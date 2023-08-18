@@ -1,4 +1,5 @@
 # ui
+<<<<<<< HEAD
 
 Framework for building UI elements programmatically using JavaScript.
 
@@ -31,3 +32,5 @@ console.log(JSON.stringify(renderedFields))
 
 ## License
 
+=======
+>>>>>>> 59f38b8 (Create README.md)
