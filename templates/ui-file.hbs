@@ -1,0 +1,5 @@
+<label for="{{{id}}}" class="form-control-label form-control-label-{{{type}}} form-control-label-{{{id}}}">{{{label}}}:{{#if required}} <span class="required-control">*</span>{{/if}}</label>
+<input type="{{{type}}}" class="form-control-file border{{#if class}} {{{class}}}{{/if}}" name="{{{name}}}" id="{{{id}}}" placeholder="{{{label}}}"{{#if required}} required{{/if}}{{#if value}} value="{{{value}}}"{{/if}} />
+{{#if description}}
+<div class="text-small">{{{description}}}</div>
+{{/if}}
