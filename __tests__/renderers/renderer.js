@@ -69,13 +69,18 @@ describe('UiHandlebarsRenderer', () => {
         })
 
         test('', () => {
-            let props = {
-                useTemplateFilename: true,
-                templateFilename: 'templateFilename',
-                templateString: 'templateString',
+            function invokeUiHandlebarsRenderer() {
+                let props = {
+                    useTemplateFilename: true,
+                    templateFilename: 'templateFilename',
+                    templateString: 'templateString',
+                }
+                let renderer = new UiHandlebarsRenderer(props);
+                let result = renderer.render()
             }
-            let renderer = new UiHandlebarsRenderer(props);
-            let result = renderer.render()
+
+
+            expect(invokeUiHandlebarsRenderer).toThrowError();
         })
     })
 })
