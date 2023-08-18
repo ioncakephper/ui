@@ -5,15 +5,7 @@
     "version": "0.2.0",
     "configurations": [
     
-    {
-        "name": "Launch ff Program",
-        "program": "${workspaceFolder}/ff.js",
-        "request": "launch",
-        "skipFiles": [
-            "<node_internals>/**"
-        ],
-        "type": "node"
-    },
+  
     
 
 
@@ -24,7 +16,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\quick-test.js"
+            "program": "${workspaceFolder}\\demo\\sample-page.js"
         }
     ]
 }
