@@ -6,13 +6,12 @@
   "scripts": {
     "test": "jest"
   },
-  "author": "",
+  "author": "Ion Gireada",
   "license": "ISC",
   "devDependencies": {
     "jest": "^29.5.0"
   },
   "dependencies": {
-    "beautify": "^0.0.8",
     "file-easy": "^1.0.3",
     "hbsr": "^1.0.9",
     "lodash": "^4.17.21"
