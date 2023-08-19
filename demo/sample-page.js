@@ -1,4 +1,4 @@
-const { textField, colorField, numberField, booleanField, dateField, datetimeField, datetimelocalField, emailField, fileField, hiddenField, imageField, monthField, passwordField, rangeField, searchField, telField, timeField, urlField, textareaField, selectField } = require("../lib/ui-field-shortcuts");
+const { textField, colorField, numberField, booleanField, dateField, datetimeField, datetimelocalField, emailField, fileField, hiddenField, imageField, monthField, passwordField, rangeField, searchField, telField, timeField, urlField, textareaField, selectField, radioField, checkboxesField } = require("../lib/ui-field-shortcuts");
 const {saveDocument} = require("file-easy");
 const hbsr = require("hbsr");
 
@@ -7,35 +7,38 @@ let choices = [
     'Choice 2', 
 ].map((label, value) => {
     return {
-        label,
-        value: `${value}`,
+        label, 
+        value: `${value}`, 
     }
 })
 let fields = [
-    selectField('Select', choices),
-    selectField('My selected choice', choices, {name: 'selected-choice'}),
-    textField('First name'),
-    textField('Last name*'),
+    booleanField('Required', {description: `Checkbox field description goes here`}),
+    checkboxesField('Checkboxes 1', choices),
+    checkboxesField('Checkboxes', choices),
     colorField('Background color'),
     colorField('Text color'),
-    numberField('Width'),
-    booleanField('Required', {description: `Checkbox field description goes here`}),
     dateField('Date'),
     datetimeField('Datetime'),
-    datetimelocalField('Datetime-local'), 
+    datetimelocalField('Datetime-local'),
     emailField('Email'),
     fileField('File'),
     hiddenField('Hidden'),
     imageField('Image'), 
     monthField('Month'),
+    numberField('Width'),
     passwordField('Password'),
+    radioField('Radio 1', choices),
+    radioField('Radio', choices),
     rangeField('Range'),
     searchField('Search'),
+    selectField('My selected choice', choices, {name: 'selected-choice'}),
+    selectField('Select', choices),
     telField('Tel'),
     textareaField('Textarea'),
+    textField('First name'),
+    textField('Last name*'),
     timeField('Time'),
     urlField('URL'),
-
 ]
 fields = fields.map(field => {
     field.props.templateOptions = {
@@ -49,6 +52,8 @@ let values = {
     firstName: 'John',
     lastName: 'Doe',
     'selected-choice': '1',
+    'radio-1': '1',
+    'checkboxes': ['0', '1'],
 }
 
 let result = fields.map(field => {
