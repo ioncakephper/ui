@@ -1,5 +1,7 @@
 <label for="{{{id}}}" class="form-control-label form-control-label-{{{type}}} form-control-label-{{{id}}}">{{{label}}}:{{#if required}}<span class="required-control">*</span>{{/if}}</label>
-<input type="{{{type}}}" class="form-control{{#if class}} {{{class}}}{{/if}}" name="{{{name}}}" id="{{{id}}}" placeholder="{{{label}}}"{{#if required}} required{{/if}}{{#if value}} value="{{{value}}}"{{/if}} />
+<input type="{{{type}}}" class="form-control{{#if class}} {{{class}}}{{/if}}" name="{{{name}}}" id="{{{id}}}" placeholder="{{{label}}}"{{#if required}} required{{/if}}{{#if value}} value="{{{value}}}"{{/if}}
+{{#if src}} src="{{{src}}}"{{/if}}
+{{#if alt}} alt="{{{alt}}}"{{/if}} />
 {{#if description}}
 <div class="text-small">{{{description}}}</div>
 {{/if}}
