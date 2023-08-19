@@ -21,7 +21,7 @@ const {
     UiTextField,
     UiTimeField,
     UiUrlField,
-} = require("./ui-basic-fields");
+} = require("./lib/ui-basic-fields");
 
 const {
     booleanField,
@@ -50,18 +50,18 @@ const {
     getLabelAndRequired,
     sanitizeLabel,
     itSuggestsRequired,
-} = require("./ui-field-shortcuts");
+} = require("./lib/ui-field-shortcuts");
 
 const {
     UiField,
     UiFieldBase,
     UiFieldWithOptions,
-} = require("./ui-field");
+} = require("./lib/ui-field");
 
 const {
     UiRenderer,
     UiHandlebarsRenderer,
-} = require("./ui-renderer");
+} = require("./lib/ui-renderer");
 
 module.exports = {
     UiBooleanField,
