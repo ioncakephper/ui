@@ -30,6 +30,7 @@ console.log(JSON.stringify(renderedFields))
 ### SelectField: field with choices
 
 ```js
+const {selectField} = require('uijs-kit');
 
 // choices as array of objects with label and value properties
 let choices = ["Choice 1", "Choice 2"].map((label, value) => {
