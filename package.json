@@ -1,5 +1,5 @@
 {
-  "name": "uijs",
+  "name": "uijs-kit",
   "version": "1.0.1",
   "description": "Framework for building UI elements programmatically using JavaScript.",
   "main": "index.js",

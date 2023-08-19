@@ -1,5 +1,4 @@
-# ui
-<<<<<<< HEAD
+# uijs-kit
 
 Framework for building UI elements programmatically using JavaScript.
 
@@ -8,13 +7,13 @@ Framework for building UI elements programmatically using JavaScript.
 ## Installation
 
 ```bash
-npm i ui --save
+npm i uijs-kit --save
 ```
 
 ## Usage
 
 ```js
-const {textField, colorField} = require('ui')
+const {textField, colorField} = require('uijs-kit')
 
 let fields = [
   textField('First name'), // optional. Label, name, and id properties derived from text parameter
@@ -32,5 +31,3 @@ console.log(JSON.stringify(renderedFields))
 
 ## License
 
-=======
->>>>>>> 59f38b8 (Create README.md)
