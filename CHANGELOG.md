@@ -1,8 +1,9 @@
 
-## v1.0.5
+## v1.0.6
 
 * Updated index.js to export classes and functions
 * Updated code documentation for ui-renderer
+* Updated templateOptions to reflect default templates
 
 ## v1.0.2
 
