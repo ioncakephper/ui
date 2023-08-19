@@ -1,6 +1,6 @@
 {
   "name": "uijs-kit",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Framework for building UI elements programmatically using JavaScript.",
   "main": "index.js",
   "scripts": {
