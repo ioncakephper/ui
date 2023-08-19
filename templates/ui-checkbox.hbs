@@ -1,2 +1,8 @@
-
-    <input type="checkbox" class="form-check-input" id="{{{id}}}" name="{{{name}}}" value="{{{value}}}">{{{label}}} 
+<div class="form-check">
+  <label class="form-check-label">
+    <input type="checkbox" class="form-check-input" name="{{{name}}}" id="{{{id}}}" value="{{{value}}}">{{{label}}}
+  </label>
+  {{#if description}}
+    <div class="text-small">{{{description}}}</div>
+  {{/if}}
+</div>

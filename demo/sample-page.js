@@ -1,4 +1,4 @@
-const { textField, colorField, numberField } = require("../lib/ui-field-shortcuts");
+const { textField, colorField, numberField, booleanField, dateField, datetimeField, datetimelocalField, emailField, fileField, hiddenField, imageField, monthField, passwordField, rangeField, searchField, telField, timeField, urlField } = require("../lib/ui-field-shortcuts");
 const {saveDocument} = require("file-easy");
 const hbsr = require("hbsr");
 
@@ -7,7 +7,23 @@ let fields = [
     textField('Last name*'),
     colorField('Background color'),
     colorField('Text color'),
-    numberField('Width')
+    numberField('Width'),
+    booleanField('Required', {description: `Checkbox field description goes here`}),
+    dateField('Date'),
+    datetimeField('Datetime'),
+    datetimelocalField('Datetime-local'),
+    emailField('Email'),
+    fileField('File'),
+    hiddenField('Hidden'),
+    imageField('Image'), 
+    monthField('Month'),
+    passwordField('Password'),
+    rangeField('Range'),
+    searchField('Search'),
+    telField('Tel'),
+    timeField('Time'),
+    urlField('URL'),
+
 ]
 fields = fields.map(field => {
     field.props.templateOptions = {
