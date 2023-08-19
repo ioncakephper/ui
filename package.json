@@ -1,6 +1,6 @@
 {
   "name": "uijs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Framework for building UI elements programmatically using JavaScript.",
   "main": "index.js",
   "scripts": {
