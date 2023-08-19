@@ -1,5 +1,5 @@
 
-## v1.0.4
+## v1.0.5
 
 * Updated index.js to export classes and functions
 * Updated code documentation for ui-renderer
