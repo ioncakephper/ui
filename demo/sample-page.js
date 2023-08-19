@@ -22,7 +22,7 @@ let fields = [
     booleanField('Required', {description: `Checkbox field description goes here`}),
     dateField('Date'),
     datetimeField('Datetime'),
-    datetimelocalField('Datetime-local'),
+    datetimelocalField('Datetime-local'), 
     emailField('Email'),
     fileField('File'),
     hiddenField('Hidden'),
