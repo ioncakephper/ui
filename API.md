@@ -295,10 +295,10 @@ and returns the rendered template as a string.
 - <code>Error</code> If the `templateFilename` parameter is undefined.
 
 
-| Param | Description |
-| --- | --- |
-| templateFilename | The templateFilename parameter is a string that represents the filename of the template file that needs to be rendered. |
-| [values] | The `values` parameter is an optional object that contains key-value pairs. These values can be used to replace placeholders in the template file with actual values. |
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| templateFilename | <code>string</code> |  | The templateFilename parameter is a string that represents the filename of the template file that needs to be rendered. |
+| [values] | <code>object</code> | <code>{}</code> | The `values` parameter is an optional object that contains key-value pairs. These values can be used to replace placeholders in the template file with actual values. |
 
 <a name="UiRenderer+renderTemplateString"></a>
 
@@ -316,7 +316,7 @@ arguments.
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
-| templateString |  |  | A string that represents a template with placeholders for values to be inserted. |
+| templateString | <code>string</code> |  | A string that represents a template with placeholders for values to be inserted. |
 | [values] | <code>object</code> | <code>{}</code> | The `values` parameter is an optional object that contains key-value pairs. These values can be used to replace placeholders in the `templateString`. |
 
 <a name="UiHandlebarsRenderer"></a>
@@ -360,7 +360,7 @@ values and template options.
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
-| templateFilename |  |  | The template filename is the name or path of the template file that you want to render. It could be a string representing the filename or a variable containing the filename. |
+| templateFilename | <code>string</code> |  | The template filename is the name or path of the template file that you want to render. It could be a string representing the filename or a variable containing the filename. |
 | [values] | <code>object</code> | <code>{}</code> | The `values` parameter is an optional object that contains the values to be used in the template rendering. These values can be accessed within the template using placeholders or variables. |
 
 <a name="UiHandlebarsRenderer+renderTemplateString"></a>
@@ -375,7 +375,7 @@ and returns the rendered template.
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
-| templateString |  |  | The templateString parameter is a string that represents a template. It can contain placeholders or variables that will be replaced with actual values when the template is rendered. |
+| templateString | <code>string</code> |  | The templateString parameter is a string that represents a template. It can contain placeholders or variables that will be replaced with actual values when the template is rendered. |
 | [values] | <code>object</code> | <code>{}</code> | The `values` parameter is an optional object that contains key-value pairs representing the values to be substituted in the template string. These values will be used to replace placeholders or variables in the template string with their corresponding values. |
 
 <a name="UiRenderer+render"></a>
