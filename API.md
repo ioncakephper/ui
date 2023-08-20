@@ -209,7 +209,7 @@ whitespace, and returns the sanitized label or &#39;No label&#39; if the resulti
 <dd><p>The <code>FieldProperties</code> object represents a field in a form.</p>
 </dd>
 <dt><a href="#FieldChoice">FieldChoice</a> : <code>object</code></dt>
-<dd><p>The <code>FieldChoices</code> object represents a choice in a radio, select, or checkboxes field.</p>
+<dd><p>The <code>FieldChoice</code> object represents a choice in a radio, select, or checkboxes field.</p>
 </dd>
 </dl>
 
@@ -4536,7 +4536,7 @@ The function `colorField` creates a new UiColorField object with the provided la
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
-| [label] |  |  | A string representing the label for the color field. It is an optional parameter and defaults to an empty string if not provided. |
+| [label] | <code>string</code> | <code>&quot;&#x27;&#x27;&quot;</code> | A string representing the label for the color field. It is an optional parameter and defaults to an empty string if not provided. |
 | [options] | [<code>FieldProperties</code>](#FieldProperties) | <code>{}</code> | An object that contains additional configuration options for the color field. These options can include properties such as the default color, the available color options, and any event handlers for when the color is changed. |
 
 <a name="numberField"></a>
@@ -4550,7 +4550,7 @@ options.
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
-| [label] |  |  | A string representing the label for the number field. It is an optional parameter and defaults to an empty string if not provided. |
+| [label] | <code>string</code> | <code>&quot;&#x27;&#x27;&quot;</code> | A string representing the label for the number field. It is an optional parameter and defaults to an empty string if not provided. |
 | [options] | [<code>FieldProperties</code>](#FieldProperties) | <code>{}</code> | An object that contains additional options for the number field. These options can include properties such as minimum and maximum values, step size, default value, and any other configuration options specific to the number field component. |
 
 <a name="textareaField"></a>
@@ -4564,7 +4564,7 @@ options.
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
-| [label] |  |  | A string representing the label for the textarea field. It is an optional parameter and defaults to an empty string if not provided. |
+| [label] | <code>string</code> | <code>&quot;&#x27;&#x27;&quot;</code> | A string representing the label for the textarea field. It is an optional parameter and defaults to an empty string if not provided. |
 | [options] | [<code>FieldProperties</code>](#FieldProperties) | <code>{}</code> | An object that contains additional options for the textarea field. These options can include properties such as placeholder, value, rows, cols, and disabled. |
 
 <a name="textField"></a>
@@ -4578,7 +4578,7 @@ options.
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
-| [label] |  |  | The label parameter is a string that represents the label or placeholder text for the text field. It is optional and defaults to an empty string if not provided. |
+| [label] | <code>string</code> | <code>&quot;&#x27;&#x27;&quot;</code> | The label parameter is a string that represents the label or placeholder text for the text field. It is optional and defaults to an empty string if not provided. |
 | [options] | [<code>FieldProperties</code>](#FieldProperties) | <code>{}</code> | The `options` parameter is an object that contains additional configuration options for the `UiTextField` component. These options can include properties such as `placeholder`, `maxLength`, `defaultValue`, `disabled`, etc. |
 
 <a name="dateField"></a>
@@ -4591,7 +4591,7 @@ The function `dateField` creates a new date field with a label and optional addi
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
-| [label] |  |  | A string that represents the label for the date field. It is an optional parameter and defaults to an empty string if not provided. |
+| [label] | <code>string</code> | <code>&quot;&#x27;&#x27;&quot;</code> | A string that represents the label for the date field. It is an optional parameter and defaults to an empty string if not provided. |
 | [options] | [<code>FieldProperties</code>](#FieldProperties) | <code>{}</code> | An object that contains additional options for the date field. These options can include properties such as the default value, minimum and maximum date, and any custom validation rules. |
 
 <a name="datetimeField"></a>
@@ -4605,7 +4605,7 @@ options.
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
-| [label] |  |  | A string representing the label for the datetime field. It is an optional parameter and defaults to an empty string if not provided. |
+| [label] | <code>string</code> | <code>&quot;&#x27;&#x27;&quot;</code> | A string representing the label for the datetime field. It is an optional parameter and defaults to an empty string if not provided. |
 | [options] | [<code>FieldProperties</code>](#FieldProperties) | <code>{}</code> | An object that contains additional options for the UiDateTimeField. These options can include properties such as format, initialDate, minDate, maxDate, and onChange. |
 
 <a name="datetimelocalField"></a>
@@ -4619,7 +4619,7 @@ label and options.
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
-| [label] |  |  | The label parameter is a string that represents the label or name of the field. It is used to provide a descriptive name for the field in the user interface. |
+| [label] | <code>string</code> | <code>&quot;&#x27;&#x27;&quot;</code> | The label parameter is a string that represents the label or name of the field. It is used to provide a descriptive name for the field in the user interface. |
 | [options] | [<code>FieldProperties</code>](#FieldProperties) | <code>{}</code> | An object that contains additional configuration options for the `UiDateTimeLocalField` component. These options can include properties such as `defaultValue`, `disabled`, `onChange`, etc. |
 
 <a name="emailField"></a>
@@ -4632,7 +4632,7 @@ The function creates an email input field with an optional label and additional 
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
-| [label] |  |  | A string that represents the label for the email field. It is an optional parameter and defaults to an empty string if not provided. |
+| [label] | <code>string</code> | <code>&quot;&#x27;&#x27;&quot;</code> | A string that represents the label for the email field. It is an optional parameter and defaults to an empty string if not provided. |
 | [options] | [<code>FieldProperties</code>](#FieldProperties) | <code>{}</code> | An object that contains additional options for the email field. These options can include properties such as placeholder text, default value, validation rules, and event handlers. |
 
 <a name="fileField"></a>
@@ -4646,7 +4646,7 @@ options.
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
-| [label] |  |  | The label parameter is a string that represents the label or name of the file field. It is optional and can be left empty if no label is needed for the field. |
+| [label] | <code>string</code> | <code>&quot;&#x27;&#x27;&quot;</code> | The label parameter is a string that represents the label or name of the file field. It is optional and can be left empty if no label is needed for the field. |
 | [options] | [<code>FieldProperties</code>](#FieldProperties) | <code>{}</code> | An object that contains additional options for the file field. These options can include properties such as the field's name, value, placeholder, and event handlers. |
 
 <a name="formField"></a>
@@ -4660,7 +4660,7 @@ options.
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
-| [label] |  |  | The label parameter is a string that represents the label for the form field. It is optional and defaults to an empty string if not provided. |
+| [label] | <code>string</code> | <code>&quot;&#x27;&#x27;&quot;</code> | The label parameter is a string that represents the label for the form field. It is optional and defaults to an empty string if not provided. |
 | [fields] | [<code>Array.&lt;UiField&gt;</code>](#UiField) | <code>[]</code> | The `fields` parameter is an array that contains the input fields for the form. Each element in the array represents a single input field. |
 | [options] | [<code>FieldProperties</code>](#FieldProperties) | <code>{}</code> | An object that contains additional options for the form field. These options will be merged with the label and required properties obtained from the getLabelAndRequired function. |
 
@@ -4674,7 +4674,7 @@ The function `hiddenField` creates a hidden field with an optional label and add
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
-| [label] |  |  | The label parameter is a string that represents the label for the hidden field. It is optional and defaults to an empty string if not provided. |
+| [label] | <code>string</code> | <code>&quot;&#x27;&#x27;&quot;</code> | The label parameter is a string that represents the label for the hidden field. It is optional and defaults to an empty string if not provided. |
 | [options] | [<code>FieldProperties</code>](#FieldProperties) | <code>{}</code> | An object that contains additional options for the hidden field. These options can include properties such as the field's name, value, and any additional attributes or classes that should be applied to the field. |
 
 <a name="imageField"></a>
@@ -4687,7 +4687,7 @@ The function `imageField` creates a new image field with a label and optional ad
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
-| [label] |  |  | The label parameter is a string that represents the label or title for the image field. It is optional and can be left empty if no label is needed. |
+| [label] | <code>string</code> | <code>&quot;&#x27;&#x27;&quot;</code> | The label parameter is a string that represents the label or title for the image field. It is optional and can be left empty if no label is needed. |
 | [options] | [<code>FieldProperties</code>](#FieldProperties) | <code>{}</code> | An object that contains additional options for the image field. These options can include properties such as the field's name, value, placeholder, and event handlers. |
 
 <a name="monthField"></a>
@@ -4701,7 +4701,7 @@ additional options.
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
-| [label] |  |  | A string representing the label for the month field. It is an optional parameter and defaults to an empty string if not provided. |
+| [label] | <code>string</code> | <code>&quot;&#x27;&#x27;&quot;</code> | A string representing the label for the month field. It is an optional parameter and defaults to an empty string if not provided. |
 | [options] | [<code>FieldProperties</code>](#FieldProperties) | <code>{}</code> | An object that contains additional options for the month field. These options can include properties such as defaultValue, placeholder, disabled, and onChange. |
 
 <a name="passwordField"></a>
@@ -4714,7 +4714,7 @@ The function creates a password field with a label and optional additional optio
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
-| [label] |  |  | The label parameter is a string that represents the label or name of the password field. It is optional and can be left empty if no label is needed for the field. |
+| [label] | <code>string</code> | <code>&quot;&#x27;&#x27;&quot;</code> | The label parameter is a string that represents the label or name of the password field. It is optional and can be left empty if no label is needed for the field. |
 | [options] | [<code>FieldProperties</code>](#FieldProperties) | <code>{}</code> | An object that contains additional options for the password field. These options can include properties such as placeholder, maxLength, minLength, and disabled. |
 
 <a name="radioField"></a>
@@ -4727,7 +4727,7 @@ The function `radioField` creates a radio field with a label, choices, and addit
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
-| [label] |  |  | The label parameter is a string that represents the label or title for the radio field. It is optional and defaults to an empty string if not provided. |
+| [label] | <code>string</code> | <code>&quot;&#x27;&#x27;&quot;</code> | The label parameter is a string that represents the label or title for the radio field. It is optional and defaults to an empty string if not provided. |
 | [choices] | [<code>Array.&lt;FieldChoice&gt;</code>](#FieldChoice) | <code>[]</code> | An array of options for the radio field. Each option should be a string representing the label for the option. |
 | [options] | [<code>FieldProperties</code>](#FieldProperties) | <code>{}</code> | An object that contains additional options for the radio field. These options can include properties such as `id`, `name`, `value`, `disabled`, `readonly`, etc. |
 
@@ -4742,7 +4742,7 @@ options.
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
-| [label] |  |  | A string representing the label for the range field. It is an optional parameter and defaults to an empty string if not provided. |
+| [label] | <code>string</code> | <code>&quot;&#x27;&#x27;&quot;</code> | A string representing the label for the range field. It is an optional parameter and defaults to an empty string if not provided. |
 | [options] | [<code>FieldProperties</code>](#FieldProperties) | <code>{}</code> | An object that contains additional options for the range field. These options can include properties such as min, max, step, and value, which define the range of values and the initial value of the range field. |
 
 <a name="searchField"></a>
@@ -4756,7 +4756,7 @@ options.
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
-| [label] |  |  | The label parameter is a string that represents the label or title of the search field. It is optional and defaults to an empty string if not provided. |
+| [label] | <code>string</code> | <code>&quot;&#x27;&#x27;&quot;</code> | The label parameter is a string that represents the label or title of the search field. It is optional and defaults to an empty string if not provided. |
 | [options] | [<code>FieldProperties</code>](#FieldProperties) | <code>{}</code> | The `options` parameter is an object that contains additional configuration options for the `UiSearchField` component. These options can include properties such as `placeholder`, `defaultValue`, `onChange`, etc. |
 
 <a name="telField"></a>
@@ -4769,7 +4769,7 @@ The function `telField` creates a new `UiTelField` object with optional label an
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
-| [label] |  |  | A string that represents the label for the telephone field. It is an optional parameter and defaults to an empty string if not provided. |
+| [label] | <code>string</code> | <code>&quot;&#x27;&#x27;&quot;</code> | A string that represents the label for the telephone field. It is an optional parameter and defaults to an empty string if not provided. |
 | [options] | [<code>FieldProperties</code>](#FieldProperties) | <code>{}</code> | An object that contains additional configuration options for the `UiTelField` component. |
 
 <a name="selectField"></a>
@@ -4783,7 +4783,7 @@ and options.
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
-| [label] |  |  | The label parameter is a string that represents the label or title of the field. It is optional and defaults to an empty string if not provided. |
+| [label] | <code>string</code> | <code>&quot;&#x27;&#x27;&quot;</code> | The label parameter is a string that represents the label or title of the field. It is optional and defaults to an empty string if not provided. |
 | [choices] | [<code>Array.&lt;FieldChoice&gt;</code>](#FieldChoice) | <code>[]</code> | An array of options for the select field. Each option should be a string or an object with a "label" and "value" property. |
 | [options] | [<code>FieldProperties</code>](#FieldProperties) | <code>{}</code> | An object containing additional options for the select field. These options will be merged with the default options. |
 
@@ -4798,7 +4798,7 @@ options.
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
-| [label] |  |  | A string that represents the label for the time field. It is an optional parameter and defaults to an empty string if not provided. |
+| [label] | <code>string</code> | <code>&quot;&#x27;&#x27;&quot;</code> | A string that represents the label for the time field. It is an optional parameter and defaults to an empty string if not provided. |
 | [options] | [<code>FieldProperties</code>](#FieldProperties) | <code>{}</code> | An object that contains additional configuration options for the time field. These options can include properties such as the default value, minimum and maximum time values, and any custom validation rules. |
 
 <a name="urlField"></a>
@@ -4811,7 +4811,7 @@ The function `urlField` creates a URL input field with an optional label.
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
-| [label] |  |  | The label parameter is a string that represents the label or name of the URL field. It is optional and can be left empty if no label is needed for the field. |
+| [label] | <code>string</code> | <code>&quot;&#x27;&#x27;&quot;</code> | The label parameter is a string that represents the label or name of the URL field. It is optional and can be left empty if no label is needed for the field. |
 | [options] | [<code>FieldProperties</code>](#FieldProperties) | <code>{}</code> | An object that contains additional options for the URL field. These options can include properties such as placeholder text, default value, validation rules, and event handlers. |
 
 <a name="getLabelAndRequired"></a>
@@ -4826,9 +4826,9 @@ the result of calling the "sanitizeLabel" function with the "label" parameter as
 value of the "required" property is the result of calling the "itSuggestsRequired" function with the
 "label" parameter as an argument.  
 
-| Param | Description |
-| --- | --- |
-| [label] | The `label` parameter is a string that represents the label for a form field. |
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| [label] | <code>string</code> | <code>&quot;&#x27;&#x27;&quot;</code> | The `label` parameter is a string that represents the label for a form field. |
 
 <a name="sanitizeLabel"></a>
 
@@ -4899,7 +4899,7 @@ The `FieldProperties` object represents a field in a form.
 <a name="FieldChoice"></a>
 
 ## FieldChoice : <code>object</code>
-The `FieldChoices` object represents a choice in a radio, select, or checkboxes field.
+The `FieldChoice` object represents a choice in a radio, select, or checkboxes field.
 
 **Kind**: global typedef  
 **Properties**
