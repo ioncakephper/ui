@@ -80,6 +80,10 @@ console.log(html);
 // </div>
 ```
 
+## API
+
+See [APi.md](API.md) for API documentation.
+
 
 ## Run tests
 
