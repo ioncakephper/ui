@@ -226,11 +226,11 @@ string, replacing placeholders with values.
 
 * [UiRenderer](#UiRenderer)
     * [new UiRenderer([props])](#new_UiRenderer_new)
-    * [.render([values])](#UiRenderer+render) ⇒
-    * [.usesTemplateFilename()](#UiRenderer+usesTemplateFilename) ⇒
-    * [.getTemplateFilename()](#UiRenderer+getTemplateFilename) ⇒
-    * [.getTemplateString()](#UiRenderer+getTemplateString) ⇒
-    * [.renderTemplateFilename(templateFilename, [values])](#UiRenderer+renderTemplateFilename) ⇒
+    * [.render([values])](#UiRenderer+render) ⇒ <code>string</code>
+    * [.usesTemplateFilename()](#UiRenderer+usesTemplateFilename) ⇒ <code>boolean</code>
+    * [.getTemplateFilename()](#UiRenderer+getTemplateFilename) ⇒ <code>string</code>
+    * [.getTemplateString()](#UiRenderer+getTemplateString) ⇒ <code>string</code>
+    * [.renderTemplateFilename(templateFilename, [values])](#UiRenderer+renderTemplateFilename) ⇒ <code>string</code>
     * [.renderTemplateString(templateString, [values])](#UiRenderer+renderTemplateString) ⇒ <code>string</code>
 
 <a name="new_UiRenderer_new"></a>
@@ -246,12 +246,12 @@ those properties with custom values.
 
 <a name="UiRenderer+render"></a>
 
-### uiRenderer.render([values]) ⇒
+### uiRenderer.render([values]) ⇒ <code>string</code>
 The render function checks if a template filename is provided and renders the template using
 either the filename or the template string.
 
 **Kind**: instance method of [<code>UiRenderer</code>](#UiRenderer)  
-**Returns**: the result of either `this.renderTemplateFilename(this.getTemplateFilename(), values)`
+**Returns**: <code>string</code> - the result of either `this.renderTemplateFilename(this.getTemplateFilename(), values)`
 or `this.renderTemplateString(this.getTemplateString(), values)`, depending on the result of
 `this.usesTemplateFilename()`.  
 
@@ -261,34 +261,34 @@ or `this.renderTemplateString(this.getTemplateString(), values)`, depending on t
 
 <a name="UiRenderer+usesTemplateFilename"></a>
 
-### uiRenderer.usesTemplateFilename() ⇒
+### uiRenderer.usesTemplateFilename() ⇒ <code>boolean</code>
 The function checks if the template filename is defined and should be used.
 
 **Kind**: instance method of [<code>UiRenderer</code>](#UiRenderer)  
-**Returns**: a boolean value. It returns true if the `useTemplateFilename` prop is true and the
+**Returns**: <code>boolean</code> - It returns a boolean value. It returns true if the `useTemplateFilename` prop is true and the
 `templateFilename` prop is not undefined. Otherwise, it returns false.  
 <a name="UiRenderer+getTemplateFilename"></a>
 
-### uiRenderer.getTemplateFilename() ⇒
+### uiRenderer.getTemplateFilename() ⇒ <code>string</code>
 The function returns the template filename from the props.
 
 **Kind**: instance method of [<code>UiRenderer</code>](#UiRenderer)  
-**Returns**: The value of `this.props.templateFilename` is being returned.  
+**Returns**: <code>string</code> - The value of `this.props.templateFilename` is being returned.  
 <a name="UiRenderer+getTemplateString"></a>
 
-### uiRenderer.getTemplateString() ⇒
+### uiRenderer.getTemplateString() ⇒ <code>string</code>
 The function returns the template string from the props.
 
 **Kind**: instance method of [<code>UiRenderer</code>](#UiRenderer)  
-**Returns**: The template string stored in the `props` object.  
+**Returns**: <code>string</code> - The template string stored in the `props` object.  
 <a name="UiRenderer+renderTemplateFilename"></a>
 
-### uiRenderer.renderTemplateFilename(templateFilename, [values]) ⇒
+### uiRenderer.renderTemplateFilename(templateFilename, [values]) ⇒ <code>string</code>
 The function `renderTemplateFilename` reads a template file, replaces placeholders with values,
 and returns the rendered template as a string.
 
 **Kind**: instance method of [<code>UiRenderer</code>](#UiRenderer)  
-**Returns**: the result of calling the `renderTemplateString` method with the contents of the
+**Returns**: <code>string</code> - the result of calling the `renderTemplateString` method with the contents of the
 `templateFilename` file as a string and the `values` object as arguments.  
 **Throws**:
 
@@ -331,11 +331,11 @@ Handlebars templates.
 * [UiHandlebarsRenderer](#UiHandlebarsRenderer) ⇐ [<code>UiRenderer</code>](#UiRenderer)
     * [new UiHandlebarsRenderer([props])](#new_UiHandlebarsRenderer_new)
     * [.renderTemplateFilename(templateFilename, [values])](#UiHandlebarsRenderer+renderTemplateFilename) ⇒ <code>string</code>
-    * [.renderTemplateString(templateString, [values])](#UiHandlebarsRenderer+renderTemplateString) ⇒
-    * [.render([values])](#UiRenderer+render) ⇒
-    * [.usesTemplateFilename()](#UiRenderer+usesTemplateFilename) ⇒
-    * [.getTemplateFilename()](#UiRenderer+getTemplateFilename) ⇒
-    * [.getTemplateString()](#UiRenderer+getTemplateString) ⇒
+    * [.renderTemplateString(templateString, [values])](#UiHandlebarsRenderer+renderTemplateString) ⇒ <code>string</code>
+    * [.render([values])](#UiRenderer+render) ⇒ <code>string</code>
+    * [.usesTemplateFilename()](#UiRenderer+usesTemplateFilename) ⇒ <code>boolean</code>
+    * [.getTemplateFilename()](#UiRenderer+getTemplateFilename) ⇒ <code>string</code>
+    * [.getTemplateString()](#UiRenderer+getTemplateString) ⇒ <code>string</code>
 
 <a name="new_UiHandlebarsRenderer_new"></a>
 
@@ -365,13 +365,13 @@ values and template options.
 
 <a name="UiHandlebarsRenderer+renderTemplateString"></a>
 
-### uiHandlebarsRenderer.renderTemplateString(templateString, [values]) ⇒
+### uiHandlebarsRenderer.renderTemplateString(templateString, [values]) ⇒ <code>string</code>
 The function `renderTemplateString` takes a template string and an optional object of values,
 and returns the rendered template.
 
 **Kind**: instance method of [<code>UiHandlebarsRenderer</code>](#UiHandlebarsRenderer)  
 **Overrides**: [<code>renderTemplateString</code>](#UiRenderer+renderTemplateString)  
-**Returns**: the result of rendering the template string with the provided values.  
+**Returns**: <code>string</code> - the result of rendering the template string with the provided values.  
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
@@ -380,13 +380,13 @@ and returns the rendered template.
 
 <a name="UiRenderer+render"></a>
 
-### uiHandlebarsRenderer.render([values]) ⇒
+### uiHandlebarsRenderer.render([values]) ⇒ <code>string</code>
 The render function checks if a template filename is provided and renders the template using
 either the filename or the template string.
 
 **Kind**: instance method of [<code>UiHandlebarsRenderer</code>](#UiHandlebarsRenderer)  
 **Overrides**: [<code>render</code>](#UiRenderer+render)  
-**Returns**: the result of either `this.renderTemplateFilename(this.getTemplateFilename(), values)`
+**Returns**: <code>string</code> - the result of either `this.renderTemplateFilename(this.getTemplateFilename(), values)`
 or `this.renderTemplateString(this.getTemplateString(), values)`, depending on the result of
 `this.usesTemplateFilename()`.  
 
@@ -396,29 +396,29 @@ or `this.renderTemplateString(this.getTemplateString(), values)`, depending on t
 
 <a name="UiRenderer+usesTemplateFilename"></a>
 
-### uiHandlebarsRenderer.usesTemplateFilename() ⇒
+### uiHandlebarsRenderer.usesTemplateFilename() ⇒ <code>boolean</code>
 The function checks if the template filename is defined and should be used.
 
 **Kind**: instance method of [<code>UiHandlebarsRenderer</code>](#UiHandlebarsRenderer)  
 **Overrides**: [<code>usesTemplateFilename</code>](#UiRenderer+usesTemplateFilename)  
-**Returns**: a boolean value. It returns true if the `useTemplateFilename` prop is true and the
+**Returns**: <code>boolean</code> - It returns a boolean value. It returns true if the `useTemplateFilename` prop is true and the
 `templateFilename` prop is not undefined. Otherwise, it returns false.  
 <a name="UiRenderer+getTemplateFilename"></a>
 
-### uiHandlebarsRenderer.getTemplateFilename() ⇒
+### uiHandlebarsRenderer.getTemplateFilename() ⇒ <code>string</code>
 The function returns the template filename from the props.
 
 **Kind**: instance method of [<code>UiHandlebarsRenderer</code>](#UiHandlebarsRenderer)  
 **Overrides**: [<code>getTemplateFilename</code>](#UiRenderer+getTemplateFilename)  
-**Returns**: The value of `this.props.templateFilename` is being returned.  
+**Returns**: <code>string</code> - The value of `this.props.templateFilename` is being returned.  
 <a name="UiRenderer+getTemplateString"></a>
 
-### uiHandlebarsRenderer.getTemplateString() ⇒
+### uiHandlebarsRenderer.getTemplateString() ⇒ <code>string</code>
 The function returns the template string from the props.
 
 **Kind**: instance method of [<code>UiHandlebarsRenderer</code>](#UiHandlebarsRenderer)  
 **Overrides**: [<code>getTemplateString</code>](#UiRenderer+getTemplateString)  
-**Returns**: The template string stored in the `props` object.  
+**Returns**: <code>string</code> - The template string stored in the `props` object.  
 <a name="UiBooleanField"></a>
 
 ## UiBooleanField ⇐ [<code>UiField</code>](#UiField)
