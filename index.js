@@ -7,6 +7,7 @@ const {
     UiDateTimeLocalField,
     UiEmailField,
     UiFileField,
+    UiFormField,
     UiHiddenField,
     UiImageField,
     UiMonthField,
@@ -32,6 +33,7 @@ const {
     datetimelocalField,
     emailField,
     fileField,
+    formField,
     hiddenField,
     imageField,
     monthField,
@@ -56,6 +58,7 @@ const {
     UiField,
     UiFieldBase,
     UiFieldWithOptions,
+    UiFieldWithFields,
 } = require("./lib/ui-field");
 
 const {
@@ -72,6 +75,7 @@ module.exports = {
     UiDateTimeLocalField,
     UiEmailField,
     UiFileField,
+    UiFormField,
     UiHiddenField,
     UiImageField,
     UiMonthField,
@@ -95,6 +99,7 @@ module.exports = {
     datetimelocalField,
     emailField,
     fileField,
+    formField,
     hiddenField,
     imageField,
     monthField,
@@ -118,6 +123,7 @@ module.exports = {
     UiField,
     UiFieldBase,
     UiFieldWithOptions,
+    UiFieldWithFields,
 
     UiRenderer,
     UiHandlebarsRenderer,

@@ -1,4 +1,4 @@
-const { textField, colorField, numberField, booleanField, dateField, datetimeField, datetimelocalField, emailField, fileField, hiddenField, imageField, monthField, passwordField, rangeField, searchField, telField, timeField, urlField, textareaField, selectField, radioField, checkboxesField } = require("../lib/ui-field-shortcuts");
+const { textField, colorField, numberField, booleanField, dateField, datetimeField, datetimelocalField, emailField, fileField, hiddenField, imageField, monthField, passwordField, rangeField, searchField, telField, timeField, urlField, textareaField, selectField, radioField, checkboxesField, formField } = require("../lib/ui-field-shortcuts");
 const {saveDocument} = require("file-easy");
 const hbsr = require("hbsr");
 
@@ -48,6 +48,17 @@ fields = fields.map(field => {
     return field;
 })
 
+fields = [
+    formField('Form', fields),
+]
+fields = fields.map(field => {
+    field.props.templateOptions = {
+        template_path: `${__dirname}/../templates`,
+        template_extension: '.hbs',
+    }
+    return field;
+})
+
 let values = {
     firstName: 'John',
     lastName: 'Doe',
@@ -55,6 +66,7 @@ let values = {
     'radio-1': '1',
     'checkboxes': ['0', '1'],
 }
+
 
 let result = fields.map(field => {
     return field.render(values)

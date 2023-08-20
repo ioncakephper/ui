@@ -1,5 +1,13 @@
 # Changelog
 
+## v1.0.7
+
+* Added UIFieldWithFields class and documented class
+* Added UiFormField class and documented class
+* Added formField shortcut function and documented function
+* Update index.js to export additional classes and shortcut functions
+* Updated demo/sample-page.js and confirmed generated page has valid html code.
+
 ## v1.0.6
 
 * Updated index.js to export classes and functions
