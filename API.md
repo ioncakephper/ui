@@ -107,6 +107,10 @@ items based on the options provided.</p>
 <dt><a href="#booleanField">booleanField([label], [options])</a> ⇒</dt>
 <dd><p>The function <code>booleanField</code> creates a boolean field with a label and optional additional options.</p>
 </dd>
+<dt><a href="#checkboxesField">checkboxesField([label], [choices], [options])</a> ⇒</dt>
+<dd><p>The function <code>checkboxesField</code> creates a checkboxes field with a label, choices, and additional
+options.</p>
+</dd>
 <dt><a href="#colorField">colorField([label], [options])</a> ⇒</dt>
 <dd><p>The function <code>colorField</code> creates a new UiColorField object with the provided label and options.</p>
 </dd>
@@ -191,26 +195,27 @@ whitespace, and returns the sanitized label or &#39;No label&#39; if the resulti
 <a name="UiRenderer"></a>
 
 ## UiRenderer
+
 The `UiRenderer` class is a JavaScript class that renders a template either from a file or from a
 string, replacing placeholders with values.
 
 **Kind**: global class  
 
 * [UiRenderer](#UiRenderer)
-    * [new UiRenderer([props])](#new_UiRenderer_new)
-    * [.render([values])](#UiRenderer+render) ⇒
-    * [.usesTemplateFilename()](#UiRenderer+usesTemplateFilename) ⇒
-    * [.getTemplateFilename()](#UiRenderer+getTemplateFilename) ⇒
-    * [.getTemplateString()](#UiRenderer+getTemplateString) ⇒
-    * [.renderTemplateFilename(templateFilename, [values])](#UiRenderer+renderTemplateFilename) ⇒
-    * [.renderTemplateString(templateString, [values])](#UiRenderer+renderTemplateString) ⇒
+  * [new UiRenderer([props])](#new_UiRenderer_new)
+  * [.render([values])](#UiRenderer+render) ⇒
+  * [.usesTemplateFilename()](#UiRenderer+usesTemplateFilename) ⇒
+  * [.getTemplateFilename()](#UiRenderer+getTemplateFilename) ⇒
+  * [.getTemplateString()](#UiRenderer+getTemplateString) ⇒
+  * [.renderTemplateFilename(templateFilename, [values])](#UiRenderer+renderTemplateFilename) ⇒
+  * [.renderTemplateString(templateString, [values])](#UiRenderer+renderTemplateString) ⇒
 
 <a name="new_UiRenderer_new"></a>
 
 ### new UiRenderer([props])
+
 The constructor function initializes an object with default properties and allows for overriding
 those properties with custom values.
-
 
 | Param | Description |
 | --- | --- |
@@ -219,6 +224,7 @@ those properties with custom values.
 <a name="UiRenderer+render"></a>
 
 ### uiRenderer.render([values]) ⇒
+
 The render function checks if a template filename is provided and renders the template using
 either the filename or the template string.
 
@@ -234,6 +240,7 @@ or `this.renderTemplateString(this.getTemplateString(), values)`, depending on t
 <a name="UiRenderer+usesTemplateFilename"></a>
 
 ### uiRenderer.usesTemplateFilename() ⇒
+
 The function checks if the template filename is defined and should be used.
 
 **Kind**: instance method of [<code>UiRenderer</code>](#UiRenderer)  
@@ -242,6 +249,7 @@ The function checks if the template filename is defined and should be used.
 <a name="UiRenderer+getTemplateFilename"></a>
 
 ### uiRenderer.getTemplateFilename() ⇒
+
 The function returns the template filename from the props.
 
 **Kind**: instance method of [<code>UiRenderer</code>](#UiRenderer)  
@@ -249,6 +257,7 @@ The function returns the template filename from the props.
 <a name="UiRenderer+getTemplateString"></a>
 
 ### uiRenderer.getTemplateString() ⇒
+
 The function returns the template string from the props.
 
 **Kind**: instance method of [<code>UiRenderer</code>](#UiRenderer)  
@@ -256,6 +265,7 @@ The function returns the template string from the props.
 <a name="UiRenderer+renderTemplateFilename"></a>
 
 ### uiRenderer.renderTemplateFilename(templateFilename, [values]) ⇒
+
 The function `renderTemplateFilename` reads a template file, replaces placeholders with values,
 and returns the rendered template as a string.
 
@@ -271,6 +281,7 @@ and returns the rendered template as a string.
 <a name="UiRenderer+renderTemplateString"></a>
 
 ### uiRenderer.renderTemplateString(templateString, [values]) ⇒
+
 The function `renderTemplateString` takes a template string and an optional object of values,
 and returns a beautified version of the template string with the values replaced.
 
@@ -286,6 +297,7 @@ arguments.
 <a name="UiHandlebarsRenderer"></a>
 
 ## UiHandlebarsRenderer ⇐ [<code>UiRenderer</code>](#UiRenderer)
+
 The `UiHandlebarsRenderer` class is a subclass of `UiRenderer` that provides methods for rendering
 Handlebars templates.
 
@@ -293,19 +305,19 @@ Handlebars templates.
 **Extends**: [<code>UiRenderer</code>](#UiRenderer)  
 
 * [UiHandlebarsRenderer](#UiHandlebarsRenderer) ⇐ [<code>UiRenderer</code>](#UiRenderer)
-    * [new UiHandlebarsRenderer([props])](#new_UiHandlebarsRenderer_new)
-    * [.renderTemplateFilename(templateFilename, [values])](#UiHandlebarsRenderer+renderTemplateFilename) ⇒
-    * [.renderTemplateString(templateString, [values])](#UiHandlebarsRenderer+renderTemplateString) ⇒
-    * [.render([values])](#UiRenderer+render) ⇒
-    * [.usesTemplateFilename()](#UiRenderer+usesTemplateFilename) ⇒
-    * [.getTemplateFilename()](#UiRenderer+getTemplateFilename) ⇒
-    * [.getTemplateString()](#UiRenderer+getTemplateString) ⇒
+  * [new UiHandlebarsRenderer([props])](#new_UiHandlebarsRenderer_new)
+  * [.renderTemplateFilename(templateFilename, [values])](#UiHandlebarsRenderer+renderTemplateFilename) ⇒
+  * [.renderTemplateString(templateString, [values])](#UiHandlebarsRenderer+renderTemplateString) ⇒
+  * [.render([values])](#UiRenderer+render) ⇒
+  * [.usesTemplateFilename()](#UiRenderer+usesTemplateFilename) ⇒
+  * [.getTemplateFilename()](#UiRenderer+getTemplateFilename) ⇒
+  * [.getTemplateString()](#UiRenderer+getTemplateString) ⇒
 
 <a name="new_UiHandlebarsRenderer_new"></a>
 
 ### new UiHandlebarsRenderer([props])
-This is a constructor function in JavaScript that takes an optional props object as an argument.
 
+This is a constructor function in JavaScript that takes an optional props object as an argument.
 
 | Param | Description |
 | --- | --- |
@@ -314,6 +326,7 @@ This is a constructor function in JavaScript that takes an optional props object
 <a name="UiHandlebarsRenderer+renderTemplateFilename"></a>
 
 ### uiHandlebarsRenderer.renderTemplateFilename(templateFilename, [values]) ⇒
+
 The function `renderTemplateFilename` renders a template file using Handlebars with optional
 values and template options.
 
@@ -330,6 +343,7 @@ values and template options.
 <a name="UiHandlebarsRenderer+renderTemplateString"></a>
 
 ### uiHandlebarsRenderer.renderTemplateString(templateString, [values]) ⇒
+
 The function `renderTemplateString` takes a template string and an optional object of values,
 and returns the rendered template.
 
@@ -345,6 +359,7 @@ and returns the rendered template.
 <a name="UiRenderer+render"></a>
 
 ### uiHandlebarsRenderer.render([values]) ⇒
+
 The render function checks if a template filename is provided and renders the template using
 either the filename or the template string.
 
@@ -361,6 +376,7 @@ or `this.renderTemplateString(this.getTemplateString(), values)`, depending on t
 <a name="UiRenderer+usesTemplateFilename"></a>
 
 ### uiHandlebarsRenderer.usesTemplateFilename() ⇒
+
 The function checks if the template filename is defined and should be used.
 
 **Kind**: instance method of [<code>UiHandlebarsRenderer</code>](#UiHandlebarsRenderer)  
@@ -370,6 +386,7 @@ The function checks if the template filename is defined and should be used.
 <a name="UiRenderer+getTemplateFilename"></a>
 
 ### uiHandlebarsRenderer.getTemplateFilename() ⇒
+
 The function returns the template filename from the props.
 
 **Kind**: instance method of [<code>UiHandlebarsRenderer</code>](#UiHandlebarsRenderer)  
@@ -378,6 +395,7 @@ The function returns the template filename from the props.
 <a name="UiRenderer+getTemplateString"></a>
 
 ### uiHandlebarsRenderer.getTemplateString() ⇒
+
 The function returns the template string from the props.
 
 **Kind**: instance method of [<code>UiHandlebarsRenderer</code>](#UiHandlebarsRenderer)  
@@ -386,36 +404,40 @@ The function returns the template string from the props.
 <a name="UiBooleanField"></a>
 
 ## UiBooleanField ⇐ [<code>UiField</code>](#UiField)
+
 The `UiBooleanField` class is a subclass of `UiField` that represents a checkbox field in a user interface.
 
 **Kind**: global class  
 **Extends**: [<code>UiField</code>](#UiField)  
 
 * [UiBooleanField](#UiBooleanField) ⇐ [<code>UiField</code>](#UiField)
-    * [new UiBooleanField(props)](#new_UiBooleanField_new)
-    * [.render([values])](#UiField+render) ⇒
-    * [.contentRenderer()](#UiField+contentRenderer) ⇒
-    * [.wrapperRenderer()](#UiField+wrapperRenderer) ⇒
-    * [.renderer(props)](#UiField+renderer) ⇒
-    * [.defaultVariables([values])](#UiField+defaultVariables) ⇒
-    * [.variables([values])](#UiField+variables) ⇒
-    * [.getTemplateFilename()](#UiField+getTemplateFilename) ⇒ <code>string</code>
-    * [.getTemplateString()](#UiField+getTemplateString) ⇒
-    * [.getWrapperTemplateFilename()](#UiField+getWrapperTemplateFilename) ⇒
-    * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒
-    * [.getValue([values])](#UiField+getValue) ⇒
+  * [new UiBooleanField([props])](#new_UiBooleanField_new)
+  * [.render([values])](#UiField+render) ⇒
+  * [.contentRenderer()](#UiField+contentRenderer) ⇒
+  * [.wrapperRenderer()](#UiField+wrapperRenderer) ⇒
+  * [.renderer(props)](#UiField+renderer) ⇒
+  * [.defaultVariables([values])](#UiField+defaultVariables) ⇒
+  * [.variables([values])](#UiField+variables) ⇒
+  * [.getTemplateFilename()](#UiField+getTemplateFilename) ⇒ <code>string</code>
+  * [.getTemplateString()](#UiField+getTemplateString) ⇒
+  * [.getWrapperTemplateFilename()](#UiField+getWrapperTemplateFilename) ⇒
+  * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒
+  * [.getValue([values])](#UiField+getValue) ⇒
 
 <a name="new_UiBooleanField_new"></a>
 
-### new UiBooleanField(props)
+### new UiBooleanField([props])
 
-| Param |
-| --- |
-| props | 
+The constructor function sets the type property of the props object to 'checkbox'.
+
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| [props] | <code>object</code> | <code>{}</code> | The `props` parameter is an object that contains the properties and values that are passed to the component when it is created. In this case, the `props` object is set to an empty object `{}` by default if no argument is provided when creating the component. |
 
 <a name="UiField+render"></a>
 
 ### uiBooleanField.render([values]) ⇒
+
 The `render` function takes in a `values` object, renders the content using a content renderer
 and variables, wraps the rendered content using a wrapper renderer and default variables, and
 returns the final result.
@@ -432,6 +454,7 @@ wrapper.
 <a name="UiField+contentRenderer"></a>
 
 ### uiBooleanField.contentRenderer() ⇒
+
 The contentRenderer function returns the result of calling the renderer function with certain
 props.
 
@@ -441,6 +464,7 @@ props.
 <a name="UiField+wrapperRenderer"></a>
 
 ### uiBooleanField.wrapperRenderer() ⇒
+
 The function `wrapperRenderer` returns the result of calling the `renderer` function with
 specific props.
 
@@ -451,6 +475,7 @@ function with the `props` object as an argument.
 <a name="UiField+renderer"></a>
 
 ### uiBooleanField.renderer(props) ⇒
+
 The function returns a new instance of the UiHandlebarsRenderer class with the given props.
 
 **Kind**: instance method of [<code>UiBooleanField</code>](#UiBooleanField)  
@@ -464,6 +489,7 @@ The function returns a new instance of the UiHandlebarsRenderer class with the g
 <a name="UiField+defaultVariables"></a>
 
 ### uiBooleanField.defaultVariables([values]) ⇒
+
 The defaultVariables function returns the props object.
 
 **Kind**: instance method of [<code>UiBooleanField</code>](#UiBooleanField)  
@@ -477,6 +503,7 @@ The defaultVariables function returns the props object.
 <a name="UiField+variables"></a>
 
 ### uiBooleanField.variables([values]) ⇒
+
 The function returns a merged object of default variables and a value.
 
 **Kind**: instance method of [<code>UiBooleanField</code>](#UiBooleanField)  
@@ -490,6 +517,7 @@ The function returns a merged object of default variables and a value.
 <a name="UiField+getTemplateFilename"></a>
 
 ### uiBooleanField.getTemplateFilename() ⇒ <code>string</code>
+
 The function returns a template filename based on the type property.
 
 **Kind**: instance method of [<code>UiBooleanField</code>](#UiBooleanField)  
@@ -498,6 +526,7 @@ The function returns a template filename based on the type property.
 <a name="UiField+getTemplateString"></a>
 
 ### uiBooleanField.getTemplateString() ⇒
+
 The function returns the template string from the props.
 
 **Kind**: instance method of [<code>UiBooleanField</code>](#UiBooleanField)  
@@ -506,6 +535,7 @@ The function returns the template string from the props.
 <a name="UiField+getWrapperTemplateFilename"></a>
 
 ### uiBooleanField.getWrapperTemplateFilename() ⇒
+
 The function returns the filename of a UI wrapper template.
 
 **Kind**: instance method of [<code>UiBooleanField</code>](#UiBooleanField)  
@@ -514,6 +544,7 @@ The function returns the filename of a UI wrapper template.
 <a name="UiField+getWrapperTemplateString"></a>
 
 ### uiBooleanField.getWrapperTemplateString() ⇒
+
 The function returns the wrapper template string from the props.
 
 **Kind**: instance method of [<code>UiBooleanField</code>](#UiBooleanField)  
@@ -522,6 +553,7 @@ The function returns the wrapper template string from the props.
 <a name="UiField+getValue"></a>
 
 ### uiBooleanField.getValue([values]) ⇒
+
 The getValue function returns the value associated with a given name from a provided object.
 
 **Kind**: instance method of [<code>UiBooleanField</code>](#UiBooleanField)  
@@ -535,42 +567,49 @@ The getValue function returns the value associated with a given name from a prov
 <a name="UiTextField"></a>
 
 ## UiTextField ⇐ [<code>UiField</code>](#UiField)
+
 The `UiTextField` class is a subclass of `UiField` that represents a text input field in a user interface.
 
 **Kind**: global class  
 **Extends**: [<code>UiField</code>](#UiField)  
 
 * [UiTextField](#UiTextField) ⇐ [<code>UiField</code>](#UiField)
-    * [new UiTextField(props)](#new_UiTextField_new)
-    * [.getTemplateFilename()](#UiTextField+getTemplateFilename) ⇒ <code>string</code>
-    * [.render([values])](#UiField+render) ⇒
-    * [.contentRenderer()](#UiField+contentRenderer) ⇒
-    * [.wrapperRenderer()](#UiField+wrapperRenderer) ⇒
-    * [.renderer(props)](#UiField+renderer) ⇒
-    * [.defaultVariables([values])](#UiField+defaultVariables) ⇒
-    * [.variables([values])](#UiField+variables) ⇒
-    * [.getTemplateString()](#UiField+getTemplateString) ⇒
-    * [.getWrapperTemplateFilename()](#UiField+getWrapperTemplateFilename) ⇒
-    * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒
-    * [.getValue([values])](#UiField+getValue) ⇒
+  * [new UiTextField([props])](#new_UiTextField_new)
+  * [.getTemplateFilename()](#UiTextField+getTemplateFilename) ⇒ <code>string</code>
+  * [.render([values])](#UiField+render) ⇒
+  * [.contentRenderer()](#UiField+contentRenderer) ⇒
+  * [.wrapperRenderer()](#UiField+wrapperRenderer) ⇒
+  * [.renderer(props)](#UiField+renderer) ⇒
+  * [.defaultVariables([values])](#UiField+defaultVariables) ⇒
+  * [.variables([values])](#UiField+variables) ⇒
+  * [.getTemplateString()](#UiField+getTemplateString) ⇒
+  * [.getWrapperTemplateFilename()](#UiField+getWrapperTemplateFilename) ⇒
+  * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒
+  * [.getValue([values])](#UiField+getValue) ⇒
 
 <a name="new_UiTextField_new"></a>
 
-### new UiTextField(props)
+### new UiTextField([props])
 
-| Param |
-| --- |
-| props | 
+The constructor function sets the default value of the 'type' property to 'text'.
+
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| [props] | <code>object</code> | <code>{}</code> | The `props` parameter is an object that contains the properties and values that are passed to the constructor. In this case, the `props` object is set to an empty object `{}` by default if no argument is provided when creating an instance of the class. |
 
 <a name="UiTextField+getTemplateFilename"></a>
 
 ### uiTextField.getTemplateFilename() ⇒ <code>string</code>
+
+The function returns the filename of a UI text template.
+
 **Kind**: instance method of [<code>UiTextField</code>](#UiTextField)  
 **Overrides**: [<code>getTemplateFilename</code>](#UiField+getTemplateFilename)  
-**Returns**: <code>string</code> - template filename to be used in templates  
+**Returns**: <code>string</code> - The string 'ui-text' is being returned.  
 <a name="UiField+render"></a>
 
 ### uiTextField.render([values]) ⇒
+
 The `render` function takes in a `values` object, renders the content using a content renderer
 and variables, wraps the rendered content using a wrapper renderer and default variables, and
 returns the final result.
@@ -587,6 +626,7 @@ wrapper.
 <a name="UiField+contentRenderer"></a>
 
 ### uiTextField.contentRenderer() ⇒
+
 The contentRenderer function returns the result of calling the renderer function with certain
 props.
 
@@ -596,6 +636,7 @@ props.
 <a name="UiField+wrapperRenderer"></a>
 
 ### uiTextField.wrapperRenderer() ⇒
+
 The function `wrapperRenderer` returns the result of calling the `renderer` function with
 specific props.
 
@@ -606,6 +647,7 @@ function with the `props` object as an argument.
 <a name="UiField+renderer"></a>
 
 ### uiTextField.renderer(props) ⇒
+
 The function returns a new instance of the UiHandlebarsRenderer class with the given props.
 
 **Kind**: instance method of [<code>UiTextField</code>](#UiTextField)  
@@ -619,6 +661,7 @@ The function returns a new instance of the UiHandlebarsRenderer class with the g
 <a name="UiField+defaultVariables"></a>
 
 ### uiTextField.defaultVariables([values]) ⇒
+
 The defaultVariables function returns the props object.
 
 **Kind**: instance method of [<code>UiTextField</code>](#UiTextField)  
@@ -632,6 +675,7 @@ The defaultVariables function returns the props object.
 <a name="UiField+variables"></a>
 
 ### uiTextField.variables([values]) ⇒
+
 The function returns a merged object of default variables and a value.
 
 **Kind**: instance method of [<code>UiTextField</code>](#UiTextField)  
@@ -645,6 +689,7 @@ The function returns a merged object of default variables and a value.
 <a name="UiField+getTemplateString"></a>
 
 ### uiTextField.getTemplateString() ⇒
+
 The function returns the template string from the props.
 
 **Kind**: instance method of [<code>UiTextField</code>](#UiTextField)  
@@ -653,6 +698,7 @@ The function returns the template string from the props.
 <a name="UiField+getWrapperTemplateFilename"></a>
 
 ### uiTextField.getWrapperTemplateFilename() ⇒
+
 The function returns the filename of a UI wrapper template.
 
 **Kind**: instance method of [<code>UiTextField</code>](#UiTextField)  
@@ -661,6 +707,7 @@ The function returns the filename of a UI wrapper template.
 <a name="UiField+getWrapperTemplateString"></a>
 
 ### uiTextField.getWrapperTemplateString() ⇒
+
 The function returns the wrapper template string from the props.
 
 **Kind**: instance method of [<code>UiTextField</code>](#UiTextField)  
@@ -669,6 +716,7 @@ The function returns the wrapper template string from the props.
 <a name="UiField+getValue"></a>
 
 ### uiTextField.getValue([values]) ⇒
+
 The getValue function returns the value associated with a given name from a provided object.
 
 **Kind**: instance method of [<code>UiTextField</code>](#UiTextField)  
@@ -682,42 +730,49 @@ The getValue function returns the value associated with a given name from a prov
 <a name="UiNumberField"></a>
 
 ## UiNumberField ⇐ [<code>UiTextField</code>](#UiTextField)
+
 The `UiNumberField` class is a subclass of `UiTextField` that sets the input type to "number".
 
 **Kind**: global class  
 **Extends**: [<code>UiTextField</code>](#UiTextField)  
 
 * [UiNumberField](#UiNumberField) ⇐ [<code>UiTextField</code>](#UiTextField)
-    * [new UiNumberField(props)](#new_UiNumberField_new)
-    * [.getTemplateFilename()](#UiTextField+getTemplateFilename) ⇒ <code>string</code>
-    * [.render([values])](#UiField+render) ⇒
-    * [.contentRenderer()](#UiField+contentRenderer) ⇒
-    * [.wrapperRenderer()](#UiField+wrapperRenderer) ⇒
-    * [.renderer(props)](#UiField+renderer) ⇒
-    * [.defaultVariables([values])](#UiField+defaultVariables) ⇒
-    * [.variables([values])](#UiField+variables) ⇒
-    * [.getTemplateString()](#UiField+getTemplateString) ⇒
-    * [.getWrapperTemplateFilename()](#UiField+getWrapperTemplateFilename) ⇒
-    * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒
-    * [.getValue([values])](#UiField+getValue) ⇒
+  * [new UiNumberField([props])](#new_UiNumberField_new)
+  * [.getTemplateFilename()](#UiTextField+getTemplateFilename) ⇒ <code>string</code>
+  * [.render([values])](#UiField+render) ⇒
+  * [.contentRenderer()](#UiField+contentRenderer) ⇒
+  * [.wrapperRenderer()](#UiField+wrapperRenderer) ⇒
+  * [.renderer(props)](#UiField+renderer) ⇒
+  * [.defaultVariables([values])](#UiField+defaultVariables) ⇒
+  * [.variables([values])](#UiField+variables) ⇒
+  * [.getTemplateString()](#UiField+getTemplateString) ⇒
+  * [.getWrapperTemplateFilename()](#UiField+getWrapperTemplateFilename) ⇒
+  * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒
+  * [.getValue([values])](#UiField+getValue) ⇒
 
 <a name="new_UiNumberField_new"></a>
 
-### new UiNumberField(props)
+### new UiNumberField([props])
 
-| Param |
-| --- |
-| props | 
+The constructor function sets the type property of the props object to 'number'.
+
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| [props] | <code>object</code> | <code>{}</code> | The `props` parameter is an object that contains the properties and values that are passed to the constructor when creating an instance of the class. In this case, the `props` object is set to an empty object `{}` by default if no argument is provided when creating an instance. |
 
 <a name="UiTextField+getTemplateFilename"></a>
 
 ### uiNumberField.getTemplateFilename() ⇒ <code>string</code>
+
+The function returns the filename of a UI text template.
+
 **Kind**: instance method of [<code>UiNumberField</code>](#UiNumberField)  
 **Overrides**: [<code>getTemplateFilename</code>](#UiTextField+getTemplateFilename)  
-**Returns**: <code>string</code> - template filename to be used in templates  
+**Returns**: <code>string</code> - The string 'ui-text' is being returned.  
 <a name="UiField+render"></a>
 
 ### uiNumberField.render([values]) ⇒
+
 The `render` function takes in a `values` object, renders the content using a content renderer
 and variables, wraps the rendered content using a wrapper renderer and default variables, and
 returns the final result.
@@ -734,6 +789,7 @@ wrapper.
 <a name="UiField+contentRenderer"></a>
 
 ### uiNumberField.contentRenderer() ⇒
+
 The contentRenderer function returns the result of calling the renderer function with certain
 props.
 
@@ -743,6 +799,7 @@ props.
 <a name="UiField+wrapperRenderer"></a>
 
 ### uiNumberField.wrapperRenderer() ⇒
+
 The function `wrapperRenderer` returns the result of calling the `renderer` function with
 specific props.
 
@@ -753,6 +810,7 @@ function with the `props` object as an argument.
 <a name="UiField+renderer"></a>
 
 ### uiNumberField.renderer(props) ⇒
+
 The function returns a new instance of the UiHandlebarsRenderer class with the given props.
 
 **Kind**: instance method of [<code>UiNumberField</code>](#UiNumberField)  
@@ -766,6 +824,7 @@ The function returns a new instance of the UiHandlebarsRenderer class with the g
 <a name="UiField+defaultVariables"></a>
 
 ### uiNumberField.defaultVariables([values]) ⇒
+
 The defaultVariables function returns the props object.
 
 **Kind**: instance method of [<code>UiNumberField</code>](#UiNumberField)  
@@ -779,6 +838,7 @@ The defaultVariables function returns the props object.
 <a name="UiField+variables"></a>
 
 ### uiNumberField.variables([values]) ⇒
+
 The function returns a merged object of default variables and a value.
 
 **Kind**: instance method of [<code>UiNumberField</code>](#UiNumberField)  
@@ -792,6 +852,7 @@ The function returns a merged object of default variables and a value.
 <a name="UiField+getTemplateString"></a>
 
 ### uiNumberField.getTemplateString() ⇒
+
 The function returns the template string from the props.
 
 **Kind**: instance method of [<code>UiNumberField</code>](#UiNumberField)  
@@ -800,6 +861,7 @@ The function returns the template string from the props.
 <a name="UiField+getWrapperTemplateFilename"></a>
 
 ### uiNumberField.getWrapperTemplateFilename() ⇒
+
 The function returns the filename of a UI wrapper template.
 
 **Kind**: instance method of [<code>UiNumberField</code>](#UiNumberField)  
@@ -808,6 +870,7 @@ The function returns the filename of a UI wrapper template.
 <a name="UiField+getWrapperTemplateString"></a>
 
 ### uiNumberField.getWrapperTemplateString() ⇒
+
 The function returns the wrapper template string from the props.
 
 **Kind**: instance method of [<code>UiNumberField</code>](#UiNumberField)  
@@ -816,6 +879,7 @@ The function returns the wrapper template string from the props.
 <a name="UiField+getValue"></a>
 
 ### uiNumberField.getValue([values]) ⇒
+
 The getValue function returns the value associated with a given name from a provided object.
 
 **Kind**: instance method of [<code>UiNumberField</code>](#UiNumberField)  
@@ -829,38 +893,42 @@ The getValue function returns the value associated with a given name from a prov
 <a name="UiCheckboxesField"></a>
 
 ## UiCheckboxesField ⇐ [<code>UiFieldWithOptions</code>](#UiFieldWithOptions)
+
 The `UiCheckboxesField` class is a subclass of `UiFieldWithOptions` that represents a field with multiple checkboxes as options.
 
 **Kind**: global class  
 **Extends**: [<code>UiFieldWithOptions</code>](#UiFieldWithOptions)  
 
 * [UiCheckboxesField](#UiCheckboxesField) ⇐ [<code>UiFieldWithOptions</code>](#UiFieldWithOptions)
-    * [new UiCheckboxesField(props)](#new_UiCheckboxesField_new)
-    * [.getValue([values])](#UiFieldWithOptions+getValue) ⇒
-    * [.defaultVariables([values])](#UiFieldWithOptions+defaultVariables) ⇒
-    * [.buildItems(fieldValue)](#UiFieldWithOptions+buildItems) ⇒
-    * [.isOptionValueChecked(fieldValue, optionValue)](#UiFieldWithOptions+isOptionValueChecked) ⇒
-    * [.render([values])](#UiField+render) ⇒
-    * [.contentRenderer()](#UiField+contentRenderer) ⇒
-    * [.wrapperRenderer()](#UiField+wrapperRenderer) ⇒
-    * [.renderer(props)](#UiField+renderer) ⇒
-    * [.variables([values])](#UiField+variables) ⇒
-    * [.getTemplateFilename()](#UiField+getTemplateFilename) ⇒ <code>string</code>
-    * [.getTemplateString()](#UiField+getTemplateString) ⇒
-    * [.getWrapperTemplateFilename()](#UiField+getWrapperTemplateFilename) ⇒
-    * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒
+  * [new UiCheckboxesField([props])](#new_UiCheckboxesField_new)
+  * [.getValue([values])](#UiFieldWithOptions+getValue) ⇒
+  * [.defaultVariables([values])](#UiFieldWithOptions+defaultVariables) ⇒
+  * [.buildItems(fieldValue)](#UiFieldWithOptions+buildItems) ⇒
+  * [.isOptionValueChecked(fieldValue, optionValue)](#UiFieldWithOptions+isOptionValueChecked) ⇒
+  * [.render([values])](#UiField+render) ⇒
+  * [.contentRenderer()](#UiField+contentRenderer) ⇒
+  * [.wrapperRenderer()](#UiField+wrapperRenderer) ⇒
+  * [.renderer(props)](#UiField+renderer) ⇒
+  * [.variables([values])](#UiField+variables) ⇒
+  * [.getTemplateFilename()](#UiField+getTemplateFilename) ⇒ <code>string</code>
+  * [.getTemplateString()](#UiField+getTemplateString) ⇒
+  * [.getWrapperTemplateFilename()](#UiField+getWrapperTemplateFilename) ⇒
+  * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒
 
 <a name="new_UiCheckboxesField_new"></a>
 
-### new UiCheckboxesField(props)
+### new UiCheckboxesField([props])
 
-| Param |
-| --- |
-| props | 
+The constructor function sets the type property of the props object to 'checkboxes'.
+
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| [props] | <code>object</code> | <code>{}</code> | The `props` parameter is an object that contains the properties passed to the constructor. In this case, it is set to an empty object `{}` by default. |
 
 <a name="UiFieldWithOptions+getValue"></a>
 
 ### uiCheckboxesField.getValue([values]) ⇒
+
 The function `getValue` takes an object as an argument and returns an array containing the
 values of the object, or an empty array if the values are undefined.
 
@@ -875,6 +943,7 @@ values of the object, or an empty array if the values are undefined.
 <a name="UiFieldWithOptions+defaultVariables"></a>
 
 ### uiCheckboxesField.defaultVariables([values]) ⇒
+
 The function `defaultVariables` returns an object with default variables, including an `items`
 property that is built based on a field value.
 
@@ -891,6 +960,7 @@ with the "fieldValue" as an argument.
 <a name="UiFieldWithOptions+buildItems"></a>
 
 ### uiCheckboxesField.buildItems(fieldValue) ⇒
+
 The function "buildItems" takes a fieldValue and returns an array of objects with label, value,
 and checked properties based on the options provided.
 
@@ -908,6 +978,7 @@ to the `value` property of the corresponding option object. The `checked` proper
 <a name="UiFieldWithOptions+isOptionValueChecked"></a>
 
 ### uiCheckboxesField.isOptionValueChecked(fieldValue, optionValue) ⇒
+
 The function checks if a specific option value is included in a given field value.
 
 **Kind**: instance method of [<code>UiCheckboxesField</code>](#UiCheckboxesField)  
@@ -922,6 +993,7 @@ The function checks if a specific option value is included in a given field valu
 <a name="UiField+render"></a>
 
 ### uiCheckboxesField.render([values]) ⇒
+
 The `render` function takes in a `values` object, renders the content using a content renderer
 and variables, wraps the rendered content using a wrapper renderer and default variables, and
 returns the final result.
@@ -938,6 +1010,7 @@ wrapper.
 <a name="UiField+contentRenderer"></a>
 
 ### uiCheckboxesField.contentRenderer() ⇒
+
 The contentRenderer function returns the result of calling the renderer function with certain
 props.
 
@@ -947,6 +1020,7 @@ props.
 <a name="UiField+wrapperRenderer"></a>
 
 ### uiCheckboxesField.wrapperRenderer() ⇒
+
 The function `wrapperRenderer` returns the result of calling the `renderer` function with
 specific props.
 
@@ -957,6 +1031,7 @@ function with the `props` object as an argument.
 <a name="UiField+renderer"></a>
 
 ### uiCheckboxesField.renderer(props) ⇒
+
 The function returns a new instance of the UiHandlebarsRenderer class with the given props.
 
 **Kind**: instance method of [<code>UiCheckboxesField</code>](#UiCheckboxesField)  
@@ -970,6 +1045,7 @@ The function returns a new instance of the UiHandlebarsRenderer class with the g
 <a name="UiField+variables"></a>
 
 ### uiCheckboxesField.variables([values]) ⇒
+
 The function returns a merged object of default variables and a value.
 
 **Kind**: instance method of [<code>UiCheckboxesField</code>](#UiCheckboxesField)  
@@ -983,6 +1059,7 @@ The function returns a merged object of default variables and a value.
 <a name="UiField+getTemplateFilename"></a>
 
 ### uiCheckboxesField.getTemplateFilename() ⇒ <code>string</code>
+
 The function returns a template filename based on the type property.
 
 **Kind**: instance method of [<code>UiCheckboxesField</code>](#UiCheckboxesField)  
@@ -991,6 +1068,7 @@ The function returns a template filename based on the type property.
 <a name="UiField+getTemplateString"></a>
 
 ### uiCheckboxesField.getTemplateString() ⇒
+
 The function returns the template string from the props.
 
 **Kind**: instance method of [<code>UiCheckboxesField</code>](#UiCheckboxesField)  
@@ -999,6 +1077,7 @@ The function returns the template string from the props.
 <a name="UiField+getWrapperTemplateFilename"></a>
 
 ### uiCheckboxesField.getWrapperTemplateFilename() ⇒
+
 The function returns the filename of a UI wrapper template.
 
 **Kind**: instance method of [<code>UiCheckboxesField</code>](#UiCheckboxesField)  
@@ -1007,6 +1086,7 @@ The function returns the filename of a UI wrapper template.
 <a name="UiField+getWrapperTemplateString"></a>
 
 ### uiCheckboxesField.getWrapperTemplateString() ⇒
+
 The function returns the wrapper template string from the props.
 
 **Kind**: instance method of [<code>UiCheckboxesField</code>](#UiCheckboxesField)  
@@ -1015,42 +1095,50 @@ The function returns the wrapper template string from the props.
 <a name="UiColorField"></a>
 
 ## UiColorField ⇐ [<code>UiTextField</code>](#UiTextField)
+
 The `UiColorField` class is a subclass of `UiTextField` that sets the input type to 'color'.
 
 **Kind**: global class  
 **Extends**: [<code>UiTextField</code>](#UiTextField)  
 
 * [UiColorField](#UiColorField) ⇐ [<code>UiTextField</code>](#UiTextField)
-    * [new UiColorField(props)](#new_UiColorField_new)
-    * [.getTemplateFilename()](#UiTextField+getTemplateFilename) ⇒ <code>string</code>
-    * [.render([values])](#UiField+render) ⇒
-    * [.contentRenderer()](#UiField+contentRenderer) ⇒
-    * [.wrapperRenderer()](#UiField+wrapperRenderer) ⇒
-    * [.renderer(props)](#UiField+renderer) ⇒
-    * [.defaultVariables([values])](#UiField+defaultVariables) ⇒
-    * [.variables([values])](#UiField+variables) ⇒
-    * [.getTemplateString()](#UiField+getTemplateString) ⇒
-    * [.getWrapperTemplateFilename()](#UiField+getWrapperTemplateFilename) ⇒
-    * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒
-    * [.getValue([values])](#UiField+getValue) ⇒
+  * [new UiColorField([props])](#new_UiColorField_new)
+  * [.getTemplateFilename()](#UiTextField+getTemplateFilename) ⇒ <code>string</code>
+  * [.render([values])](#UiField+render) ⇒
+  * [.contentRenderer()](#UiField+contentRenderer) ⇒
+  * [.wrapperRenderer()](#UiField+wrapperRenderer) ⇒
+  * [.renderer(props)](#UiField+renderer) ⇒
+  * [.defaultVariables([values])](#UiField+defaultVariables) ⇒
+  * [.variables([values])](#UiField+variables) ⇒
+  * [.getTemplateString()](#UiField+getTemplateString) ⇒
+  * [.getWrapperTemplateFilename()](#UiField+getWrapperTemplateFilename) ⇒
+  * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒
+  * [.getValue([values])](#UiField+getValue) ⇒
 
 <a name="new_UiColorField_new"></a>
 
-### new UiColorField(props)
+### new UiColorField([props])
 
-| Param |
-| --- |
-| props | 
+The constructor function sets the default value of the type property to 'color' in the props
+object.
+
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| [props] | <code>object</code> | <code>{}</code> | The `props` parameter is an object that contains the properties and values that are passed to the constructor when creating an instance of the class. In this case, the `props` object is set to an empty object `{}` by default if no arguments are provided when creating an instance. |
 
 <a name="UiTextField+getTemplateFilename"></a>
 
 ### uiColorField.getTemplateFilename() ⇒ <code>string</code>
+
+The function returns the filename of a UI text template.
+
 **Kind**: instance method of [<code>UiColorField</code>](#UiColorField)  
 **Overrides**: [<code>getTemplateFilename</code>](#UiTextField+getTemplateFilename)  
-**Returns**: <code>string</code> - template filename to be used in templates  
+**Returns**: <code>string</code> - The string 'ui-text' is being returned.  
 <a name="UiField+render"></a>
 
 ### uiColorField.render([values]) ⇒
+
 The `render` function takes in a `values` object, renders the content using a content renderer
 and variables, wraps the rendered content using a wrapper renderer and default variables, and
 returns the final result.
@@ -1067,6 +1155,7 @@ wrapper.
 <a name="UiField+contentRenderer"></a>
 
 ### uiColorField.contentRenderer() ⇒
+
 The contentRenderer function returns the result of calling the renderer function with certain
 props.
 
@@ -1076,6 +1165,7 @@ props.
 <a name="UiField+wrapperRenderer"></a>
 
 ### uiColorField.wrapperRenderer() ⇒
+
 The function `wrapperRenderer` returns the result of calling the `renderer` function with
 specific props.
 
@@ -1086,6 +1176,7 @@ function with the `props` object as an argument.
 <a name="UiField+renderer"></a>
 
 ### uiColorField.renderer(props) ⇒
+
 The function returns a new instance of the UiHandlebarsRenderer class with the given props.
 
 **Kind**: instance method of [<code>UiColorField</code>](#UiColorField)  
@@ -1099,6 +1190,7 @@ The function returns a new instance of the UiHandlebarsRenderer class with the g
 <a name="UiField+defaultVariables"></a>
 
 ### uiColorField.defaultVariables([values]) ⇒
+
 The defaultVariables function returns the props object.
 
 **Kind**: instance method of [<code>UiColorField</code>](#UiColorField)  
@@ -1112,6 +1204,7 @@ The defaultVariables function returns the props object.
 <a name="UiField+variables"></a>
 
 ### uiColorField.variables([values]) ⇒
+
 The function returns a merged object of default variables and a value.
 
 **Kind**: instance method of [<code>UiColorField</code>](#UiColorField)  
@@ -1125,6 +1218,7 @@ The function returns a merged object of default variables and a value.
 <a name="UiField+getTemplateString"></a>
 
 ### uiColorField.getTemplateString() ⇒
+
 The function returns the template string from the props.
 
 **Kind**: instance method of [<code>UiColorField</code>](#UiColorField)  
@@ -1133,6 +1227,7 @@ The function returns the template string from the props.
 <a name="UiField+getWrapperTemplateFilename"></a>
 
 ### uiColorField.getWrapperTemplateFilename() ⇒
+
 The function returns the filename of a UI wrapper template.
 
 **Kind**: instance method of [<code>UiColorField</code>](#UiColorField)  
@@ -1141,6 +1236,7 @@ The function returns the filename of a UI wrapper template.
 <a name="UiField+getWrapperTemplateString"></a>
 
 ### uiColorField.getWrapperTemplateString() ⇒
+
 The function returns the wrapper template string from the props.
 
 **Kind**: instance method of [<code>UiColorField</code>](#UiColorField)  
@@ -1149,6 +1245,7 @@ The function returns the wrapper template string from the props.
 <a name="UiField+getValue"></a>
 
 ### uiColorField.getValue([values]) ⇒
+
 The getValue function returns the value associated with a given name from a provided object.
 
 **Kind**: instance method of [<code>UiColorField</code>](#UiColorField)  
@@ -1162,42 +1259,50 @@ The getValue function returns the value associated with a given name from a prov
 <a name="UiDateField"></a>
 
 ## UiDateField ⇐ [<code>UiTextField</code>](#UiTextField)
+
 The `UiDateField` class is a subclass of `UiTextField` that sets the input type to 'date'.
 
 **Kind**: global class  
 **Extends**: [<code>UiTextField</code>](#UiTextField)  
 
 * [UiDateField](#UiDateField) ⇐ [<code>UiTextField</code>](#UiTextField)
-    * [new UiDateField(props)](#new_UiDateField_new)
-    * [.getTemplateFilename()](#UiTextField+getTemplateFilename) ⇒ <code>string</code>
-    * [.render([values])](#UiField+render) ⇒
-    * [.contentRenderer()](#UiField+contentRenderer) ⇒
-    * [.wrapperRenderer()](#UiField+wrapperRenderer) ⇒
-    * [.renderer(props)](#UiField+renderer) ⇒
-    * [.defaultVariables([values])](#UiField+defaultVariables) ⇒
-    * [.variables([values])](#UiField+variables) ⇒
-    * [.getTemplateString()](#UiField+getTemplateString) ⇒
-    * [.getWrapperTemplateFilename()](#UiField+getWrapperTemplateFilename) ⇒
-    * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒
-    * [.getValue([values])](#UiField+getValue) ⇒
+  * [new UiDateField([props])](#new_UiDateField_new)
+  * [.getTemplateFilename()](#UiTextField+getTemplateFilename) ⇒ <code>string</code>
+  * [.render([values])](#UiField+render) ⇒
+  * [.contentRenderer()](#UiField+contentRenderer) ⇒
+  * [.wrapperRenderer()](#UiField+wrapperRenderer) ⇒
+  * [.renderer(props)](#UiField+renderer) ⇒
+  * [.defaultVariables([values])](#UiField+defaultVariables) ⇒
+  * [.variables([values])](#UiField+variables) ⇒
+  * [.getTemplateString()](#UiField+getTemplateString) ⇒
+  * [.getWrapperTemplateFilename()](#UiField+getWrapperTemplateFilename) ⇒
+  * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒
+  * [.getValue([values])](#UiField+getValue) ⇒
 
 <a name="new_UiDateField_new"></a>
 
-### new UiDateField(props)
+### new UiDateField([props])
 
-| Param |
-| --- |
-| props | 
+The constructor function sets the default value of the "type" property to "date" in the props
+object.
+
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| [props] | <code>object</code> | <code>{}</code> | The `props` parameter is an object that contains the properties passed to the constructor. In this case, it is an optional parameter with a default value of an empty object `{}`. |
 
 <a name="UiTextField+getTemplateFilename"></a>
 
 ### uiDateField.getTemplateFilename() ⇒ <code>string</code>
+
+The function returns the filename of a UI text template.
+
 **Kind**: instance method of [<code>UiDateField</code>](#UiDateField)  
 **Overrides**: [<code>getTemplateFilename</code>](#UiTextField+getTemplateFilename)  
-**Returns**: <code>string</code> - template filename to be used in templates  
+**Returns**: <code>string</code> - The string 'ui-text' is being returned.  
 <a name="UiField+render"></a>
 
 ### uiDateField.render([values]) ⇒
+
 The `render` function takes in a `values` object, renders the content using a content renderer
 and variables, wraps the rendered content using a wrapper renderer and default variables, and
 returns the final result.
@@ -1214,6 +1319,7 @@ wrapper.
 <a name="UiField+contentRenderer"></a>
 
 ### uiDateField.contentRenderer() ⇒
+
 The contentRenderer function returns the result of calling the renderer function with certain
 props.
 
@@ -1223,6 +1329,7 @@ props.
 <a name="UiField+wrapperRenderer"></a>
 
 ### uiDateField.wrapperRenderer() ⇒
+
 The function `wrapperRenderer` returns the result of calling the `renderer` function with
 specific props.
 
@@ -1233,6 +1340,7 @@ function with the `props` object as an argument.
 <a name="UiField+renderer"></a>
 
 ### uiDateField.renderer(props) ⇒
+
 The function returns a new instance of the UiHandlebarsRenderer class with the given props.
 
 **Kind**: instance method of [<code>UiDateField</code>](#UiDateField)  
@@ -1246,6 +1354,7 @@ The function returns a new instance of the UiHandlebarsRenderer class with the g
 <a name="UiField+defaultVariables"></a>
 
 ### uiDateField.defaultVariables([values]) ⇒
+
 The defaultVariables function returns the props object.
 
 **Kind**: instance method of [<code>UiDateField</code>](#UiDateField)  
@@ -1259,6 +1368,7 @@ The defaultVariables function returns the props object.
 <a name="UiField+variables"></a>
 
 ### uiDateField.variables([values]) ⇒
+
 The function returns a merged object of default variables and a value.
 
 **Kind**: instance method of [<code>UiDateField</code>](#UiDateField)  
@@ -1272,6 +1382,7 @@ The function returns a merged object of default variables and a value.
 <a name="UiField+getTemplateString"></a>
 
 ### uiDateField.getTemplateString() ⇒
+
 The function returns the template string from the props.
 
 **Kind**: instance method of [<code>UiDateField</code>](#UiDateField)  
@@ -1280,6 +1391,7 @@ The function returns the template string from the props.
 <a name="UiField+getWrapperTemplateFilename"></a>
 
 ### uiDateField.getWrapperTemplateFilename() ⇒
+
 The function returns the filename of a UI wrapper template.
 
 **Kind**: instance method of [<code>UiDateField</code>](#UiDateField)  
@@ -1288,6 +1400,7 @@ The function returns the filename of a UI wrapper template.
 <a name="UiField+getWrapperTemplateString"></a>
 
 ### uiDateField.getWrapperTemplateString() ⇒
+
 The function returns the wrapper template string from the props.
 
 **Kind**: instance method of [<code>UiDateField</code>](#UiDateField)  
@@ -1296,6 +1409,7 @@ The function returns the wrapper template string from the props.
 <a name="UiField+getValue"></a>
 
 ### uiDateField.getValue([values]) ⇒
+
 The getValue function returns the value associated with a given name from a provided object.
 
 **Kind**: instance method of [<code>UiDateField</code>](#UiDateField)  
@@ -1309,42 +1423,49 @@ The getValue function returns the value associated with a given name from a prov
 <a name="UiDateTimeField"></a>
 
 ## UiDateTimeField ⇐ [<code>UiTextField</code>](#UiTextField)
+
 The UiDateTimeField class is a subclass of UiTextField that sets the type of the input field to 'datetime'.
 
 **Kind**: global class  
 **Extends**: [<code>UiTextField</code>](#UiTextField)  
 
 * [UiDateTimeField](#UiDateTimeField) ⇐ [<code>UiTextField</code>](#UiTextField)
-    * [new UiDateTimeField(props)](#new_UiDateTimeField_new)
-    * [.getTemplateFilename()](#UiTextField+getTemplateFilename) ⇒ <code>string</code>
-    * [.render([values])](#UiField+render) ⇒
-    * [.contentRenderer()](#UiField+contentRenderer) ⇒
-    * [.wrapperRenderer()](#UiField+wrapperRenderer) ⇒
-    * [.renderer(props)](#UiField+renderer) ⇒
-    * [.defaultVariables([values])](#UiField+defaultVariables) ⇒
-    * [.variables([values])](#UiField+variables) ⇒
-    * [.getTemplateString()](#UiField+getTemplateString) ⇒
-    * [.getWrapperTemplateFilename()](#UiField+getWrapperTemplateFilename) ⇒
-    * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒
-    * [.getValue([values])](#UiField+getValue) ⇒
+  * [new UiDateTimeField([props])](#new_UiDateTimeField_new)
+  * [.getTemplateFilename()](#UiTextField+getTemplateFilename) ⇒ <code>string</code>
+  * [.render([values])](#UiField+render) ⇒
+  * [.contentRenderer()](#UiField+contentRenderer) ⇒
+  * [.wrapperRenderer()](#UiField+wrapperRenderer) ⇒
+  * [.renderer(props)](#UiField+renderer) ⇒
+  * [.defaultVariables([values])](#UiField+defaultVariables) ⇒
+  * [.variables([values])](#UiField+variables) ⇒
+  * [.getTemplateString()](#UiField+getTemplateString) ⇒
+  * [.getWrapperTemplateFilename()](#UiField+getWrapperTemplateFilename) ⇒
+  * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒
+  * [.getValue([values])](#UiField+getValue) ⇒
 
 <a name="new_UiDateTimeField_new"></a>
 
-### new UiDateTimeField(props)
+### new UiDateTimeField([props])
 
-| Param |
-| --- |
-| props | 
+The constructor function sets the type property of the props object to 'datetime'.
+
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| [props] | <code>object</code> | <code>{}</code> | The `props` parameter is an object that contains the properties passed to the constructor. In this case, it is an optional parameter with a default value of an empty object `{}`. |
 
 <a name="UiTextField+getTemplateFilename"></a>
 
 ### uiDateTimeField.getTemplateFilename() ⇒ <code>string</code>
+
+The function returns the filename of a UI text template.
+
 **Kind**: instance method of [<code>UiDateTimeField</code>](#UiDateTimeField)  
 **Overrides**: [<code>getTemplateFilename</code>](#UiTextField+getTemplateFilename)  
-**Returns**: <code>string</code> - template filename to be used in templates  
+**Returns**: <code>string</code> - The string 'ui-text' is being returned.  
 <a name="UiField+render"></a>
 
 ### uiDateTimeField.render([values]) ⇒
+
 The `render` function takes in a `values` object, renders the content using a content renderer
 and variables, wraps the rendered content using a wrapper renderer and default variables, and
 returns the final result.
@@ -1361,6 +1482,7 @@ wrapper.
 <a name="UiField+contentRenderer"></a>
 
 ### uiDateTimeField.contentRenderer() ⇒
+
 The contentRenderer function returns the result of calling the renderer function with certain
 props.
 
@@ -1370,6 +1492,7 @@ props.
 <a name="UiField+wrapperRenderer"></a>
 
 ### uiDateTimeField.wrapperRenderer() ⇒
+
 The function `wrapperRenderer` returns the result of calling the `renderer` function with
 specific props.
 
@@ -1380,6 +1503,7 @@ function with the `props` object as an argument.
 <a name="UiField+renderer"></a>
 
 ### uiDateTimeField.renderer(props) ⇒
+
 The function returns a new instance of the UiHandlebarsRenderer class with the given props.
 
 **Kind**: instance method of [<code>UiDateTimeField</code>](#UiDateTimeField)  
@@ -1393,6 +1517,7 @@ The function returns a new instance of the UiHandlebarsRenderer class with the g
 <a name="UiField+defaultVariables"></a>
 
 ### uiDateTimeField.defaultVariables([values]) ⇒
+
 The defaultVariables function returns the props object.
 
 **Kind**: instance method of [<code>UiDateTimeField</code>](#UiDateTimeField)  
@@ -1406,6 +1531,7 @@ The defaultVariables function returns the props object.
 <a name="UiField+variables"></a>
 
 ### uiDateTimeField.variables([values]) ⇒
+
 The function returns a merged object of default variables and a value.
 
 **Kind**: instance method of [<code>UiDateTimeField</code>](#UiDateTimeField)  
@@ -1419,6 +1545,7 @@ The function returns a merged object of default variables and a value.
 <a name="UiField+getTemplateString"></a>
 
 ### uiDateTimeField.getTemplateString() ⇒
+
 The function returns the template string from the props.
 
 **Kind**: instance method of [<code>UiDateTimeField</code>](#UiDateTimeField)  
@@ -1427,6 +1554,7 @@ The function returns the template string from the props.
 <a name="UiField+getWrapperTemplateFilename"></a>
 
 ### uiDateTimeField.getWrapperTemplateFilename() ⇒
+
 The function returns the filename of a UI wrapper template.
 
 **Kind**: instance method of [<code>UiDateTimeField</code>](#UiDateTimeField)  
@@ -1435,6 +1563,7 @@ The function returns the filename of a UI wrapper template.
 <a name="UiField+getWrapperTemplateString"></a>
 
 ### uiDateTimeField.getWrapperTemplateString() ⇒
+
 The function returns the wrapper template string from the props.
 
 **Kind**: instance method of [<code>UiDateTimeField</code>](#UiDateTimeField)  
@@ -1443,6 +1572,7 @@ The function returns the wrapper template string from the props.
 <a name="UiField+getValue"></a>
 
 ### uiDateTimeField.getValue([values]) ⇒
+
 The getValue function returns the value associated with a given name from a provided object.
 
 **Kind**: instance method of [<code>UiDateTimeField</code>](#UiDateTimeField)  
@@ -1456,42 +1586,49 @@ The getValue function returns the value associated with a given name from a prov
 <a name="UiDateTimeLocalField"></a>
 
 ## UiDateTimeLocalField ⇐ [<code>UiTextField</code>](#UiTextField)
+
 The `UiDateTimeLocalField` class is a subclass of `UiTextField` that sets the input type to `datetime-local`.
 
 **Kind**: global class  
 **Extends**: [<code>UiTextField</code>](#UiTextField)  
 
 * [UiDateTimeLocalField](#UiDateTimeLocalField) ⇐ [<code>UiTextField</code>](#UiTextField)
-    * [new UiDateTimeLocalField(props)](#new_UiDateTimeLocalField_new)
-    * [.getTemplateFilename()](#UiTextField+getTemplateFilename) ⇒ <code>string</code>
-    * [.render([values])](#UiField+render) ⇒
-    * [.contentRenderer()](#UiField+contentRenderer) ⇒
-    * [.wrapperRenderer()](#UiField+wrapperRenderer) ⇒
-    * [.renderer(props)](#UiField+renderer) ⇒
-    * [.defaultVariables([values])](#UiField+defaultVariables) ⇒
-    * [.variables([values])](#UiField+variables) ⇒
-    * [.getTemplateString()](#UiField+getTemplateString) ⇒
-    * [.getWrapperTemplateFilename()](#UiField+getWrapperTemplateFilename) ⇒
-    * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒
-    * [.getValue([values])](#UiField+getValue) ⇒
+  * [new UiDateTimeLocalField([props])](#new_UiDateTimeLocalField_new)
+  * [.getTemplateFilename()](#UiTextField+getTemplateFilename) ⇒ <code>string</code>
+  * [.render([values])](#UiField+render) ⇒
+  * [.contentRenderer()](#UiField+contentRenderer) ⇒
+  * [.wrapperRenderer()](#UiField+wrapperRenderer) ⇒
+  * [.renderer(props)](#UiField+renderer) ⇒
+  * [.defaultVariables([values])](#UiField+defaultVariables) ⇒
+  * [.variables([values])](#UiField+variables) ⇒
+  * [.getTemplateString()](#UiField+getTemplateString) ⇒
+  * [.getWrapperTemplateFilename()](#UiField+getWrapperTemplateFilename) ⇒
+  * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒
+  * [.getValue([values])](#UiField+getValue) ⇒
 
 <a name="new_UiDateTimeLocalField_new"></a>
 
-### new UiDateTimeLocalField(props)
+### new UiDateTimeLocalField([props])
 
-| Param |
-| --- |
-| props | 
+The constructor function sets the type of a props object to 'datetime-local'.
+
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| [props] | <code>object</code> | <code>{}</code> | The `props` parameter is an object that contains the properties passed to the constructor. In this case, it is an optional parameter with a default value of an empty object `{}`. |
 
 <a name="UiTextField+getTemplateFilename"></a>
 
 ### uiDateTimeLocalField.getTemplateFilename() ⇒ <code>string</code>
+
+The function returns the filename of a UI text template.
+
 **Kind**: instance method of [<code>UiDateTimeLocalField</code>](#UiDateTimeLocalField)  
 **Overrides**: [<code>getTemplateFilename</code>](#UiTextField+getTemplateFilename)  
-**Returns**: <code>string</code> - template filename to be used in templates  
+**Returns**: <code>string</code> - The string 'ui-text' is being returned.  
 <a name="UiField+render"></a>
 
 ### uiDateTimeLocalField.render([values]) ⇒
+
 The `render` function takes in a `values` object, renders the content using a content renderer
 and variables, wraps the rendered content using a wrapper renderer and default variables, and
 returns the final result.
@@ -1508,6 +1645,7 @@ wrapper.
 <a name="UiField+contentRenderer"></a>
 
 ### uiDateTimeLocalField.contentRenderer() ⇒
+
 The contentRenderer function returns the result of calling the renderer function with certain
 props.
 
@@ -1517,6 +1655,7 @@ props.
 <a name="UiField+wrapperRenderer"></a>
 
 ### uiDateTimeLocalField.wrapperRenderer() ⇒
+
 The function `wrapperRenderer` returns the result of calling the `renderer` function with
 specific props.
 
@@ -1527,6 +1666,7 @@ function with the `props` object as an argument.
 <a name="UiField+renderer"></a>
 
 ### uiDateTimeLocalField.renderer(props) ⇒
+
 The function returns a new instance of the UiHandlebarsRenderer class with the given props.
 
 **Kind**: instance method of [<code>UiDateTimeLocalField</code>](#UiDateTimeLocalField)  
@@ -1540,6 +1680,7 @@ The function returns a new instance of the UiHandlebarsRenderer class with the g
 <a name="UiField+defaultVariables"></a>
 
 ### uiDateTimeLocalField.defaultVariables([values]) ⇒
+
 The defaultVariables function returns the props object.
 
 **Kind**: instance method of [<code>UiDateTimeLocalField</code>](#UiDateTimeLocalField)  
@@ -1553,6 +1694,7 @@ The defaultVariables function returns the props object.
 <a name="UiField+variables"></a>
 
 ### uiDateTimeLocalField.variables([values]) ⇒
+
 The function returns a merged object of default variables and a value.
 
 **Kind**: instance method of [<code>UiDateTimeLocalField</code>](#UiDateTimeLocalField)  
@@ -1566,6 +1708,7 @@ The function returns a merged object of default variables and a value.
 <a name="UiField+getTemplateString"></a>
 
 ### uiDateTimeLocalField.getTemplateString() ⇒
+
 The function returns the template string from the props.
 
 **Kind**: instance method of [<code>UiDateTimeLocalField</code>](#UiDateTimeLocalField)  
@@ -1574,6 +1717,7 @@ The function returns the template string from the props.
 <a name="UiField+getWrapperTemplateFilename"></a>
 
 ### uiDateTimeLocalField.getWrapperTemplateFilename() ⇒
+
 The function returns the filename of a UI wrapper template.
 
 **Kind**: instance method of [<code>UiDateTimeLocalField</code>](#UiDateTimeLocalField)  
@@ -1582,6 +1726,7 @@ The function returns the filename of a UI wrapper template.
 <a name="UiField+getWrapperTemplateString"></a>
 
 ### uiDateTimeLocalField.getWrapperTemplateString() ⇒
+
 The function returns the wrapper template string from the props.
 
 **Kind**: instance method of [<code>UiDateTimeLocalField</code>](#UiDateTimeLocalField)  
@@ -1590,6 +1735,7 @@ The function returns the wrapper template string from the props.
 <a name="UiField+getValue"></a>
 
 ### uiDateTimeLocalField.getValue([values]) ⇒
+
 The getValue function returns the value associated with a given name from a provided object.
 
 **Kind**: instance method of [<code>UiDateTimeLocalField</code>](#UiDateTimeLocalField)  
@@ -1603,42 +1749,49 @@ The getValue function returns the value associated with a given name from a prov
 <a name="UiEmailField"></a>
 
 ## UiEmailField ⇐ [<code>UiTextField</code>](#UiTextField)
+
 The `UiEmailField` class is a subclass of `UiTextField` that sets the `type` property to 'email'.
 
 **Kind**: global class  
 **Extends**: [<code>UiTextField</code>](#UiTextField)  
 
 * [UiEmailField](#UiEmailField) ⇐ [<code>UiTextField</code>](#UiTextField)
-    * [new UiEmailField(props)](#new_UiEmailField_new)
-    * [.getTemplateFilename()](#UiTextField+getTemplateFilename) ⇒ <code>string</code>
-    * [.render([values])](#UiField+render) ⇒
-    * [.contentRenderer()](#UiField+contentRenderer) ⇒
-    * [.wrapperRenderer()](#UiField+wrapperRenderer) ⇒
-    * [.renderer(props)](#UiField+renderer) ⇒
-    * [.defaultVariables([values])](#UiField+defaultVariables) ⇒
-    * [.variables([values])](#UiField+variables) ⇒
-    * [.getTemplateString()](#UiField+getTemplateString) ⇒
-    * [.getWrapperTemplateFilename()](#UiField+getWrapperTemplateFilename) ⇒
-    * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒
-    * [.getValue([values])](#UiField+getValue) ⇒
+  * [new UiEmailField([props])](#new_UiEmailField_new)
+  * [.getTemplateFilename()](#UiTextField+getTemplateFilename) ⇒ <code>string</code>
+  * [.render([values])](#UiField+render) ⇒
+  * [.contentRenderer()](#UiField+contentRenderer) ⇒
+  * [.wrapperRenderer()](#UiField+wrapperRenderer) ⇒
+  * [.renderer(props)](#UiField+renderer) ⇒
+  * [.defaultVariables([values])](#UiField+defaultVariables) ⇒
+  * [.variables([values])](#UiField+variables) ⇒
+  * [.getTemplateString()](#UiField+getTemplateString) ⇒
+  * [.getWrapperTemplateFilename()](#UiField+getWrapperTemplateFilename) ⇒
+  * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒
+  * [.getValue([values])](#UiField+getValue) ⇒
 
 <a name="new_UiEmailField_new"></a>
 
-### new UiEmailField(props)
+### new UiEmailField([props])
 
-| Param |
-| --- |
-| props | 
+The constructor function sets the type property of the props object to 'email'.
+
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| [props] | <code>object</code> | <code>{}</code> | The `props` parameter is an object that contains the properties passed to the constructor. In this case, it is set to an empty object `{}` by default. |
 
 <a name="UiTextField+getTemplateFilename"></a>
 
 ### uiEmailField.getTemplateFilename() ⇒ <code>string</code>
+
+The function returns the filename of a UI text template.
+
 **Kind**: instance method of [<code>UiEmailField</code>](#UiEmailField)  
 **Overrides**: [<code>getTemplateFilename</code>](#UiTextField+getTemplateFilename)  
-**Returns**: <code>string</code> - template filename to be used in templates  
+**Returns**: <code>string</code> - The string 'ui-text' is being returned.  
 <a name="UiField+render"></a>
 
 ### uiEmailField.render([values]) ⇒
+
 The `render` function takes in a `values` object, renders the content using a content renderer
 and variables, wraps the rendered content using a wrapper renderer and default variables, and
 returns the final result.
@@ -1655,6 +1808,7 @@ wrapper.
 <a name="UiField+contentRenderer"></a>
 
 ### uiEmailField.contentRenderer() ⇒
+
 The contentRenderer function returns the result of calling the renderer function with certain
 props.
 
@@ -1664,6 +1818,7 @@ props.
 <a name="UiField+wrapperRenderer"></a>
 
 ### uiEmailField.wrapperRenderer() ⇒
+
 The function `wrapperRenderer` returns the result of calling the `renderer` function with
 specific props.
 
@@ -1674,6 +1829,7 @@ function with the `props` object as an argument.
 <a name="UiField+renderer"></a>
 
 ### uiEmailField.renderer(props) ⇒
+
 The function returns a new instance of the UiHandlebarsRenderer class with the given props.
 
 **Kind**: instance method of [<code>UiEmailField</code>](#UiEmailField)  
@@ -1687,6 +1843,7 @@ The function returns a new instance of the UiHandlebarsRenderer class with the g
 <a name="UiField+defaultVariables"></a>
 
 ### uiEmailField.defaultVariables([values]) ⇒
+
 The defaultVariables function returns the props object.
 
 **Kind**: instance method of [<code>UiEmailField</code>](#UiEmailField)  
@@ -1700,6 +1857,7 @@ The defaultVariables function returns the props object.
 <a name="UiField+variables"></a>
 
 ### uiEmailField.variables([values]) ⇒
+
 The function returns a merged object of default variables and a value.
 
 **Kind**: instance method of [<code>UiEmailField</code>](#UiEmailField)  
@@ -1713,6 +1871,7 @@ The function returns a merged object of default variables and a value.
 <a name="UiField+getTemplateString"></a>
 
 ### uiEmailField.getTemplateString() ⇒
+
 The function returns the template string from the props.
 
 **Kind**: instance method of [<code>UiEmailField</code>](#UiEmailField)  
@@ -1721,6 +1880,7 @@ The function returns the template string from the props.
 <a name="UiField+getWrapperTemplateFilename"></a>
 
 ### uiEmailField.getWrapperTemplateFilename() ⇒
+
 The function returns the filename of a UI wrapper template.
 
 **Kind**: instance method of [<code>UiEmailField</code>](#UiEmailField)  
@@ -1729,6 +1889,7 @@ The function returns the filename of a UI wrapper template.
 <a name="UiField+getWrapperTemplateString"></a>
 
 ### uiEmailField.getWrapperTemplateString() ⇒
+
 The function returns the wrapper template string from the props.
 
 **Kind**: instance method of [<code>UiEmailField</code>](#UiEmailField)  
@@ -1737,6 +1898,7 @@ The function returns the wrapper template string from the props.
 <a name="UiField+getValue"></a>
 
 ### uiEmailField.getValue([values]) ⇒
+
 The getValue function returns the value associated with a given name from a provided object.
 
 **Kind**: instance method of [<code>UiEmailField</code>](#UiEmailField)  
@@ -1750,42 +1912,49 @@ The getValue function returns the value associated with a given name from a prov
 <a name="UiFileField"></a>
 
 ## UiFileField ⇐ [<code>UiTextField</code>](#UiTextField)
+
 The `UiFileField` class is a subclass of `UiTextField` that sets the `type` property to 'file'.
 
 **Kind**: global class  
 **Extends**: [<code>UiTextField</code>](#UiTextField)  
 
 * [UiFileField](#UiFileField) ⇐ [<code>UiTextField</code>](#UiTextField)
-    * [new UiFileField(props)](#new_UiFileField_new)
-    * [.getTemplateFilename()](#UiTextField+getTemplateFilename) ⇒ <code>string</code>
-    * [.render([values])](#UiField+render) ⇒
-    * [.contentRenderer()](#UiField+contentRenderer) ⇒
-    * [.wrapperRenderer()](#UiField+wrapperRenderer) ⇒
-    * [.renderer(props)](#UiField+renderer) ⇒
-    * [.defaultVariables([values])](#UiField+defaultVariables) ⇒
-    * [.variables([values])](#UiField+variables) ⇒
-    * [.getTemplateString()](#UiField+getTemplateString) ⇒
-    * [.getWrapperTemplateFilename()](#UiField+getWrapperTemplateFilename) ⇒
-    * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒
-    * [.getValue([values])](#UiField+getValue) ⇒
+  * [new UiFileField([props])](#new_UiFileField_new)
+  * [.getTemplateFilename()](#UiTextField+getTemplateFilename) ⇒ <code>string</code>
+  * [.render([values])](#UiField+render) ⇒
+  * [.contentRenderer()](#UiField+contentRenderer) ⇒
+  * [.wrapperRenderer()](#UiField+wrapperRenderer) ⇒
+  * [.renderer(props)](#UiField+renderer) ⇒
+  * [.defaultVariables([values])](#UiField+defaultVariables) ⇒
+  * [.variables([values])](#UiField+variables) ⇒
+  * [.getTemplateString()](#UiField+getTemplateString) ⇒
+  * [.getWrapperTemplateFilename()](#UiField+getWrapperTemplateFilename) ⇒
+  * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒
+  * [.getValue([values])](#UiField+getValue) ⇒
 
 <a name="new_UiFileField_new"></a>
 
-### new UiFileField(props)
+### new UiFileField([props])
 
-| Param |
-| --- |
-| props | 
+The constructor function sets the type property of the props object to 'file'.
+
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| [props] | <code>object</code> | <code>{}</code> | The `props` parameter is an object that contains the properties and values that are passed to the constructor when creating an instance of the class. In this case, the `props` object is set to an empty object `{}` by default if no arguments are provided when creating an instance. |
 
 <a name="UiTextField+getTemplateFilename"></a>
 
 ### uiFileField.getTemplateFilename() ⇒ <code>string</code>
+
+The function returns the filename of a UI text template.
+
 **Kind**: instance method of [<code>UiFileField</code>](#UiFileField)  
 **Overrides**: [<code>getTemplateFilename</code>](#UiTextField+getTemplateFilename)  
-**Returns**: <code>string</code> - template filename to be used in templates  
+**Returns**: <code>string</code> - The string 'ui-text' is being returned.  
 <a name="UiField+render"></a>
 
 ### uiFileField.render([values]) ⇒
+
 The `render` function takes in a `values` object, renders the content using a content renderer
 and variables, wraps the rendered content using a wrapper renderer and default variables, and
 returns the final result.
@@ -1802,6 +1971,7 @@ wrapper.
 <a name="UiField+contentRenderer"></a>
 
 ### uiFileField.contentRenderer() ⇒
+
 The contentRenderer function returns the result of calling the renderer function with certain
 props.
 
@@ -1811,6 +1981,7 @@ props.
 <a name="UiField+wrapperRenderer"></a>
 
 ### uiFileField.wrapperRenderer() ⇒
+
 The function `wrapperRenderer` returns the result of calling the `renderer` function with
 specific props.
 
@@ -1821,6 +1992,7 @@ function with the `props` object as an argument.
 <a name="UiField+renderer"></a>
 
 ### uiFileField.renderer(props) ⇒
+
 The function returns a new instance of the UiHandlebarsRenderer class with the given props.
 
 **Kind**: instance method of [<code>UiFileField</code>](#UiFileField)  
@@ -1834,6 +2006,7 @@ The function returns a new instance of the UiHandlebarsRenderer class with the g
 <a name="UiField+defaultVariables"></a>
 
 ### uiFileField.defaultVariables([values]) ⇒
+
 The defaultVariables function returns the props object.
 
 **Kind**: instance method of [<code>UiFileField</code>](#UiFileField)  
@@ -1847,6 +2020,7 @@ The defaultVariables function returns the props object.
 <a name="UiField+variables"></a>
 
 ### uiFileField.variables([values]) ⇒
+
 The function returns a merged object of default variables and a value.
 
 **Kind**: instance method of [<code>UiFileField</code>](#UiFileField)  
@@ -1860,6 +2034,7 @@ The function returns a merged object of default variables and a value.
 <a name="UiField+getTemplateString"></a>
 
 ### uiFileField.getTemplateString() ⇒
+
 The function returns the template string from the props.
 
 **Kind**: instance method of [<code>UiFileField</code>](#UiFileField)  
@@ -1868,6 +2043,7 @@ The function returns the template string from the props.
 <a name="UiField+getWrapperTemplateFilename"></a>
 
 ### uiFileField.getWrapperTemplateFilename() ⇒
+
 The function returns the filename of a UI wrapper template.
 
 **Kind**: instance method of [<code>UiFileField</code>](#UiFileField)  
@@ -1876,6 +2052,7 @@ The function returns the filename of a UI wrapper template.
 <a name="UiField+getWrapperTemplateString"></a>
 
 ### uiFileField.getWrapperTemplateString() ⇒
+
 The function returns the wrapper template string from the props.
 
 **Kind**: instance method of [<code>UiFileField</code>](#UiFileField)  
@@ -1884,6 +2061,7 @@ The function returns the wrapper template string from the props.
 <a name="UiField+getValue"></a>
 
 ### uiFileField.getValue([values]) ⇒
+
 The getValue function returns the value associated with a given name from a provided object.
 
 **Kind**: instance method of [<code>UiFileField</code>](#UiFileField)  
@@ -1897,6 +2075,7 @@ The getValue function returns the value associated with a given name from a prov
 <a name="UiFormField"></a>
 
 ## UiFormField ⇐ [<code>UiFieldWithFields</code>](#UiFieldWithFields)
+
 The `UiFormField` class is a subclass of `UiFieldWithFields` that sets the type property of the
 props object to 'form' in its constructor.
 
@@ -1904,33 +2083,34 @@ props object to 'form' in its constructor.
 **Extends**: [<code>UiFieldWithFields</code>](#UiFieldWithFields)  
 
 * [UiFormField](#UiFormField) ⇐ [<code>UiFieldWithFields</code>](#UiFieldWithFields)
-    * [new UiFormField([props])](#new_UiFormField_new)
-    * [.defaultVariables([values])](#UiFieldWithFields+defaultVariables) ⇒
-    * [.buildComponents(fieldValue)](#UiFieldWithFields+buildComponents) ⇒
-    * [.render([values])](#UiField+render) ⇒
-    * [.contentRenderer()](#UiField+contentRenderer) ⇒
-    * [.wrapperRenderer()](#UiField+wrapperRenderer) ⇒
-    * [.renderer(props)](#UiField+renderer) ⇒
-    * [.variables([values])](#UiField+variables) ⇒
-    * [.getTemplateFilename()](#UiField+getTemplateFilename) ⇒ <code>string</code>
-    * [.getTemplateString()](#UiField+getTemplateString) ⇒
-    * [.getWrapperTemplateFilename()](#UiField+getWrapperTemplateFilename) ⇒
-    * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒
-    * [.getValue([values])](#UiField+getValue) ⇒
+  * [new UiFormField([props])](#new_UiFormField_new)
+  * [.defaultVariables([values])](#UiFieldWithFields+defaultVariables) ⇒
+  * [.buildComponents(fieldValue)](#UiFieldWithFields+buildComponents) ⇒
+  * [.render([values])](#UiField+render) ⇒
+  * [.contentRenderer()](#UiField+contentRenderer) ⇒
+  * [.wrapperRenderer()](#UiField+wrapperRenderer) ⇒
+  * [.renderer(props)](#UiField+renderer) ⇒
+  * [.variables([values])](#UiField+variables) ⇒
+  * [.getTemplateFilename()](#UiField+getTemplateFilename) ⇒ <code>string</code>
+  * [.getTemplateString()](#UiField+getTemplateString) ⇒
+  * [.getWrapperTemplateFilename()](#UiField+getWrapperTemplateFilename) ⇒
+  * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒
+  * [.getValue([values])](#UiField+getValue) ⇒
 
 <a name="new_UiFormField_new"></a>
 
 ### new UiFormField([props])
+
 The constructor function sets the type property of the props object to 'form'.
 
-
-| Param | Description |
-| --- | --- |
-| [props] | The `props` parameter is an object that contains the properties passed to the constructor. In this case, it is set to an empty object `` by default. |
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| [props] | <code>object</code> | <code>{}</code> | The `props` parameter is an object that contains the properties passed to the constructor. In this case, it is set to an empty object `{}` by default. |
 
 <a name="UiFieldWithFields+defaultVariables"></a>
 
 ### uiFormField.defaultVariables([values]) ⇒
+
 The function `defaultVariables` returns an object with default variables, including a
 `components` property that is built based on the `fieldValue`.
 
@@ -1947,6 +2127,7 @@ method with the "fieldValue" as an argument.
 <a name="UiFieldWithFields+buildComponents"></a>
 
 ### uiFormField.buildComponents(fieldValue) ⇒
+
 The function "buildComponents" takes a fieldValue parameter and returns an array of components
 rendered based on the fields array.
 
@@ -1962,6 +2143,7 @@ corresponding field in the `fieldValue` object.
 <a name="UiField+render"></a>
 
 ### uiFormField.render([values]) ⇒
+
 The `render` function takes in a `values` object, renders the content using a content renderer
 and variables, wraps the rendered content using a wrapper renderer and default variables, and
 returns the final result.
@@ -1978,6 +2160,7 @@ wrapper.
 <a name="UiField+contentRenderer"></a>
 
 ### uiFormField.contentRenderer() ⇒
+
 The contentRenderer function returns the result of calling the renderer function with certain
 props.
 
@@ -1987,6 +2170,7 @@ props.
 <a name="UiField+wrapperRenderer"></a>
 
 ### uiFormField.wrapperRenderer() ⇒
+
 The function `wrapperRenderer` returns the result of calling the `renderer` function with
 specific props.
 
@@ -1997,6 +2181,7 @@ function with the `props` object as an argument.
 <a name="UiField+renderer"></a>
 
 ### uiFormField.renderer(props) ⇒
+
 The function returns a new instance of the UiHandlebarsRenderer class with the given props.
 
 **Kind**: instance method of [<code>UiFormField</code>](#UiFormField)  
@@ -2010,6 +2195,7 @@ The function returns a new instance of the UiHandlebarsRenderer class with the g
 <a name="UiField+variables"></a>
 
 ### uiFormField.variables([values]) ⇒
+
 The function returns a merged object of default variables and a value.
 
 **Kind**: instance method of [<code>UiFormField</code>](#UiFormField)  
@@ -2023,6 +2209,7 @@ The function returns a merged object of default variables and a value.
 <a name="UiField+getTemplateFilename"></a>
 
 ### uiFormField.getTemplateFilename() ⇒ <code>string</code>
+
 The function returns a template filename based on the type property.
 
 **Kind**: instance method of [<code>UiFormField</code>](#UiFormField)  
@@ -2031,6 +2218,7 @@ The function returns a template filename based on the type property.
 <a name="UiField+getTemplateString"></a>
 
 ### uiFormField.getTemplateString() ⇒
+
 The function returns the template string from the props.
 
 **Kind**: instance method of [<code>UiFormField</code>](#UiFormField)  
@@ -2039,6 +2227,7 @@ The function returns the template string from the props.
 <a name="UiField+getWrapperTemplateFilename"></a>
 
 ### uiFormField.getWrapperTemplateFilename() ⇒
+
 The function returns the filename of a UI wrapper template.
 
 **Kind**: instance method of [<code>UiFormField</code>](#UiFormField)  
@@ -2047,6 +2236,7 @@ The function returns the filename of a UI wrapper template.
 <a name="UiField+getWrapperTemplateString"></a>
 
 ### uiFormField.getWrapperTemplateString() ⇒
+
 The function returns the wrapper template string from the props.
 
 **Kind**: instance method of [<code>UiFormField</code>](#UiFormField)  
@@ -2055,6 +2245,7 @@ The function returns the wrapper template string from the props.
 <a name="UiField+getValue"></a>
 
 ### uiFormField.getValue([values]) ⇒
+
 The getValue function returns the value associated with a given name from a provided object.
 
 **Kind**: instance method of [<code>UiFormField</code>](#UiFormField)  
@@ -2068,6 +2259,7 @@ The getValue function returns the value associated with a given name from a prov
 <a name="UiHiddenField"></a>
 
 ## UiHiddenField ⇐ [<code>UiTextField</code>](#UiTextField)
+
 The `UiHiddenField` class is a subclass of `UiTextField` that represents a hidden input field in a
 user interface.
 
@@ -2075,38 +2267,42 @@ user interface.
 **Extends**: [<code>UiTextField</code>](#UiTextField)  
 
 * [UiHiddenField](#UiHiddenField) ⇐ [<code>UiTextField</code>](#UiTextField)
-    * [new UiHiddenField(props)](#new_UiHiddenField_new)
-    * [.getTemplateFilename()](#UiHiddenField+getTemplateFilename) ⇒
-    * [.render([values])](#UiField+render) ⇒
-    * [.contentRenderer()](#UiField+contentRenderer) ⇒
-    * [.wrapperRenderer()](#UiField+wrapperRenderer) ⇒
-    * [.renderer(props)](#UiField+renderer) ⇒
-    * [.defaultVariables([values])](#UiField+defaultVariables) ⇒
-    * [.variables([values])](#UiField+variables) ⇒
-    * [.getTemplateString()](#UiField+getTemplateString) ⇒
-    * [.getWrapperTemplateFilename()](#UiField+getWrapperTemplateFilename) ⇒
-    * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒
-    * [.getValue([values])](#UiField+getValue) ⇒
+  * [new UiHiddenField([props])](#new_UiHiddenField_new)
+  * [.getTemplateFilename()](#UiHiddenField+getTemplateFilename) ⇒ <code>string</code>
+  * [.render([values])](#UiField+render) ⇒
+  * [.contentRenderer()](#UiField+contentRenderer) ⇒
+  * [.wrapperRenderer()](#UiField+wrapperRenderer) ⇒
+  * [.renderer(props)](#UiField+renderer) ⇒
+  * [.defaultVariables([values])](#UiField+defaultVariables) ⇒
+  * [.variables([values])](#UiField+variables) ⇒
+  * [.getTemplateString()](#UiField+getTemplateString) ⇒
+  * [.getWrapperTemplateFilename()](#UiField+getWrapperTemplateFilename) ⇒
+  * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒
+  * [.getValue([values])](#UiField+getValue) ⇒
 
 <a name="new_UiHiddenField_new"></a>
 
-### new UiHiddenField(props)
+### new UiHiddenField([props])
 
-| Param |
-| --- |
-| props | 
+The constructor function sets the type property of the props object to 'hidden'.
+
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| [props] | <code>object</code> | <code>{}</code> | The `props` parameter is an object that contains the properties and values that are passed to the component when it is created. In this case, the `props` object is set to an empty object `{}` by default if no argument is provided when creating the component. |
 
 <a name="UiHiddenField+getTemplateFilename"></a>
 
-### uiHiddenField.getTemplateFilename() ⇒
+### uiHiddenField.getTemplateFilename() ⇒ <code>string</code>
+
 The function getTemplateFilename() returns the filename 'ui-hidden'.
 
 **Kind**: instance method of [<code>UiHiddenField</code>](#UiHiddenField)  
 **Overrides**: [<code>getTemplateFilename</code>](#UiTextField+getTemplateFilename)  
-**Returns**: the string 'ui-hidden'.  
+**Returns**: <code>string</code> - - Returns the string 'ui-hidden'.  
 <a name="UiField+render"></a>
 
 ### uiHiddenField.render([values]) ⇒
+
 The `render` function takes in a `values` object, renders the content using a content renderer
 and variables, wraps the rendered content using a wrapper renderer and default variables, and
 returns the final result.
@@ -2123,6 +2319,7 @@ wrapper.
 <a name="UiField+contentRenderer"></a>
 
 ### uiHiddenField.contentRenderer() ⇒
+
 The contentRenderer function returns the result of calling the renderer function with certain
 props.
 
@@ -2132,6 +2329,7 @@ props.
 <a name="UiField+wrapperRenderer"></a>
 
 ### uiHiddenField.wrapperRenderer() ⇒
+
 The function `wrapperRenderer` returns the result of calling the `renderer` function with
 specific props.
 
@@ -2142,6 +2340,7 @@ function with the `props` object as an argument.
 <a name="UiField+renderer"></a>
 
 ### uiHiddenField.renderer(props) ⇒
+
 The function returns a new instance of the UiHandlebarsRenderer class with the given props.
 
 **Kind**: instance method of [<code>UiHiddenField</code>](#UiHiddenField)  
@@ -2155,6 +2354,7 @@ The function returns a new instance of the UiHandlebarsRenderer class with the g
 <a name="UiField+defaultVariables"></a>
 
 ### uiHiddenField.defaultVariables([values]) ⇒
+
 The defaultVariables function returns the props object.
 
 **Kind**: instance method of [<code>UiHiddenField</code>](#UiHiddenField)  
@@ -2168,6 +2368,7 @@ The defaultVariables function returns the props object.
 <a name="UiField+variables"></a>
 
 ### uiHiddenField.variables([values]) ⇒
+
 The function returns a merged object of default variables and a value.
 
 **Kind**: instance method of [<code>UiHiddenField</code>](#UiHiddenField)  
@@ -2181,6 +2382,7 @@ The function returns a merged object of default variables and a value.
 <a name="UiField+getTemplateString"></a>
 
 ### uiHiddenField.getTemplateString() ⇒
+
 The function returns the template string from the props.
 
 **Kind**: instance method of [<code>UiHiddenField</code>](#UiHiddenField)  
@@ -2189,6 +2391,7 @@ The function returns the template string from the props.
 <a name="UiField+getWrapperTemplateFilename"></a>
 
 ### uiHiddenField.getWrapperTemplateFilename() ⇒
+
 The function returns the filename of a UI wrapper template.
 
 **Kind**: instance method of [<code>UiHiddenField</code>](#UiHiddenField)  
@@ -2197,6 +2400,7 @@ The function returns the filename of a UI wrapper template.
 <a name="UiField+getWrapperTemplateString"></a>
 
 ### uiHiddenField.getWrapperTemplateString() ⇒
+
 The function returns the wrapper template string from the props.
 
 **Kind**: instance method of [<code>UiHiddenField</code>](#UiHiddenField)  
@@ -2205,6 +2409,7 @@ The function returns the wrapper template string from the props.
 <a name="UiField+getValue"></a>
 
 ### uiHiddenField.getValue([values]) ⇒
+
 The getValue function returns the value associated with a given name from a provided object.
 
 **Kind**: instance method of [<code>UiHiddenField</code>](#UiHiddenField)  
@@ -2218,42 +2423,50 @@ The getValue function returns the value associated with a given name from a prov
 <a name="UiImageField"></a>
 
 ## UiImageField ⇐ [<code>UiTextField</code>](#UiTextField)
+
 The `UiImageField` class is a subclass of `UiTextField` that represents an image input field with default alternative text and source.
 
 **Kind**: global class  
 **Extends**: [<code>UiTextField</code>](#UiTextField)  
 
 * [UiImageField](#UiImageField) ⇐ [<code>UiTextField</code>](#UiTextField)
-    * [new UiImageField(props)](#new_UiImageField_new)
-    * [.getTemplateFilename()](#UiTextField+getTemplateFilename) ⇒ <code>string</code>
-    * [.render([values])](#UiField+render) ⇒
-    * [.contentRenderer()](#UiField+contentRenderer) ⇒
-    * [.wrapperRenderer()](#UiField+wrapperRenderer) ⇒
-    * [.renderer(props)](#UiField+renderer) ⇒
-    * [.defaultVariables([values])](#UiField+defaultVariables) ⇒
-    * [.variables([values])](#UiField+variables) ⇒
-    * [.getTemplateString()](#UiField+getTemplateString) ⇒
-    * [.getWrapperTemplateFilename()](#UiField+getWrapperTemplateFilename) ⇒
-    * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒
-    * [.getValue([values])](#UiField+getValue) ⇒
+  * [new UiImageField([props])](#new_UiImageField_new)
+  * [.getTemplateFilename()](#UiTextField+getTemplateFilename) ⇒ <code>string</code>
+  * [.render([values])](#UiField+render) ⇒
+  * [.contentRenderer()](#UiField+contentRenderer) ⇒
+  * [.wrapperRenderer()](#UiField+wrapperRenderer) ⇒
+  * [.renderer(props)](#UiField+renderer) ⇒
+  * [.defaultVariables([values])](#UiField+defaultVariables) ⇒
+  * [.variables([values])](#UiField+variables) ⇒
+  * [.getTemplateString()](#UiField+getTemplateString) ⇒
+  * [.getWrapperTemplateFilename()](#UiField+getWrapperTemplateFilename) ⇒
+  * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒
+  * [.getValue([values])](#UiField+getValue) ⇒
 
 <a name="new_UiImageField_new"></a>
 
-### new UiImageField(props)
+### new UiImageField([props])
 
-| Param |
-| --- |
-| props | 
+The constructor function sets default values for the props object and adds additional properties
+before calling the super constructor.
+
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| [props] | <code>object</code> | <code>{}</code> | The `props` parameter is an object that contains the properties and values that are passed to the constructor. |
 
 <a name="UiTextField+getTemplateFilename"></a>
 
 ### uiImageField.getTemplateFilename() ⇒ <code>string</code>
+
+The function returns the filename of a UI text template.
+
 **Kind**: instance method of [<code>UiImageField</code>](#UiImageField)  
 **Overrides**: [<code>getTemplateFilename</code>](#UiTextField+getTemplateFilename)  
-**Returns**: <code>string</code> - template filename to be used in templates  
+**Returns**: <code>string</code> - The string 'ui-text' is being returned.  
 <a name="UiField+render"></a>
 
 ### uiImageField.render([values]) ⇒
+
 The `render` function takes in a `values` object, renders the content using a content renderer
 and variables, wraps the rendered content using a wrapper renderer and default variables, and
 returns the final result.
@@ -2270,6 +2483,7 @@ wrapper.
 <a name="UiField+contentRenderer"></a>
 
 ### uiImageField.contentRenderer() ⇒
+
 The contentRenderer function returns the result of calling the renderer function with certain
 props.
 
@@ -2279,6 +2493,7 @@ props.
 <a name="UiField+wrapperRenderer"></a>
 
 ### uiImageField.wrapperRenderer() ⇒
+
 The function `wrapperRenderer` returns the result of calling the `renderer` function with
 specific props.
 
@@ -2289,6 +2504,7 @@ function with the `props` object as an argument.
 <a name="UiField+renderer"></a>
 
 ### uiImageField.renderer(props) ⇒
+
 The function returns a new instance of the UiHandlebarsRenderer class with the given props.
 
 **Kind**: instance method of [<code>UiImageField</code>](#UiImageField)  
@@ -2302,6 +2518,7 @@ The function returns a new instance of the UiHandlebarsRenderer class with the g
 <a name="UiField+defaultVariables"></a>
 
 ### uiImageField.defaultVariables([values]) ⇒
+
 The defaultVariables function returns the props object.
 
 **Kind**: instance method of [<code>UiImageField</code>](#UiImageField)  
@@ -2315,6 +2532,7 @@ The defaultVariables function returns the props object.
 <a name="UiField+variables"></a>
 
 ### uiImageField.variables([values]) ⇒
+
 The function returns a merged object of default variables and a value.
 
 **Kind**: instance method of [<code>UiImageField</code>](#UiImageField)  
@@ -2328,6 +2546,7 @@ The function returns a merged object of default variables and a value.
 <a name="UiField+getTemplateString"></a>
 
 ### uiImageField.getTemplateString() ⇒
+
 The function returns the template string from the props.
 
 **Kind**: instance method of [<code>UiImageField</code>](#UiImageField)  
@@ -2336,6 +2555,7 @@ The function returns the template string from the props.
 <a name="UiField+getWrapperTemplateFilename"></a>
 
 ### uiImageField.getWrapperTemplateFilename() ⇒
+
 The function returns the filename of a UI wrapper template.
 
 **Kind**: instance method of [<code>UiImageField</code>](#UiImageField)  
@@ -2344,6 +2564,7 @@ The function returns the filename of a UI wrapper template.
 <a name="UiField+getWrapperTemplateString"></a>
 
 ### uiImageField.getWrapperTemplateString() ⇒
+
 The function returns the wrapper template string from the props.
 
 **Kind**: instance method of [<code>UiImageField</code>](#UiImageField)  
@@ -2352,6 +2573,7 @@ The function returns the wrapper template string from the props.
 <a name="UiField+getValue"></a>
 
 ### uiImageField.getValue([values]) ⇒
+
 The getValue function returns the value associated with a given name from a provided object.
 
 **Kind**: instance method of [<code>UiImageField</code>](#UiImageField)  
@@ -2365,42 +2587,50 @@ The getValue function returns the value associated with a given name from a prov
 <a name="UiMonthField"></a>
 
 ## UiMonthField ⇐ [<code>UiTextField</code>](#UiTextField)
+
 The UiMonthField class is a subclass of UiTextField that sets the input type to 'month'.
 
 **Kind**: global class  
 **Extends**: [<code>UiTextField</code>](#UiTextField)  
 
 * [UiMonthField](#UiMonthField) ⇐ [<code>UiTextField</code>](#UiTextField)
-    * [new UiMonthField(props)](#new_UiMonthField_new)
-    * [.getTemplateFilename()](#UiTextField+getTemplateFilename) ⇒ <code>string</code>
-    * [.render([values])](#UiField+render) ⇒
-    * [.contentRenderer()](#UiField+contentRenderer) ⇒
-    * [.wrapperRenderer()](#UiField+wrapperRenderer) ⇒
-    * [.renderer(props)](#UiField+renderer) ⇒
-    * [.defaultVariables([values])](#UiField+defaultVariables) ⇒
-    * [.variables([values])](#UiField+variables) ⇒
-    * [.getTemplateString()](#UiField+getTemplateString) ⇒
-    * [.getWrapperTemplateFilename()](#UiField+getWrapperTemplateFilename) ⇒
-    * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒
-    * [.getValue([values])](#UiField+getValue) ⇒
+  * [new UiMonthField([props])](#new_UiMonthField_new)
+  * [.getTemplateFilename()](#UiTextField+getTemplateFilename) ⇒ <code>string</code>
+  * [.render([values])](#UiField+render) ⇒
+  * [.contentRenderer()](#UiField+contentRenderer) ⇒
+  * [.wrapperRenderer()](#UiField+wrapperRenderer) ⇒
+  * [.renderer(props)](#UiField+renderer) ⇒
+  * [.defaultVariables([values])](#UiField+defaultVariables) ⇒
+  * [.variables([values])](#UiField+variables) ⇒
+  * [.getTemplateString()](#UiField+getTemplateString) ⇒
+  * [.getWrapperTemplateFilename()](#UiField+getWrapperTemplateFilename) ⇒
+  * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒
+  * [.getValue([values])](#UiField+getValue) ⇒
 
 <a name="new_UiMonthField_new"></a>
 
-### new UiMonthField(props)
+### new UiMonthField([props])
 
-| Param |
-| --- |
-| props | 
+The constructor function sets the default value of the "type" property to "month" in the props
+object.
+
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| [props] | <code>object</code> | <code>{}</code> | The `props` parameter is an object that contains the properties passed to the constructor. In this case, it is set to an empty object `{}` by default. |
 
 <a name="UiTextField+getTemplateFilename"></a>
 
 ### uiMonthField.getTemplateFilename() ⇒ <code>string</code>
+
+The function returns the filename of a UI text template.
+
 **Kind**: instance method of [<code>UiMonthField</code>](#UiMonthField)  
 **Overrides**: [<code>getTemplateFilename</code>](#UiTextField+getTemplateFilename)  
-**Returns**: <code>string</code> - template filename to be used in templates  
+**Returns**: <code>string</code> - The string 'ui-text' is being returned.  
 <a name="UiField+render"></a>
 
 ### uiMonthField.render([values]) ⇒
+
 The `render` function takes in a `values` object, renders the content using a content renderer
 and variables, wraps the rendered content using a wrapper renderer and default variables, and
 returns the final result.
@@ -2417,6 +2647,7 @@ wrapper.
 <a name="UiField+contentRenderer"></a>
 
 ### uiMonthField.contentRenderer() ⇒
+
 The contentRenderer function returns the result of calling the renderer function with certain
 props.
 
@@ -2426,6 +2657,7 @@ props.
 <a name="UiField+wrapperRenderer"></a>
 
 ### uiMonthField.wrapperRenderer() ⇒
+
 The function `wrapperRenderer` returns the result of calling the `renderer` function with
 specific props.
 
@@ -2436,6 +2668,7 @@ function with the `props` object as an argument.
 <a name="UiField+renderer"></a>
 
 ### uiMonthField.renderer(props) ⇒
+
 The function returns a new instance of the UiHandlebarsRenderer class with the given props.
 
 **Kind**: instance method of [<code>UiMonthField</code>](#UiMonthField)  
@@ -2449,6 +2682,7 @@ The function returns a new instance of the UiHandlebarsRenderer class with the g
 <a name="UiField+defaultVariables"></a>
 
 ### uiMonthField.defaultVariables([values]) ⇒
+
 The defaultVariables function returns the props object.
 
 **Kind**: instance method of [<code>UiMonthField</code>](#UiMonthField)  
@@ -2462,6 +2696,7 @@ The defaultVariables function returns the props object.
 <a name="UiField+variables"></a>
 
 ### uiMonthField.variables([values]) ⇒
+
 The function returns a merged object of default variables and a value.
 
 **Kind**: instance method of [<code>UiMonthField</code>](#UiMonthField)  
@@ -2475,6 +2710,7 @@ The function returns a merged object of default variables and a value.
 <a name="UiField+getTemplateString"></a>
 
 ### uiMonthField.getTemplateString() ⇒
+
 The function returns the template string from the props.
 
 **Kind**: instance method of [<code>UiMonthField</code>](#UiMonthField)  
@@ -2483,6 +2719,7 @@ The function returns the template string from the props.
 <a name="UiField+getWrapperTemplateFilename"></a>
 
 ### uiMonthField.getWrapperTemplateFilename() ⇒
+
 The function returns the filename of a UI wrapper template.
 
 **Kind**: instance method of [<code>UiMonthField</code>](#UiMonthField)  
@@ -2491,6 +2728,7 @@ The function returns the filename of a UI wrapper template.
 <a name="UiField+getWrapperTemplateString"></a>
 
 ### uiMonthField.getWrapperTemplateString() ⇒
+
 The function returns the wrapper template string from the props.
 
 **Kind**: instance method of [<code>UiMonthField</code>](#UiMonthField)  
@@ -2499,6 +2737,7 @@ The function returns the wrapper template string from the props.
 <a name="UiField+getValue"></a>
 
 ### uiMonthField.getValue([values]) ⇒
+
 The getValue function returns the value associated with a given name from a provided object.
 
 **Kind**: instance method of [<code>UiMonthField</code>](#UiMonthField)  
@@ -2512,42 +2751,49 @@ The getValue function returns the value associated with a given name from a prov
 <a name="UiPasswordField"></a>
 
 ## UiPasswordField ⇐ [<code>UiTextField</code>](#UiTextField)
+
 The `UiPasswordField` class is a subclass of `UiTextField` that sets the input type to password.
 
 **Kind**: global class  
 **Extends**: [<code>UiTextField</code>](#UiTextField)  
 
 * [UiPasswordField](#UiPasswordField) ⇐ [<code>UiTextField</code>](#UiTextField)
-    * [new UiPasswordField(props)](#new_UiPasswordField_new)
-    * [.getTemplateFilename()](#UiTextField+getTemplateFilename) ⇒ <code>string</code>
-    * [.render([values])](#UiField+render) ⇒
-    * [.contentRenderer()](#UiField+contentRenderer) ⇒
-    * [.wrapperRenderer()](#UiField+wrapperRenderer) ⇒
-    * [.renderer(props)](#UiField+renderer) ⇒
-    * [.defaultVariables([values])](#UiField+defaultVariables) ⇒
-    * [.variables([values])](#UiField+variables) ⇒
-    * [.getTemplateString()](#UiField+getTemplateString) ⇒
-    * [.getWrapperTemplateFilename()](#UiField+getWrapperTemplateFilename) ⇒
-    * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒
-    * [.getValue([values])](#UiField+getValue) ⇒
+  * [new UiPasswordField([props])](#new_UiPasswordField_new)
+  * [.getTemplateFilename()](#UiTextField+getTemplateFilename) ⇒ <code>string</code>
+  * [.render([values])](#UiField+render) ⇒
+  * [.contentRenderer()](#UiField+contentRenderer) ⇒
+  * [.wrapperRenderer()](#UiField+wrapperRenderer) ⇒
+  * [.renderer(props)](#UiField+renderer) ⇒
+  * [.defaultVariables([values])](#UiField+defaultVariables) ⇒
+  * [.variables([values])](#UiField+variables) ⇒
+  * [.getTemplateString()](#UiField+getTemplateString) ⇒
+  * [.getWrapperTemplateFilename()](#UiField+getWrapperTemplateFilename) ⇒
+  * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒
+  * [.getValue([values])](#UiField+getValue) ⇒
 
 <a name="new_UiPasswordField_new"></a>
 
-### new UiPasswordField(props)
+### new UiPasswordField([props])
 
-| Param |
-| --- |
-| props | 
+The constructor function sets the type of a password input field to 'password'.
+
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| [props] | <code>object</code> | <code>{}</code> | The `props` parameter is an object that contains the properties passed to the constructor. It is an optional parameter and if no value is provided, an empty object `{}` is used as the default value. |
 
 <a name="UiTextField+getTemplateFilename"></a>
 
 ### uiPasswordField.getTemplateFilename() ⇒ <code>string</code>
+
+The function returns the filename of a UI text template.
+
 **Kind**: instance method of [<code>UiPasswordField</code>](#UiPasswordField)  
 **Overrides**: [<code>getTemplateFilename</code>](#UiTextField+getTemplateFilename)  
-**Returns**: <code>string</code> - template filename to be used in templates  
+**Returns**: <code>string</code> - The string 'ui-text' is being returned.  
 <a name="UiField+render"></a>
 
 ### uiPasswordField.render([values]) ⇒
+
 The `render` function takes in a `values` object, renders the content using a content renderer
 and variables, wraps the rendered content using a wrapper renderer and default variables, and
 returns the final result.
@@ -2564,6 +2810,7 @@ wrapper.
 <a name="UiField+contentRenderer"></a>
 
 ### uiPasswordField.contentRenderer() ⇒
+
 The contentRenderer function returns the result of calling the renderer function with certain
 props.
 
@@ -2573,6 +2820,7 @@ props.
 <a name="UiField+wrapperRenderer"></a>
 
 ### uiPasswordField.wrapperRenderer() ⇒
+
 The function `wrapperRenderer` returns the result of calling the `renderer` function with
 specific props.
 
@@ -2583,6 +2831,7 @@ function with the `props` object as an argument.
 <a name="UiField+renderer"></a>
 
 ### uiPasswordField.renderer(props) ⇒
+
 The function returns a new instance of the UiHandlebarsRenderer class with the given props.
 
 **Kind**: instance method of [<code>UiPasswordField</code>](#UiPasswordField)  
@@ -2596,6 +2845,7 @@ The function returns a new instance of the UiHandlebarsRenderer class with the g
 <a name="UiField+defaultVariables"></a>
 
 ### uiPasswordField.defaultVariables([values]) ⇒
+
 The defaultVariables function returns the props object.
 
 **Kind**: instance method of [<code>UiPasswordField</code>](#UiPasswordField)  
@@ -2609,6 +2859,7 @@ The defaultVariables function returns the props object.
 <a name="UiField+variables"></a>
 
 ### uiPasswordField.variables([values]) ⇒
+
 The function returns a merged object of default variables and a value.
 
 **Kind**: instance method of [<code>UiPasswordField</code>](#UiPasswordField)  
@@ -2622,6 +2873,7 @@ The function returns a merged object of default variables and a value.
 <a name="UiField+getTemplateString"></a>
 
 ### uiPasswordField.getTemplateString() ⇒
+
 The function returns the template string from the props.
 
 **Kind**: instance method of [<code>UiPasswordField</code>](#UiPasswordField)  
@@ -2630,6 +2882,7 @@ The function returns the template string from the props.
 <a name="UiField+getWrapperTemplateFilename"></a>
 
 ### uiPasswordField.getWrapperTemplateFilename() ⇒
+
 The function returns the filename of a UI wrapper template.
 
 **Kind**: instance method of [<code>UiPasswordField</code>](#UiPasswordField)  
@@ -2638,6 +2891,7 @@ The function returns the filename of a UI wrapper template.
 <a name="UiField+getWrapperTemplateString"></a>
 
 ### uiPasswordField.getWrapperTemplateString() ⇒
+
 The function returns the wrapper template string from the props.
 
 **Kind**: instance method of [<code>UiPasswordField</code>](#UiPasswordField)  
@@ -2646,6 +2900,7 @@ The function returns the wrapper template string from the props.
 <a name="UiField+getValue"></a>
 
 ### uiPasswordField.getValue([values]) ⇒
+
 The getValue function returns the value associated with a given name from a provided object.
 
 **Kind**: instance method of [<code>UiPasswordField</code>](#UiPasswordField)  
@@ -2659,36 +2914,40 @@ The getValue function returns the value associated with a given name from a prov
 <a name="UiRadioField"></a>
 
 ## UiRadioField ⇐ [<code>UiField</code>](#UiField)
+
 The `UiRadioField` class is a subclass of `UiFieldWithOptions` that represents a radio button field in a user interface.
 
 **Kind**: global class  
 **Extends**: [<code>UiField</code>](#UiField)  
 
 * [UiRadioField](#UiRadioField) ⇐ [<code>UiField</code>](#UiField)
-    * [new UiRadioField(props)](#new_UiRadioField_new)
-    * [.render([values])](#UiField+render) ⇒
-    * [.contentRenderer()](#UiField+contentRenderer) ⇒
-    * [.wrapperRenderer()](#UiField+wrapperRenderer) ⇒
-    * [.renderer(props)](#UiField+renderer) ⇒
-    * [.defaultVariables([values])](#UiField+defaultVariables) ⇒
-    * [.variables([values])](#UiField+variables) ⇒
-    * [.getTemplateFilename()](#UiField+getTemplateFilename) ⇒ <code>string</code>
-    * [.getTemplateString()](#UiField+getTemplateString) ⇒
-    * [.getWrapperTemplateFilename()](#UiField+getWrapperTemplateFilename) ⇒
-    * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒
-    * [.getValue([values])](#UiField+getValue) ⇒
+  * [new UiRadioField([props])](#new_UiRadioField_new)
+  * [.render([values])](#UiField+render) ⇒
+  * [.contentRenderer()](#UiField+contentRenderer) ⇒
+  * [.wrapperRenderer()](#UiField+wrapperRenderer) ⇒
+  * [.renderer(props)](#UiField+renderer) ⇒
+  * [.defaultVariables([values])](#UiField+defaultVariables) ⇒
+  * [.variables([values])](#UiField+variables) ⇒
+  * [.getTemplateFilename()](#UiField+getTemplateFilename) ⇒ <code>string</code>
+  * [.getTemplateString()](#UiField+getTemplateString) ⇒
+  * [.getWrapperTemplateFilename()](#UiField+getWrapperTemplateFilename) ⇒
+  * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒
+  * [.getValue([values])](#UiField+getValue) ⇒
 
 <a name="new_UiRadioField_new"></a>
 
-### new UiRadioField(props)
+### new UiRadioField([props])
 
-| Param |
-| --- |
-| props | 
+The constructor function sets the type property of the props object to 'radio'.
+
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| [props] | <code>object</code> | <code>{}</code> | The `props` parameter is an object that contains the properties and values that are passed to the component when it is created. It is an optional parameter, and if no value is provided, an empty object `{}` is used as the default value. |
 
 <a name="UiField+render"></a>
 
 ### uiRadioField.render([values]) ⇒
+
 The `render` function takes in a `values` object, renders the content using a content renderer
 and variables, wraps the rendered content using a wrapper renderer and default variables, and
 returns the final result.
@@ -2705,6 +2964,7 @@ wrapper.
 <a name="UiField+contentRenderer"></a>
 
 ### uiRadioField.contentRenderer() ⇒
+
 The contentRenderer function returns the result of calling the renderer function with certain
 props.
 
@@ -2714,6 +2974,7 @@ props.
 <a name="UiField+wrapperRenderer"></a>
 
 ### uiRadioField.wrapperRenderer() ⇒
+
 The function `wrapperRenderer` returns the result of calling the `renderer` function with
 specific props.
 
@@ -2724,6 +2985,7 @@ function with the `props` object as an argument.
 <a name="UiField+renderer"></a>
 
 ### uiRadioField.renderer(props) ⇒
+
 The function returns a new instance of the UiHandlebarsRenderer class with the given props.
 
 **Kind**: instance method of [<code>UiRadioField</code>](#UiRadioField)  
@@ -2737,6 +2999,7 @@ The function returns a new instance of the UiHandlebarsRenderer class with the g
 <a name="UiField+defaultVariables"></a>
 
 ### uiRadioField.defaultVariables([values]) ⇒
+
 The defaultVariables function returns the props object.
 
 **Kind**: instance method of [<code>UiRadioField</code>](#UiRadioField)  
@@ -2750,6 +3013,7 @@ The defaultVariables function returns the props object.
 <a name="UiField+variables"></a>
 
 ### uiRadioField.variables([values]) ⇒
+
 The function returns a merged object of default variables and a value.
 
 **Kind**: instance method of [<code>UiRadioField</code>](#UiRadioField)  
@@ -2763,6 +3027,7 @@ The function returns a merged object of default variables and a value.
 <a name="UiField+getTemplateFilename"></a>
 
 ### uiRadioField.getTemplateFilename() ⇒ <code>string</code>
+
 The function returns a template filename based on the type property.
 
 **Kind**: instance method of [<code>UiRadioField</code>](#UiRadioField)  
@@ -2771,6 +3036,7 @@ The function returns a template filename based on the type property.
 <a name="UiField+getTemplateString"></a>
 
 ### uiRadioField.getTemplateString() ⇒
+
 The function returns the template string from the props.
 
 **Kind**: instance method of [<code>UiRadioField</code>](#UiRadioField)  
@@ -2779,6 +3045,7 @@ The function returns the template string from the props.
 <a name="UiField+getWrapperTemplateFilename"></a>
 
 ### uiRadioField.getWrapperTemplateFilename() ⇒
+
 The function returns the filename of a UI wrapper template.
 
 **Kind**: instance method of [<code>UiRadioField</code>](#UiRadioField)  
@@ -2787,6 +3054,7 @@ The function returns the filename of a UI wrapper template.
 <a name="UiField+getWrapperTemplateString"></a>
 
 ### uiRadioField.getWrapperTemplateString() ⇒
+
 The function returns the wrapper template string from the props.
 
 **Kind**: instance method of [<code>UiRadioField</code>](#UiRadioField)  
@@ -2795,6 +3063,7 @@ The function returns the wrapper template string from the props.
 <a name="UiField+getValue"></a>
 
 ### uiRadioField.getValue([values]) ⇒
+
 The getValue function returns the value associated with a given name from a provided object.
 
 **Kind**: instance method of [<code>UiRadioField</code>](#UiRadioField)  
@@ -2808,42 +3077,49 @@ The getValue function returns the value associated with a given name from a prov
 <a name="UiRangeField"></a>
 
 ## UiRangeField ⇐ [<code>UiTextField</code>](#UiTextField)
+
 The `UiRangeField` class is a subclass of `UiTextField` that sets the `type` property to 'range'.
 
 **Kind**: global class  
 **Extends**: [<code>UiTextField</code>](#UiTextField)  
 
 * [UiRangeField](#UiRangeField) ⇐ [<code>UiTextField</code>](#UiTextField)
-    * [new UiRangeField(props)](#new_UiRangeField_new)
-    * [.getTemplateFilename()](#UiTextField+getTemplateFilename) ⇒ <code>string</code>
-    * [.render([values])](#UiField+render) ⇒
-    * [.contentRenderer()](#UiField+contentRenderer) ⇒
-    * [.wrapperRenderer()](#UiField+wrapperRenderer) ⇒
-    * [.renderer(props)](#UiField+renderer) ⇒
-    * [.defaultVariables([values])](#UiField+defaultVariables) ⇒
-    * [.variables([values])](#UiField+variables) ⇒
-    * [.getTemplateString()](#UiField+getTemplateString) ⇒
-    * [.getWrapperTemplateFilename()](#UiField+getWrapperTemplateFilename) ⇒
-    * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒
-    * [.getValue([values])](#UiField+getValue) ⇒
+  * [new UiRangeField([props])](#new_UiRangeField_new)
+  * [.getTemplateFilename()](#UiTextField+getTemplateFilename) ⇒ <code>string</code>
+  * [.render([values])](#UiField+render) ⇒
+  * [.contentRenderer()](#UiField+contentRenderer) ⇒
+  * [.wrapperRenderer()](#UiField+wrapperRenderer) ⇒
+  * [.renderer(props)](#UiField+renderer) ⇒
+  * [.defaultVariables([values])](#UiField+defaultVariables) ⇒
+  * [.variables([values])](#UiField+variables) ⇒
+  * [.getTemplateString()](#UiField+getTemplateString) ⇒
+  * [.getWrapperTemplateFilename()](#UiField+getWrapperTemplateFilename) ⇒
+  * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒
+  * [.getValue([values])](#UiField+getValue) ⇒
 
 <a name="new_UiRangeField_new"></a>
 
-### new UiRangeField(props)
+### new UiRangeField([props])
 
-| Param |
-| --- |
-| props | 
+The constructor function sets the type property of the props object to 'range'.
+
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| [props] | <code>object</code> | <code>{}</code> | The `props` parameter is an object that contains the properties and values that are passed to the constructor. In this case, it is set to an empty object `{}` by default. |
 
 <a name="UiTextField+getTemplateFilename"></a>
 
 ### uiRangeField.getTemplateFilename() ⇒ <code>string</code>
+
+The function returns the filename of a UI text template.
+
 **Kind**: instance method of [<code>UiRangeField</code>](#UiRangeField)  
 **Overrides**: [<code>getTemplateFilename</code>](#UiTextField+getTemplateFilename)  
-**Returns**: <code>string</code> - template filename to be used in templates  
+**Returns**: <code>string</code> - The string 'ui-text' is being returned.  
 <a name="UiField+render"></a>
 
 ### uiRangeField.render([values]) ⇒
+
 The `render` function takes in a `values` object, renders the content using a content renderer
 and variables, wraps the rendered content using a wrapper renderer and default variables, and
 returns the final result.
@@ -2860,6 +3136,7 @@ wrapper.
 <a name="UiField+contentRenderer"></a>
 
 ### uiRangeField.contentRenderer() ⇒
+
 The contentRenderer function returns the result of calling the renderer function with certain
 props.
 
@@ -2869,6 +3146,7 @@ props.
 <a name="UiField+wrapperRenderer"></a>
 
 ### uiRangeField.wrapperRenderer() ⇒
+
 The function `wrapperRenderer` returns the result of calling the `renderer` function with
 specific props.
 
@@ -2879,6 +3157,7 @@ function with the `props` object as an argument.
 <a name="UiField+renderer"></a>
 
 ### uiRangeField.renderer(props) ⇒
+
 The function returns a new instance of the UiHandlebarsRenderer class with the given props.
 
 **Kind**: instance method of [<code>UiRangeField</code>](#UiRangeField)  
@@ -2892,6 +3171,7 @@ The function returns a new instance of the UiHandlebarsRenderer class with the g
 <a name="UiField+defaultVariables"></a>
 
 ### uiRangeField.defaultVariables([values]) ⇒
+
 The defaultVariables function returns the props object.
 
 **Kind**: instance method of [<code>UiRangeField</code>](#UiRangeField)  
@@ -2905,6 +3185,7 @@ The defaultVariables function returns the props object.
 <a name="UiField+variables"></a>
 
 ### uiRangeField.variables([values]) ⇒
+
 The function returns a merged object of default variables and a value.
 
 **Kind**: instance method of [<code>UiRangeField</code>](#UiRangeField)  
@@ -2918,6 +3199,7 @@ The function returns a merged object of default variables and a value.
 <a name="UiField+getTemplateString"></a>
 
 ### uiRangeField.getTemplateString() ⇒
+
 The function returns the template string from the props.
 
 **Kind**: instance method of [<code>UiRangeField</code>](#UiRangeField)  
@@ -2926,6 +3208,7 @@ The function returns the template string from the props.
 <a name="UiField+getWrapperTemplateFilename"></a>
 
 ### uiRangeField.getWrapperTemplateFilename() ⇒
+
 The function returns the filename of a UI wrapper template.
 
 **Kind**: instance method of [<code>UiRangeField</code>](#UiRangeField)  
@@ -2934,6 +3217,7 @@ The function returns the filename of a UI wrapper template.
 <a name="UiField+getWrapperTemplateString"></a>
 
 ### uiRangeField.getWrapperTemplateString() ⇒
+
 The function returns the wrapper template string from the props.
 
 **Kind**: instance method of [<code>UiRangeField</code>](#UiRangeField)  
@@ -2942,6 +3226,7 @@ The function returns the wrapper template string from the props.
 <a name="UiField+getValue"></a>
 
 ### uiRangeField.getValue([values]) ⇒
+
 The getValue function returns the value associated with a given name from a provided object.
 
 **Kind**: instance method of [<code>UiRangeField</code>](#UiRangeField)  
@@ -2955,42 +3240,50 @@ The getValue function returns the value associated with a given name from a prov
 <a name="UiSearchField"></a>
 
 ## UiSearchField ⇐ [<code>UiTextField</code>](#UiTextField)
+
 The `UiSearchField` class is a subclass of `UiTextField` that sets the type of the input field to "search".
 
 **Kind**: global class  
 **Extends**: [<code>UiTextField</code>](#UiTextField)  
 
 * [UiSearchField](#UiSearchField) ⇐ [<code>UiTextField</code>](#UiTextField)
-    * [new UiSearchField(props)](#new_UiSearchField_new)
-    * [.getTemplateFilename()](#UiTextField+getTemplateFilename) ⇒ <code>string</code>
-    * [.render([values])](#UiField+render) ⇒
-    * [.contentRenderer()](#UiField+contentRenderer) ⇒
-    * [.wrapperRenderer()](#UiField+wrapperRenderer) ⇒
-    * [.renderer(props)](#UiField+renderer) ⇒
-    * [.defaultVariables([values])](#UiField+defaultVariables) ⇒
-    * [.variables([values])](#UiField+variables) ⇒
-    * [.getTemplateString()](#UiField+getTemplateString) ⇒
-    * [.getWrapperTemplateFilename()](#UiField+getWrapperTemplateFilename) ⇒
-    * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒
-    * [.getValue([values])](#UiField+getValue) ⇒
+  * [new UiSearchField([props])](#new_UiSearchField_new)
+  * [.getTemplateFilename()](#UiTextField+getTemplateFilename) ⇒ <code>string</code>
+  * [.render([values])](#UiField+render) ⇒
+  * [.contentRenderer()](#UiField+contentRenderer) ⇒
+  * [.wrapperRenderer()](#UiField+wrapperRenderer) ⇒
+  * [.renderer(props)](#UiField+renderer) ⇒
+  * [.defaultVariables([values])](#UiField+defaultVariables) ⇒
+  * [.variables([values])](#UiField+variables) ⇒
+  * [.getTemplateString()](#UiField+getTemplateString) ⇒
+  * [.getWrapperTemplateFilename()](#UiField+getWrapperTemplateFilename) ⇒
+  * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒
+  * [.getValue([values])](#UiField+getValue) ⇒
 
 <a name="new_UiSearchField_new"></a>
 
-### new UiSearchField(props)
+### new UiSearchField([props])
 
-| Param |
-| --- |
-| props | 
+The constructor function sets the default value of the "type" property to "search" in the props
+object.
+
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| [props] | <code>object</code> | <code>{}</code> | The `props` parameter is an object that contains the properties passed to the constructor. In this case, it is set to an empty object `{}` by default. |
 
 <a name="UiTextField+getTemplateFilename"></a>
 
 ### uiSearchField.getTemplateFilename() ⇒ <code>string</code>
+
+The function returns the filename of a UI text template.
+
 **Kind**: instance method of [<code>UiSearchField</code>](#UiSearchField)  
 **Overrides**: [<code>getTemplateFilename</code>](#UiTextField+getTemplateFilename)  
-**Returns**: <code>string</code> - template filename to be used in templates  
+**Returns**: <code>string</code> - The string 'ui-text' is being returned.  
 <a name="UiField+render"></a>
 
 ### uiSearchField.render([values]) ⇒
+
 The `render` function takes in a `values` object, renders the content using a content renderer
 and variables, wraps the rendered content using a wrapper renderer and default variables, and
 returns the final result.
@@ -3007,6 +3300,7 @@ wrapper.
 <a name="UiField+contentRenderer"></a>
 
 ### uiSearchField.contentRenderer() ⇒
+
 The contentRenderer function returns the result of calling the renderer function with certain
 props.
 
@@ -3016,6 +3310,7 @@ props.
 <a name="UiField+wrapperRenderer"></a>
 
 ### uiSearchField.wrapperRenderer() ⇒
+
 The function `wrapperRenderer` returns the result of calling the `renderer` function with
 specific props.
 
@@ -3026,6 +3321,7 @@ function with the `props` object as an argument.
 <a name="UiField+renderer"></a>
 
 ### uiSearchField.renderer(props) ⇒
+
 The function returns a new instance of the UiHandlebarsRenderer class with the given props.
 
 **Kind**: instance method of [<code>UiSearchField</code>](#UiSearchField)  
@@ -3039,6 +3335,7 @@ The function returns a new instance of the UiHandlebarsRenderer class with the g
 <a name="UiField+defaultVariables"></a>
 
 ### uiSearchField.defaultVariables([values]) ⇒
+
 The defaultVariables function returns the props object.
 
 **Kind**: instance method of [<code>UiSearchField</code>](#UiSearchField)  
@@ -3052,6 +3349,7 @@ The defaultVariables function returns the props object.
 <a name="UiField+variables"></a>
 
 ### uiSearchField.variables([values]) ⇒
+
 The function returns a merged object of default variables and a value.
 
 **Kind**: instance method of [<code>UiSearchField</code>](#UiSearchField)  
@@ -3065,6 +3363,7 @@ The function returns a merged object of default variables and a value.
 <a name="UiField+getTemplateString"></a>
 
 ### uiSearchField.getTemplateString() ⇒
+
 The function returns the template string from the props.
 
 **Kind**: instance method of [<code>UiSearchField</code>](#UiSearchField)  
@@ -3073,6 +3372,7 @@ The function returns the template string from the props.
 <a name="UiField+getWrapperTemplateFilename"></a>
 
 ### uiSearchField.getWrapperTemplateFilename() ⇒
+
 The function returns the filename of a UI wrapper template.
 
 **Kind**: instance method of [<code>UiSearchField</code>](#UiSearchField)  
@@ -3081,6 +3381,7 @@ The function returns the filename of a UI wrapper template.
 <a name="UiField+getWrapperTemplateString"></a>
 
 ### uiSearchField.getWrapperTemplateString() ⇒
+
 The function returns the wrapper template string from the props.
 
 **Kind**: instance method of [<code>UiSearchField</code>](#UiSearchField)  
@@ -3089,6 +3390,7 @@ The function returns the wrapper template string from the props.
 <a name="UiField+getValue"></a>
 
 ### uiSearchField.getValue([values]) ⇒
+
 The getValue function returns the value associated with a given name from a provided object.
 
 **Kind**: instance method of [<code>UiSearchField</code>](#UiSearchField)  
@@ -3102,6 +3404,7 @@ The getValue function returns the value associated with a given name from a prov
 <a name="UiSelectField"></a>
 
 ## UiSelectField ⇐ [<code>UiFieldWithOptions</code>](#UiFieldWithOptions)
+
 The UiSelectField class is a subclass of UiFieldWithOptions that represents a select field in a user
 interface.
 
@@ -3109,32 +3412,35 @@ interface.
 **Extends**: [<code>UiFieldWithOptions</code>](#UiFieldWithOptions)  
 
 * [UiSelectField](#UiSelectField) ⇐ [<code>UiFieldWithOptions</code>](#UiFieldWithOptions)
-    * [new UiSelectField(props)](#new_UiSelectField_new)
-    * [.getValue([values])](#UiFieldWithOptions+getValue) ⇒
-    * [.defaultVariables([values])](#UiFieldWithOptions+defaultVariables) ⇒
-    * [.buildItems(fieldValue)](#UiFieldWithOptions+buildItems) ⇒
-    * [.isOptionValueChecked(fieldValue, optionValue)](#UiFieldWithOptions+isOptionValueChecked) ⇒
-    * [.render([values])](#UiField+render) ⇒
-    * [.contentRenderer()](#UiField+contentRenderer) ⇒
-    * [.wrapperRenderer()](#UiField+wrapperRenderer) ⇒
-    * [.renderer(props)](#UiField+renderer) ⇒
-    * [.variables([values])](#UiField+variables) ⇒
-    * [.getTemplateFilename()](#UiField+getTemplateFilename) ⇒ <code>string</code>
-    * [.getTemplateString()](#UiField+getTemplateString) ⇒
-    * [.getWrapperTemplateFilename()](#UiField+getWrapperTemplateFilename) ⇒
-    * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒
+  * [new UiSelectField([props])](#new_UiSelectField_new)
+  * [.getValue([values])](#UiFieldWithOptions+getValue) ⇒
+  * [.defaultVariables([values])](#UiFieldWithOptions+defaultVariables) ⇒
+  * [.buildItems(fieldValue)](#UiFieldWithOptions+buildItems) ⇒
+  * [.isOptionValueChecked(fieldValue, optionValue)](#UiFieldWithOptions+isOptionValueChecked) ⇒
+  * [.render([values])](#UiField+render) ⇒
+  * [.contentRenderer()](#UiField+contentRenderer) ⇒
+  * [.wrapperRenderer()](#UiField+wrapperRenderer) ⇒
+  * [.renderer(props)](#UiField+renderer) ⇒
+  * [.variables([values])](#UiField+variables) ⇒
+  * [.getTemplateFilename()](#UiField+getTemplateFilename) ⇒ <code>string</code>
+  * [.getTemplateString()](#UiField+getTemplateString) ⇒
+  * [.getWrapperTemplateFilename()](#UiField+getWrapperTemplateFilename) ⇒
+  * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒
 
 <a name="new_UiSelectField_new"></a>
 
-### new UiSelectField(props)
+### new UiSelectField([props])
 
-| Param |
-| --- |
-| props | 
+The constructor function sets the type property of the props object to 'select'.
+
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| [props] | <code>object</code> | <code>{}</code> | The `props` parameter is an object that contains the properties and values that are passed to the constructor. In this case, it is set to an empty object `{}` by default. |
 
 <a name="UiFieldWithOptions+getValue"></a>
 
 ### uiSelectField.getValue([values]) ⇒
+
 The function `getValue` takes an object as an argument and returns an array containing the
 values of the object, or an empty array if the values are undefined.
 
@@ -3149,6 +3455,7 @@ values of the object, or an empty array if the values are undefined.
 <a name="UiFieldWithOptions+defaultVariables"></a>
 
 ### uiSelectField.defaultVariables([values]) ⇒
+
 The function `defaultVariables` returns an object with default variables, including an `items`
 property that is built based on a field value.
 
@@ -3165,6 +3472,7 @@ with the "fieldValue" as an argument.
 <a name="UiFieldWithOptions+buildItems"></a>
 
 ### uiSelectField.buildItems(fieldValue) ⇒
+
 The function "buildItems" takes a fieldValue and returns an array of objects with label, value,
 and checked properties based on the options provided.
 
@@ -3182,6 +3490,7 @@ to the `value` property of the corresponding option object. The `checked` proper
 <a name="UiFieldWithOptions+isOptionValueChecked"></a>
 
 ### uiSelectField.isOptionValueChecked(fieldValue, optionValue) ⇒
+
 The function checks if a specific option value is included in a given field value.
 
 **Kind**: instance method of [<code>UiSelectField</code>](#UiSelectField)  
@@ -3196,6 +3505,7 @@ The function checks if a specific option value is included in a given field valu
 <a name="UiField+render"></a>
 
 ### uiSelectField.render([values]) ⇒
+
 The `render` function takes in a `values` object, renders the content using a content renderer
 and variables, wraps the rendered content using a wrapper renderer and default variables, and
 returns the final result.
@@ -3212,6 +3522,7 @@ wrapper.
 <a name="UiField+contentRenderer"></a>
 
 ### uiSelectField.contentRenderer() ⇒
+
 The contentRenderer function returns the result of calling the renderer function with certain
 props.
 
@@ -3221,6 +3532,7 @@ props.
 <a name="UiField+wrapperRenderer"></a>
 
 ### uiSelectField.wrapperRenderer() ⇒
+
 The function `wrapperRenderer` returns the result of calling the `renderer` function with
 specific props.
 
@@ -3231,6 +3543,7 @@ function with the `props` object as an argument.
 <a name="UiField+renderer"></a>
 
 ### uiSelectField.renderer(props) ⇒
+
 The function returns a new instance of the UiHandlebarsRenderer class with the given props.
 
 **Kind**: instance method of [<code>UiSelectField</code>](#UiSelectField)  
@@ -3244,6 +3557,7 @@ The function returns a new instance of the UiHandlebarsRenderer class with the g
 <a name="UiField+variables"></a>
 
 ### uiSelectField.variables([values]) ⇒
+
 The function returns a merged object of default variables and a value.
 
 **Kind**: instance method of [<code>UiSelectField</code>](#UiSelectField)  
@@ -3257,6 +3571,7 @@ The function returns a merged object of default variables and a value.
 <a name="UiField+getTemplateFilename"></a>
 
 ### uiSelectField.getTemplateFilename() ⇒ <code>string</code>
+
 The function returns a template filename based on the type property.
 
 **Kind**: instance method of [<code>UiSelectField</code>](#UiSelectField)  
@@ -3265,6 +3580,7 @@ The function returns a template filename based on the type property.
 <a name="UiField+getTemplateString"></a>
 
 ### uiSelectField.getTemplateString() ⇒
+
 The function returns the template string from the props.
 
 **Kind**: instance method of [<code>UiSelectField</code>](#UiSelectField)  
@@ -3273,6 +3589,7 @@ The function returns the template string from the props.
 <a name="UiField+getWrapperTemplateFilename"></a>
 
 ### uiSelectField.getWrapperTemplateFilename() ⇒
+
 The function returns the filename of a UI wrapper template.
 
 **Kind**: instance method of [<code>UiSelectField</code>](#UiSelectField)  
@@ -3281,6 +3598,7 @@ The function returns the filename of a UI wrapper template.
 <a name="UiField+getWrapperTemplateString"></a>
 
 ### uiSelectField.getWrapperTemplateString() ⇒
+
 The function returns the wrapper template string from the props.
 
 **Kind**: instance method of [<code>UiSelectField</code>](#UiSelectField)  
@@ -3289,42 +3607,49 @@ The function returns the wrapper template string from the props.
 <a name="UiTelField"></a>
 
 ## UiTelField ⇐ [<code>UiTextField</code>](#UiTextField)
+
 The UiTelField class is a subclass of UiTextField that sets the type of the input field to 'tel'.
 
 **Kind**: global class  
 **Extends**: [<code>UiTextField</code>](#UiTextField)  
 
 * [UiTelField](#UiTelField) ⇐ [<code>UiTextField</code>](#UiTextField)
-    * [new UiTelField(props)](#new_UiTelField_new)
-    * [.getTemplateFilename()](#UiTextField+getTemplateFilename) ⇒ <code>string</code>
-    * [.render([values])](#UiField+render) ⇒
-    * [.contentRenderer()](#UiField+contentRenderer) ⇒
-    * [.wrapperRenderer()](#UiField+wrapperRenderer) ⇒
-    * [.renderer(props)](#UiField+renderer) ⇒
-    * [.defaultVariables([values])](#UiField+defaultVariables) ⇒
-    * [.variables([values])](#UiField+variables) ⇒
-    * [.getTemplateString()](#UiField+getTemplateString) ⇒
-    * [.getWrapperTemplateFilename()](#UiField+getWrapperTemplateFilename) ⇒
-    * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒
-    * [.getValue([values])](#UiField+getValue) ⇒
+  * [new UiTelField([props])](#new_UiTelField_new)
+  * [.getTemplateFilename()](#UiTextField+getTemplateFilename) ⇒ <code>string</code>
+  * [.render([values])](#UiField+render) ⇒
+  * [.contentRenderer()](#UiField+contentRenderer) ⇒
+  * [.wrapperRenderer()](#UiField+wrapperRenderer) ⇒
+  * [.renderer(props)](#UiField+renderer) ⇒
+  * [.defaultVariables([values])](#UiField+defaultVariables) ⇒
+  * [.variables([values])](#UiField+variables) ⇒
+  * [.getTemplateString()](#UiField+getTemplateString) ⇒
+  * [.getWrapperTemplateFilename()](#UiField+getWrapperTemplateFilename) ⇒
+  * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒
+  * [.getValue([values])](#UiField+getValue) ⇒
 
 <a name="new_UiTelField_new"></a>
 
-### new UiTelField(props)
+### new UiTelField([props])
 
-| Param |
-| --- |
-| props | 
+The constructor function sets the type of the props object to 'tel' by default.
+
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| [props] | <code>object</code> | <code>{}</code> | The `props` parameter is an object that contains the properties passed to the component. In this case, it is an optional parameter with a default value of an empty object `{}`. |
 
 <a name="UiTextField+getTemplateFilename"></a>
 
 ### uiTelField.getTemplateFilename() ⇒ <code>string</code>
+
+The function returns the filename of a UI text template.
+
 **Kind**: instance method of [<code>UiTelField</code>](#UiTelField)  
 **Overrides**: [<code>getTemplateFilename</code>](#UiTextField+getTemplateFilename)  
-**Returns**: <code>string</code> - template filename to be used in templates  
+**Returns**: <code>string</code> - The string 'ui-text' is being returned.  
 <a name="UiField+render"></a>
 
 ### uiTelField.render([values]) ⇒
+
 The `render` function takes in a `values` object, renders the content using a content renderer
 and variables, wraps the rendered content using a wrapper renderer and default variables, and
 returns the final result.
@@ -3341,6 +3666,7 @@ wrapper.
 <a name="UiField+contentRenderer"></a>
 
 ### uiTelField.contentRenderer() ⇒
+
 The contentRenderer function returns the result of calling the renderer function with certain
 props.
 
@@ -3350,6 +3676,7 @@ props.
 <a name="UiField+wrapperRenderer"></a>
 
 ### uiTelField.wrapperRenderer() ⇒
+
 The function `wrapperRenderer` returns the result of calling the `renderer` function with
 specific props.
 
@@ -3360,6 +3687,7 @@ function with the `props` object as an argument.
 <a name="UiField+renderer"></a>
 
 ### uiTelField.renderer(props) ⇒
+
 The function returns a new instance of the UiHandlebarsRenderer class with the given props.
 
 **Kind**: instance method of [<code>UiTelField</code>](#UiTelField)  
@@ -3373,6 +3701,7 @@ The function returns a new instance of the UiHandlebarsRenderer class with the g
 <a name="UiField+defaultVariables"></a>
 
 ### uiTelField.defaultVariables([values]) ⇒
+
 The defaultVariables function returns the props object.
 
 **Kind**: instance method of [<code>UiTelField</code>](#UiTelField)  
@@ -3386,6 +3715,7 @@ The defaultVariables function returns the props object.
 <a name="UiField+variables"></a>
 
 ### uiTelField.variables([values]) ⇒
+
 The function returns a merged object of default variables and a value.
 
 **Kind**: instance method of [<code>UiTelField</code>](#UiTelField)  
@@ -3399,6 +3729,7 @@ The function returns a merged object of default variables and a value.
 <a name="UiField+getTemplateString"></a>
 
 ### uiTelField.getTemplateString() ⇒
+
 The function returns the template string from the props.
 
 **Kind**: instance method of [<code>UiTelField</code>](#UiTelField)  
@@ -3407,6 +3738,7 @@ The function returns the template string from the props.
 <a name="UiField+getWrapperTemplateFilename"></a>
 
 ### uiTelField.getWrapperTemplateFilename() ⇒
+
 The function returns the filename of a UI wrapper template.
 
 **Kind**: instance method of [<code>UiTelField</code>](#UiTelField)  
@@ -3415,6 +3747,7 @@ The function returns the filename of a UI wrapper template.
 <a name="UiField+getWrapperTemplateString"></a>
 
 ### uiTelField.getWrapperTemplateString() ⇒
+
 The function returns the wrapper template string from the props.
 
 **Kind**: instance method of [<code>UiTelField</code>](#UiTelField)  
@@ -3423,6 +3756,7 @@ The function returns the wrapper template string from the props.
 <a name="UiField+getValue"></a>
 
 ### uiTelField.getValue([values]) ⇒
+
 The getValue function returns the value associated with a given name from a provided object.
 
 **Kind**: instance method of [<code>UiTelField</code>](#UiTelField)  
@@ -3436,36 +3770,40 @@ The getValue function returns the value associated with a given name from a prov
 <a name="UiTextareaField"></a>
 
 ## UiTextareaField ⇐ [<code>UiField</code>](#UiField)
+
 The `UiTextareaField` class is a subclass of `UiField` that represents a textarea input field in a user interface.
 
 **Kind**: global class  
 **Extends**: [<code>UiField</code>](#UiField)  
 
 * [UiTextareaField](#UiTextareaField) ⇐ [<code>UiField</code>](#UiField)
-    * [new UiTextareaField(props)](#new_UiTextareaField_new)
-    * [.render([values])](#UiField+render) ⇒
-    * [.contentRenderer()](#UiField+contentRenderer) ⇒
-    * [.wrapperRenderer()](#UiField+wrapperRenderer) ⇒
-    * [.renderer(props)](#UiField+renderer) ⇒
-    * [.defaultVariables([values])](#UiField+defaultVariables) ⇒
-    * [.variables([values])](#UiField+variables) ⇒
-    * [.getTemplateFilename()](#UiField+getTemplateFilename) ⇒ <code>string</code>
-    * [.getTemplateString()](#UiField+getTemplateString) ⇒
-    * [.getWrapperTemplateFilename()](#UiField+getWrapperTemplateFilename) ⇒
-    * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒
-    * [.getValue([values])](#UiField+getValue) ⇒
+  * [new UiTextareaField([props])](#new_UiTextareaField_new)
+  * [.render([values])](#UiField+render) ⇒
+  * [.contentRenderer()](#UiField+contentRenderer) ⇒
+  * [.wrapperRenderer()](#UiField+wrapperRenderer) ⇒
+  * [.renderer(props)](#UiField+renderer) ⇒
+  * [.defaultVariables([values])](#UiField+defaultVariables) ⇒
+  * [.variables([values])](#UiField+variables) ⇒
+  * [.getTemplateFilename()](#UiField+getTemplateFilename) ⇒ <code>string</code>
+  * [.getTemplateString()](#UiField+getTemplateString) ⇒
+  * [.getWrapperTemplateFilename()](#UiField+getWrapperTemplateFilename) ⇒
+  * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒
+  * [.getValue([values])](#UiField+getValue) ⇒
 
 <a name="new_UiTextareaField_new"></a>
 
-### new UiTextareaField(props)
+### new UiTextareaField([props])
 
-| Param |
-| --- |
-| props | 
+The constructor function sets the type property of the props object to 'textarea'.
+
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| [props] | <code>object</code> | <code>{}</code> | The `props` parameter is an object that contains the properties and values that are passed to the constructor. In this case, it is set to an empty object `{}` by default. |
 
 <a name="UiField+render"></a>
 
 ### uiTextareaField.render([values]) ⇒
+
 The `render` function takes in a `values` object, renders the content using a content renderer
 and variables, wraps the rendered content using a wrapper renderer and default variables, and
 returns the final result.
@@ -3482,6 +3820,7 @@ wrapper.
 <a name="UiField+contentRenderer"></a>
 
 ### uiTextareaField.contentRenderer() ⇒
+
 The contentRenderer function returns the result of calling the renderer function with certain
 props.
 
@@ -3491,6 +3830,7 @@ props.
 <a name="UiField+wrapperRenderer"></a>
 
 ### uiTextareaField.wrapperRenderer() ⇒
+
 The function `wrapperRenderer` returns the result of calling the `renderer` function with
 specific props.
 
@@ -3501,6 +3841,7 @@ function with the `props` object as an argument.
 <a name="UiField+renderer"></a>
 
 ### uiTextareaField.renderer(props) ⇒
+
 The function returns a new instance of the UiHandlebarsRenderer class with the given props.
 
 **Kind**: instance method of [<code>UiTextareaField</code>](#UiTextareaField)  
@@ -3514,6 +3855,7 @@ The function returns a new instance of the UiHandlebarsRenderer class with the g
 <a name="UiField+defaultVariables"></a>
 
 ### uiTextareaField.defaultVariables([values]) ⇒
+
 The defaultVariables function returns the props object.
 
 **Kind**: instance method of [<code>UiTextareaField</code>](#UiTextareaField)  
@@ -3527,6 +3869,7 @@ The defaultVariables function returns the props object.
 <a name="UiField+variables"></a>
 
 ### uiTextareaField.variables([values]) ⇒
+
 The function returns a merged object of default variables and a value.
 
 **Kind**: instance method of [<code>UiTextareaField</code>](#UiTextareaField)  
@@ -3540,6 +3883,7 @@ The function returns a merged object of default variables and a value.
 <a name="UiField+getTemplateFilename"></a>
 
 ### uiTextareaField.getTemplateFilename() ⇒ <code>string</code>
+
 The function returns a template filename based on the type property.
 
 **Kind**: instance method of [<code>UiTextareaField</code>](#UiTextareaField)  
@@ -3548,6 +3892,7 @@ The function returns a template filename based on the type property.
 <a name="UiField+getTemplateString"></a>
 
 ### uiTextareaField.getTemplateString() ⇒
+
 The function returns the template string from the props.
 
 **Kind**: instance method of [<code>UiTextareaField</code>](#UiTextareaField)  
@@ -3556,6 +3901,7 @@ The function returns the template string from the props.
 <a name="UiField+getWrapperTemplateFilename"></a>
 
 ### uiTextareaField.getWrapperTemplateFilename() ⇒
+
 The function returns the filename of a UI wrapper template.
 
 **Kind**: instance method of [<code>UiTextareaField</code>](#UiTextareaField)  
@@ -3564,6 +3910,7 @@ The function returns the filename of a UI wrapper template.
 <a name="UiField+getWrapperTemplateString"></a>
 
 ### uiTextareaField.getWrapperTemplateString() ⇒
+
 The function returns the wrapper template string from the props.
 
 **Kind**: instance method of [<code>UiTextareaField</code>](#UiTextareaField)  
@@ -3572,6 +3919,7 @@ The function returns the wrapper template string from the props.
 <a name="UiField+getValue"></a>
 
 ### uiTextareaField.getValue([values]) ⇒
+
 The getValue function returns the value associated with a given name from a provided object.
 
 **Kind**: instance method of [<code>UiTextareaField</code>](#UiTextareaField)  
@@ -3585,42 +3933,49 @@ The getValue function returns the value associated with a given name from a prov
 <a name="UiTimeField"></a>
 
 ## UiTimeField ⇐ [<code>UiTextField</code>](#UiTextField)
+
 The UiTimeField class is a subclass of UiTextField that sets the type of the input field to 'time'.
 
 **Kind**: global class  
 **Extends**: [<code>UiTextField</code>](#UiTextField)  
 
 * [UiTimeField](#UiTimeField) ⇐ [<code>UiTextField</code>](#UiTextField)
-    * [new UiTimeField(props)](#new_UiTimeField_new)
-    * [.getTemplateFilename()](#UiTextField+getTemplateFilename) ⇒ <code>string</code>
-    * [.render([values])](#UiField+render) ⇒
-    * [.contentRenderer()](#UiField+contentRenderer) ⇒
-    * [.wrapperRenderer()](#UiField+wrapperRenderer) ⇒
-    * [.renderer(props)](#UiField+renderer) ⇒
-    * [.defaultVariables([values])](#UiField+defaultVariables) ⇒
-    * [.variables([values])](#UiField+variables) ⇒
-    * [.getTemplateString()](#UiField+getTemplateString) ⇒
-    * [.getWrapperTemplateFilename()](#UiField+getWrapperTemplateFilename) ⇒
-    * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒
-    * [.getValue([values])](#UiField+getValue) ⇒
+  * [new UiTimeField([props])](#new_UiTimeField_new)
+  * [.getTemplateFilename()](#UiTextField+getTemplateFilename) ⇒ <code>string</code>
+  * [.render([values])](#UiField+render) ⇒
+  * [.contentRenderer()](#UiField+contentRenderer) ⇒
+  * [.wrapperRenderer()](#UiField+wrapperRenderer) ⇒
+  * [.renderer(props)](#UiField+renderer) ⇒
+  * [.defaultVariables([values])](#UiField+defaultVariables) ⇒
+  * [.variables([values])](#UiField+variables) ⇒
+  * [.getTemplateString()](#UiField+getTemplateString) ⇒
+  * [.getWrapperTemplateFilename()](#UiField+getWrapperTemplateFilename) ⇒
+  * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒
+  * [.getValue([values])](#UiField+getValue) ⇒
 
 <a name="new_UiTimeField_new"></a>
 
-### new UiTimeField(props)
+### new UiTimeField([props])
 
-| Param |
-| --- |
-| props | 
+The constructor function sets the type property of the props object to 'time'.
+
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| [props] | <code>object</code> | <code>{}</code> | props is an object that contains the properties passed to the constructor. It is an optional parameter and if no value is provided, an empty object is assigned as the default value. |
 
 <a name="UiTextField+getTemplateFilename"></a>
 
 ### uiTimeField.getTemplateFilename() ⇒ <code>string</code>
+
+The function returns the filename of a UI text template.
+
 **Kind**: instance method of [<code>UiTimeField</code>](#UiTimeField)  
 **Overrides**: [<code>getTemplateFilename</code>](#UiTextField+getTemplateFilename)  
-**Returns**: <code>string</code> - template filename to be used in templates  
+**Returns**: <code>string</code> - The string 'ui-text' is being returned.  
 <a name="UiField+render"></a>
 
 ### uiTimeField.render([values]) ⇒
+
 The `render` function takes in a `values` object, renders the content using a content renderer
 and variables, wraps the rendered content using a wrapper renderer and default variables, and
 returns the final result.
@@ -3637,6 +3992,7 @@ wrapper.
 <a name="UiField+contentRenderer"></a>
 
 ### uiTimeField.contentRenderer() ⇒
+
 The contentRenderer function returns the result of calling the renderer function with certain
 props.
 
@@ -3646,6 +4002,7 @@ props.
 <a name="UiField+wrapperRenderer"></a>
 
 ### uiTimeField.wrapperRenderer() ⇒
+
 The function `wrapperRenderer` returns the result of calling the `renderer` function with
 specific props.
 
@@ -3656,6 +4013,7 @@ function with the `props` object as an argument.
 <a name="UiField+renderer"></a>
 
 ### uiTimeField.renderer(props) ⇒
+
 The function returns a new instance of the UiHandlebarsRenderer class with the given props.
 
 **Kind**: instance method of [<code>UiTimeField</code>](#UiTimeField)  
@@ -3669,6 +4027,7 @@ The function returns a new instance of the UiHandlebarsRenderer class with the g
 <a name="UiField+defaultVariables"></a>
 
 ### uiTimeField.defaultVariables([values]) ⇒
+
 The defaultVariables function returns the props object.
 
 **Kind**: instance method of [<code>UiTimeField</code>](#UiTimeField)  
@@ -3682,6 +4041,7 @@ The defaultVariables function returns the props object.
 <a name="UiField+variables"></a>
 
 ### uiTimeField.variables([values]) ⇒
+
 The function returns a merged object of default variables and a value.
 
 **Kind**: instance method of [<code>UiTimeField</code>](#UiTimeField)  
@@ -3695,6 +4055,7 @@ The function returns a merged object of default variables and a value.
 <a name="UiField+getTemplateString"></a>
 
 ### uiTimeField.getTemplateString() ⇒
+
 The function returns the template string from the props.
 
 **Kind**: instance method of [<code>UiTimeField</code>](#UiTimeField)  
@@ -3703,6 +4064,7 @@ The function returns the template string from the props.
 <a name="UiField+getWrapperTemplateFilename"></a>
 
 ### uiTimeField.getWrapperTemplateFilename() ⇒
+
 The function returns the filename of a UI wrapper template.
 
 **Kind**: instance method of [<code>UiTimeField</code>](#UiTimeField)  
@@ -3711,6 +4073,7 @@ The function returns the filename of a UI wrapper template.
 <a name="UiField+getWrapperTemplateString"></a>
 
 ### uiTimeField.getWrapperTemplateString() ⇒
+
 The function returns the wrapper template string from the props.
 
 **Kind**: instance method of [<code>UiTimeField</code>](#UiTimeField)  
@@ -3719,6 +4082,7 @@ The function returns the wrapper template string from the props.
 <a name="UiField+getValue"></a>
 
 ### uiTimeField.getValue([values]) ⇒
+
 The getValue function returns the value associated with a given name from a provided object.
 
 **Kind**: instance method of [<code>UiTimeField</code>](#UiTimeField)  
@@ -3732,42 +4096,50 @@ The getValue function returns the value associated with a given name from a prov
 <a name="UiUrlField"></a>
 
 ## UiUrlField ⇐ [<code>UiTextField</code>](#UiTextField)
+
 The `UiUrlField` class is a subclass of `UiTextField` that sets the input type to 'url'.
 
 **Kind**: global class  
 **Extends**: [<code>UiTextField</code>](#UiTextField)  
 
 * [UiUrlField](#UiUrlField) ⇐ [<code>UiTextField</code>](#UiTextField)
-    * [new UiUrlField(props)](#new_UiUrlField_new)
-    * [.getTemplateFilename()](#UiTextField+getTemplateFilename) ⇒ <code>string</code>
-    * [.render([values])](#UiField+render) ⇒
-    * [.contentRenderer()](#UiField+contentRenderer) ⇒
-    * [.wrapperRenderer()](#UiField+wrapperRenderer) ⇒
-    * [.renderer(props)](#UiField+renderer) ⇒
-    * [.defaultVariables([values])](#UiField+defaultVariables) ⇒
-    * [.variables([values])](#UiField+variables) ⇒
-    * [.getTemplateString()](#UiField+getTemplateString) ⇒
-    * [.getWrapperTemplateFilename()](#UiField+getWrapperTemplateFilename) ⇒
-    * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒
-    * [.getValue([values])](#UiField+getValue) ⇒
+  * [new UiUrlField([props])](#new_UiUrlField_new)
+  * [.getTemplateFilename()](#UiTextField+getTemplateFilename) ⇒ <code>string</code>
+  * [.render([values])](#UiField+render) ⇒
+  * [.contentRenderer()](#UiField+contentRenderer) ⇒
+  * [.wrapperRenderer()](#UiField+wrapperRenderer) ⇒
+  * [.renderer(props)](#UiField+renderer) ⇒
+  * [.defaultVariables([values])](#UiField+defaultVariables) ⇒
+  * [.variables([values])](#UiField+variables) ⇒
+  * [.getTemplateString()](#UiField+getTemplateString) ⇒
+  * [.getWrapperTemplateFilename()](#UiField+getWrapperTemplateFilename) ⇒
+  * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒
+  * [.getValue([values])](#UiField+getValue) ⇒
 
 <a name="new_UiUrlField_new"></a>
 
-### new UiUrlField(props)
+### new UiUrlField([props])
 
-| Param |
-| --- |
-| props | 
+The constructor function sets the default value of the "type" property to "url" in the props
+object.
+
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| [props] | <code>object</code> | <code>{}</code> | The `props` parameter is an object that contains the properties and values that are passed to the constructor. In this case, it is set to an empty object `{}` by default. |
 
 <a name="UiTextField+getTemplateFilename"></a>
 
 ### uiUrlField.getTemplateFilename() ⇒ <code>string</code>
+
+The function returns the filename of a UI text template.
+
 **Kind**: instance method of [<code>UiUrlField</code>](#UiUrlField)  
 **Overrides**: [<code>getTemplateFilename</code>](#UiTextField+getTemplateFilename)  
-**Returns**: <code>string</code> - template filename to be used in templates  
+**Returns**: <code>string</code> - The string 'ui-text' is being returned.  
 <a name="UiField+render"></a>
 
 ### uiUrlField.render([values]) ⇒
+
 The `render` function takes in a `values` object, renders the content using a content renderer
 and variables, wraps the rendered content using a wrapper renderer and default variables, and
 returns the final result.
@@ -3784,6 +4156,7 @@ wrapper.
 <a name="UiField+contentRenderer"></a>
 
 ### uiUrlField.contentRenderer() ⇒
+
 The contentRenderer function returns the result of calling the renderer function with certain
 props.
 
@@ -3793,6 +4166,7 @@ props.
 <a name="UiField+wrapperRenderer"></a>
 
 ### uiUrlField.wrapperRenderer() ⇒
+
 The function `wrapperRenderer` returns the result of calling the `renderer` function with
 specific props.
 
@@ -3803,6 +4177,7 @@ function with the `props` object as an argument.
 <a name="UiField+renderer"></a>
 
 ### uiUrlField.renderer(props) ⇒
+
 The function returns a new instance of the UiHandlebarsRenderer class with the given props.
 
 **Kind**: instance method of [<code>UiUrlField</code>](#UiUrlField)  
@@ -3816,6 +4191,7 @@ The function returns a new instance of the UiHandlebarsRenderer class with the g
 <a name="UiField+defaultVariables"></a>
 
 ### uiUrlField.defaultVariables([values]) ⇒
+
 The defaultVariables function returns the props object.
 
 **Kind**: instance method of [<code>UiUrlField</code>](#UiUrlField)  
@@ -3829,6 +4205,7 @@ The defaultVariables function returns the props object.
 <a name="UiField+variables"></a>
 
 ### uiUrlField.variables([values]) ⇒
+
 The function returns a merged object of default variables and a value.
 
 **Kind**: instance method of [<code>UiUrlField</code>](#UiUrlField)  
@@ -3842,6 +4219,7 @@ The function returns a merged object of default variables and a value.
 <a name="UiField+getTemplateString"></a>
 
 ### uiUrlField.getTemplateString() ⇒
+
 The function returns the template string from the props.
 
 **Kind**: instance method of [<code>UiUrlField</code>](#UiUrlField)  
@@ -3850,6 +4228,7 @@ The function returns the template string from the props.
 <a name="UiField+getWrapperTemplateFilename"></a>
 
 ### uiUrlField.getWrapperTemplateFilename() ⇒
+
 The function returns the filename of a UI wrapper template.
 
 **Kind**: instance method of [<code>UiUrlField</code>](#UiUrlField)  
@@ -3858,6 +4237,7 @@ The function returns the filename of a UI wrapper template.
 <a name="UiField+getWrapperTemplateString"></a>
 
 ### uiUrlField.getWrapperTemplateString() ⇒
+
 The function returns the wrapper template string from the props.
 
 **Kind**: instance method of [<code>UiUrlField</code>](#UiUrlField)  
@@ -3866,6 +4246,7 @@ The function returns the wrapper template string from the props.
 <a name="UiField+getValue"></a>
 
 ### uiUrlField.getValue([values]) ⇒
+
 The getValue function returns the value associated with a given name from a provided object.
 
 **Kind**: instance method of [<code>UiUrlField</code>](#UiUrlField)  
@@ -3879,15 +4260,16 @@ The getValue function returns the value associated with a given name from a prov
 <a name="UiFieldBase"></a>
 
 ## UiFieldBase
+
 The UiFieldBase class is a JavaScript class that sets default values for label, required, name, type, and id, and assigns the props object to this.props.
 
 **Kind**: global class  
 <a name="new_UiFieldBase_new"></a>
 
 ### new UiFieldBase(props)
+
 The constructor function takes in props and sets default values for label, required, name, type,
 and id, and then assigns the props object to this.props.
-
 
 | Param | Description |
 | --- | --- |
@@ -3896,30 +4278,31 @@ and id, and then assigns the props object to this.props.
 <a name="UiField"></a>
 
 ## UiField
+
 The `UiField` class is a JavaScript class that renders content and wraps it using a content renderer and a wrapper renderer.
 
 **Kind**: global class  
 
 * [UiField](#UiField)
-    * [new UiField([props])](#new_UiField_new)
-    * [.render([values])](#UiField+render) ⇒
-    * [.contentRenderer()](#UiField+contentRenderer) ⇒
-    * [.wrapperRenderer()](#UiField+wrapperRenderer) ⇒
-    * [.renderer(props)](#UiField+renderer) ⇒
-    * [.defaultVariables([values])](#UiField+defaultVariables) ⇒
-    * [.variables([values])](#UiField+variables) ⇒
-    * [.getTemplateFilename()](#UiField+getTemplateFilename) ⇒ <code>string</code>
-    * [.getTemplateString()](#UiField+getTemplateString) ⇒
-    * [.getWrapperTemplateFilename()](#UiField+getWrapperTemplateFilename) ⇒
-    * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒
-    * [.getValue([values])](#UiField+getValue) ⇒
+  * [new UiField([props])](#new_UiField_new)
+  * [.render([values])](#UiField+render) ⇒
+  * [.contentRenderer()](#UiField+contentRenderer) ⇒
+  * [.wrapperRenderer()](#UiField+wrapperRenderer) ⇒
+  * [.renderer(props)](#UiField+renderer) ⇒
+  * [.defaultVariables([values])](#UiField+defaultVariables) ⇒
+  * [.variables([values])](#UiField+variables) ⇒
+  * [.getTemplateFilename()](#UiField+getTemplateFilename) ⇒ <code>string</code>
+  * [.getTemplateString()](#UiField+getTemplateString) ⇒
+  * [.getWrapperTemplateFilename()](#UiField+getWrapperTemplateFilename) ⇒
+  * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒
+  * [.getValue([values])](#UiField+getValue) ⇒
 
 <a name="new_UiField_new"></a>
 
 ### new UiField([props])
+
 The constructor function sets the default value of the "useTemplateFilename" property to true if
 it is not provided in the props object.
-
 
 | Param | Description |
 | --- | --- |
@@ -3928,6 +4311,7 @@ it is not provided in the props object.
 <a name="UiField+render"></a>
 
 ### uiField.render([values]) ⇒
+
 The `render` function takes in a `values` object, renders the content using a content renderer
 and variables, wraps the rendered content using a wrapper renderer and default variables, and
 returns the final result.
@@ -3943,6 +4327,7 @@ wrapper.
 <a name="UiField+contentRenderer"></a>
 
 ### uiField.contentRenderer() ⇒
+
 The contentRenderer function returns the result of calling the renderer function with certain
 props.
 
@@ -3951,6 +4336,7 @@ props.
 <a name="UiField+wrapperRenderer"></a>
 
 ### uiField.wrapperRenderer() ⇒
+
 The function `wrapperRenderer` returns the result of calling the `renderer` function with
 specific props.
 
@@ -3960,6 +4346,7 @@ function with the `props` object as an argument.
 <a name="UiField+renderer"></a>
 
 ### uiField.renderer(props) ⇒
+
 The function returns a new instance of the UiHandlebarsRenderer class with the given props.
 
 **Kind**: instance method of [<code>UiField</code>](#UiField)  
@@ -3972,6 +4359,7 @@ The function returns a new instance of the UiHandlebarsRenderer class with the g
 <a name="UiField+defaultVariables"></a>
 
 ### uiField.defaultVariables([values]) ⇒
+
 The defaultVariables function returns the props object.
 
 **Kind**: instance method of [<code>UiField</code>](#UiField)  
@@ -3984,6 +4372,7 @@ The defaultVariables function returns the props object.
 <a name="UiField+variables"></a>
 
 ### uiField.variables([values]) ⇒
+
 The function returns a merged object of default variables and a value.
 
 **Kind**: instance method of [<code>UiField</code>](#UiField)  
@@ -3996,6 +4385,7 @@ The function returns a merged object of default variables and a value.
 <a name="UiField+getTemplateFilename"></a>
 
 ### uiField.getTemplateFilename() ⇒ <code>string</code>
+
 The function returns a template filename based on the type property.
 
 **Kind**: instance method of [<code>UiField</code>](#UiField)  
@@ -4003,6 +4393,7 @@ The function returns a template filename based on the type property.
 <a name="UiField+getTemplateString"></a>
 
 ### uiField.getTemplateString() ⇒
+
 The function returns the template string from the props.
 
 **Kind**: instance method of [<code>UiField</code>](#UiField)  
@@ -4010,6 +4401,7 @@ The function returns the template string from the props.
 <a name="UiField+getWrapperTemplateFilename"></a>
 
 ### uiField.getWrapperTemplateFilename() ⇒
+
 The function returns the filename of a UI wrapper template.
 
 **Kind**: instance method of [<code>UiField</code>](#UiField)  
@@ -4017,6 +4409,7 @@ The function returns the filename of a UI wrapper template.
 <a name="UiField+getWrapperTemplateString"></a>
 
 ### uiField.getWrapperTemplateString() ⇒
+
 The function returns the wrapper template string from the props.
 
 **Kind**: instance method of [<code>UiField</code>](#UiField)  
@@ -4024,6 +4417,7 @@ The function returns the wrapper template string from the props.
 <a name="UiField+getValue"></a>
 
 ### uiField.getValue([values]) ⇒
+
 The getValue function returns the value associated with a given name from a provided object.
 
 **Kind**: instance method of [<code>UiField</code>](#UiField)  
@@ -4036,6 +4430,7 @@ The getValue function returns the value associated with a given name from a prov
 <a name="UiFieldWithOptions"></a>
 
 ## UiFieldWithOptions ⇐ [<code>UiField</code>](#UiField)
+
 The `UiFieldWithOptions` class is a subclass of `UiField` that adds functionality for fields with
 options, including methods for getting the field value, setting default variables, and building
 items based on the options provided.
@@ -4044,26 +4439,26 @@ items based on the options provided.
 **Extends**: [<code>UiField</code>](#UiField)  
 
 * [UiFieldWithOptions](#UiFieldWithOptions) ⇐ [<code>UiField</code>](#UiField)
-    * [new UiFieldWithOptions([props])](#new_UiFieldWithOptions_new)
-    * [.getValue([values])](#UiFieldWithOptions+getValue) ⇒
-    * [.defaultVariables([values])](#UiFieldWithOptions+defaultVariables) ⇒
-    * [.buildItems(fieldValue)](#UiFieldWithOptions+buildItems) ⇒
-    * [.isOptionValueChecked(fieldValue, optionValue)](#UiFieldWithOptions+isOptionValueChecked) ⇒
-    * [.render([values])](#UiField+render) ⇒
-    * [.contentRenderer()](#UiField+contentRenderer) ⇒
-    * [.wrapperRenderer()](#UiField+wrapperRenderer) ⇒
-    * [.renderer(props)](#UiField+renderer) ⇒
-    * [.variables([values])](#UiField+variables) ⇒
-    * [.getTemplateFilename()](#UiField+getTemplateFilename) ⇒ <code>string</code>
-    * [.getTemplateString()](#UiField+getTemplateString) ⇒
-    * [.getWrapperTemplateFilename()](#UiField+getWrapperTemplateFilename) ⇒
-    * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒
+  * [new UiFieldWithOptions([props])](#new_UiFieldWithOptions_new)
+  * [.getValue([values])](#UiFieldWithOptions+getValue) ⇒
+  * [.defaultVariables([values])](#UiFieldWithOptions+defaultVariables) ⇒
+  * [.buildItems(fieldValue)](#UiFieldWithOptions+buildItems) ⇒
+  * [.isOptionValueChecked(fieldValue, optionValue)](#UiFieldWithOptions+isOptionValueChecked) ⇒
+  * [.render([values])](#UiField+render) ⇒
+  * [.contentRenderer()](#UiField+contentRenderer) ⇒
+  * [.wrapperRenderer()](#UiField+wrapperRenderer) ⇒
+  * [.renderer(props)](#UiField+renderer) ⇒
+  * [.variables([values])](#UiField+variables) ⇒
+  * [.getTemplateFilename()](#UiField+getTemplateFilename) ⇒ <code>string</code>
+  * [.getTemplateString()](#UiField+getTemplateString) ⇒
+  * [.getWrapperTemplateFilename()](#UiField+getWrapperTemplateFilename) ⇒
+  * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒
 
 <a name="new_UiFieldWithOptions_new"></a>
 
 ### new UiFieldWithOptions([props])
-This is a constructor function in JavaScript that sets default values for the "props" parameter.
 
+This is a constructor function in JavaScript that sets default values for the "props" parameter.
 
 | Param | Description |
 | --- | --- |
@@ -4072,6 +4467,7 @@ This is a constructor function in JavaScript that sets default values for the "p
 <a name="UiFieldWithOptions+getValue"></a>
 
 ### uiFieldWithOptions.getValue([values]) ⇒
+
 The function `getValue` takes an object as an argument and returns an array containing the
 values of the object, or an empty array if the values are undefined.
 
@@ -4086,6 +4482,7 @@ values of the object, or an empty array if the values are undefined.
 <a name="UiFieldWithOptions+defaultVariables"></a>
 
 ### uiFieldWithOptions.defaultVariables([values]) ⇒
+
 The function `defaultVariables` returns an object with default variables, including an `items`
 property that is built based on a field value.
 
@@ -4102,6 +4499,7 @@ with the "fieldValue" as an argument.
 <a name="UiFieldWithOptions+buildItems"></a>
 
 ### uiFieldWithOptions.buildItems(fieldValue) ⇒
+
 The function "buildItems" takes a fieldValue and returns an array of objects with label, value,
 and checked properties based on the options provided.
 
@@ -4118,6 +4516,7 @@ to the `value` property of the corresponding option object. The `checked` proper
 <a name="UiFieldWithOptions+isOptionValueChecked"></a>
 
 ### uiFieldWithOptions.isOptionValueChecked(fieldValue, optionValue) ⇒
+
 The function checks if a specific option value is included in a given field value.
 
 **Kind**: instance method of [<code>UiFieldWithOptions</code>](#UiFieldWithOptions)  
@@ -4131,6 +4530,7 @@ The function checks if a specific option value is included in a given field valu
 <a name="UiField+render"></a>
 
 ### uiFieldWithOptions.render([values]) ⇒
+
 The `render` function takes in a `values` object, renders the content using a content renderer
 and variables, wraps the rendered content using a wrapper renderer and default variables, and
 returns the final result.
@@ -4147,6 +4547,7 @@ wrapper.
 <a name="UiField+contentRenderer"></a>
 
 ### uiFieldWithOptions.contentRenderer() ⇒
+
 The contentRenderer function returns the result of calling the renderer function with certain
 props.
 
@@ -4156,6 +4557,7 @@ props.
 <a name="UiField+wrapperRenderer"></a>
 
 ### uiFieldWithOptions.wrapperRenderer() ⇒
+
 The function `wrapperRenderer` returns the result of calling the `renderer` function with
 specific props.
 
@@ -4166,6 +4568,7 @@ function with the `props` object as an argument.
 <a name="UiField+renderer"></a>
 
 ### uiFieldWithOptions.renderer(props) ⇒
+
 The function returns a new instance of the UiHandlebarsRenderer class with the given props.
 
 **Kind**: instance method of [<code>UiFieldWithOptions</code>](#UiFieldWithOptions)  
@@ -4179,6 +4582,7 @@ The function returns a new instance of the UiHandlebarsRenderer class with the g
 <a name="UiField+variables"></a>
 
 ### uiFieldWithOptions.variables([values]) ⇒
+
 The function returns a merged object of default variables and a value.
 
 **Kind**: instance method of [<code>UiFieldWithOptions</code>](#UiFieldWithOptions)  
@@ -4192,6 +4596,7 @@ The function returns a merged object of default variables and a value.
 <a name="UiField+getTemplateFilename"></a>
 
 ### uiFieldWithOptions.getTemplateFilename() ⇒ <code>string</code>
+
 The function returns a template filename based on the type property.
 
 **Kind**: instance method of [<code>UiFieldWithOptions</code>](#UiFieldWithOptions)  
@@ -4200,6 +4605,7 @@ The function returns a template filename based on the type property.
 <a name="UiField+getTemplateString"></a>
 
 ### uiFieldWithOptions.getTemplateString() ⇒
+
 The function returns the template string from the props.
 
 **Kind**: instance method of [<code>UiFieldWithOptions</code>](#UiFieldWithOptions)  
@@ -4208,6 +4614,7 @@ The function returns the template string from the props.
 <a name="UiField+getWrapperTemplateFilename"></a>
 
 ### uiFieldWithOptions.getWrapperTemplateFilename() ⇒
+
 The function returns the filename of a UI wrapper template.
 
 **Kind**: instance method of [<code>UiFieldWithOptions</code>](#UiFieldWithOptions)  
@@ -4216,6 +4623,7 @@ The function returns the filename of a UI wrapper template.
 <a name="UiField+getWrapperTemplateString"></a>
 
 ### uiFieldWithOptions.getWrapperTemplateString() ⇒
+
 The function returns the wrapper template string from the props.
 
 **Kind**: instance method of [<code>UiFieldWithOptions</code>](#UiFieldWithOptions)  
@@ -4224,32 +4632,33 @@ The function returns the wrapper template string from the props.
 <a name="UiFieldWithFields"></a>
 
 ## UiFieldWithFields ⇐ [<code>UiField</code>](#UiField)
+
 The `UiFieldWithFields` class is a subclass of `UiField` that renders an array of components based on the values of its fields.
 
 **Kind**: global class  
 **Extends**: [<code>UiField</code>](#UiField)  
 
 * [UiFieldWithFields](#UiFieldWithFields) ⇐ [<code>UiField</code>](#UiField)
-    * [new UiFieldWithFields([props])](#new_UiFieldWithFields_new)
-    * [.defaultVariables([values])](#UiFieldWithFields+defaultVariables) ⇒
-    * [.buildComponents(fieldValue)](#UiFieldWithFields+buildComponents) ⇒
-    * [.render([values])](#UiField+render) ⇒
-    * [.contentRenderer()](#UiField+contentRenderer) ⇒
-    * [.wrapperRenderer()](#UiField+wrapperRenderer) ⇒
-    * [.renderer(props)](#UiField+renderer) ⇒
-    * [.variables([values])](#UiField+variables) ⇒
-    * [.getTemplateFilename()](#UiField+getTemplateFilename) ⇒ <code>string</code>
-    * [.getTemplateString()](#UiField+getTemplateString) ⇒
-    * [.getWrapperTemplateFilename()](#UiField+getWrapperTemplateFilename) ⇒
-    * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒
-    * [.getValue([values])](#UiField+getValue) ⇒
+  * [new UiFieldWithFields([props])](#new_UiFieldWithFields_new)
+  * [.defaultVariables([values])](#UiFieldWithFields+defaultVariables) ⇒
+  * [.buildComponents(fieldValue)](#UiFieldWithFields+buildComponents) ⇒
+  * [.render([values])](#UiField+render) ⇒
+  * [.contentRenderer()](#UiField+contentRenderer) ⇒
+  * [.wrapperRenderer()](#UiField+wrapperRenderer) ⇒
+  * [.renderer(props)](#UiField+renderer) ⇒
+  * [.variables([values])](#UiField+variables) ⇒
+  * [.getTemplateFilename()](#UiField+getTemplateFilename) ⇒ <code>string</code>
+  * [.getTemplateString()](#UiField+getTemplateString) ⇒
+  * [.getWrapperTemplateFilename()](#UiField+getWrapperTemplateFilename) ⇒
+  * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒
+  * [.getValue([values])](#UiField+getValue) ⇒
 
 <a name="new_UiFieldWithFields_new"></a>
 
 ### new UiFieldWithFields([props])
+
 The constructor function sets default values for the "props" object and calls the parent
 constructor with the updated props.
-
 
 | Param | Description |
 | --- | --- |
@@ -4258,6 +4667,7 @@ constructor with the updated props.
 <a name="UiFieldWithFields+defaultVariables"></a>
 
 ### uiFieldWithFields.defaultVariables([values]) ⇒
+
 The function `defaultVariables` returns an object with default variables, including a
 `components` property that is built based on the `fieldValue`.
 
@@ -4274,6 +4684,7 @@ method with the "fieldValue" as an argument.
 <a name="UiFieldWithFields+buildComponents"></a>
 
 ### uiFieldWithFields.buildComponents(fieldValue) ⇒
+
 The function "buildComponents" takes a fieldValue parameter and returns an array of components
 rendered based on the fields array.
 
@@ -4288,6 +4699,7 @@ corresponding field in the `fieldValue` object.
 <a name="UiField+render"></a>
 
 ### uiFieldWithFields.render([values]) ⇒
+
 The `render` function takes in a `values` object, renders the content using a content renderer
 and variables, wraps the rendered content using a wrapper renderer and default variables, and
 returns the final result.
@@ -4304,6 +4716,7 @@ wrapper.
 <a name="UiField+contentRenderer"></a>
 
 ### uiFieldWithFields.contentRenderer() ⇒
+
 The contentRenderer function returns the result of calling the renderer function with certain
 props.
 
@@ -4313,6 +4726,7 @@ props.
 <a name="UiField+wrapperRenderer"></a>
 
 ### uiFieldWithFields.wrapperRenderer() ⇒
+
 The function `wrapperRenderer` returns the result of calling the `renderer` function with
 specific props.
 
@@ -4323,6 +4737,7 @@ function with the `props` object as an argument.
 <a name="UiField+renderer"></a>
 
 ### uiFieldWithFields.renderer(props) ⇒
+
 The function returns a new instance of the UiHandlebarsRenderer class with the given props.
 
 **Kind**: instance method of [<code>UiFieldWithFields</code>](#UiFieldWithFields)  
@@ -4336,6 +4751,7 @@ The function returns a new instance of the UiHandlebarsRenderer class with the g
 <a name="UiField+variables"></a>
 
 ### uiFieldWithFields.variables([values]) ⇒
+
 The function returns a merged object of default variables and a value.
 
 **Kind**: instance method of [<code>UiFieldWithFields</code>](#UiFieldWithFields)  
@@ -4349,6 +4765,7 @@ The function returns a merged object of default variables and a value.
 <a name="UiField+getTemplateFilename"></a>
 
 ### uiFieldWithFields.getTemplateFilename() ⇒ <code>string</code>
+
 The function returns a template filename based on the type property.
 
 **Kind**: instance method of [<code>UiFieldWithFields</code>](#UiFieldWithFields)  
@@ -4357,6 +4774,7 @@ The function returns a template filename based on the type property.
 <a name="UiField+getTemplateString"></a>
 
 ### uiFieldWithFields.getTemplateString() ⇒
+
 The function returns the template string from the props.
 
 **Kind**: instance method of [<code>UiFieldWithFields</code>](#UiFieldWithFields)  
@@ -4365,6 +4783,7 @@ The function returns the template string from the props.
 <a name="UiField+getWrapperTemplateFilename"></a>
 
 ### uiFieldWithFields.getWrapperTemplateFilename() ⇒
+
 The function returns the filename of a UI wrapper template.
 
 **Kind**: instance method of [<code>UiFieldWithFields</code>](#UiFieldWithFields)  
@@ -4373,6 +4792,7 @@ The function returns the filename of a UI wrapper template.
 <a name="UiField+getWrapperTemplateString"></a>
 
 ### uiFieldWithFields.getWrapperTemplateString() ⇒
+
 The function returns the wrapper template string from the props.
 
 **Kind**: instance method of [<code>UiFieldWithFields</code>](#UiFieldWithFields)  
@@ -4381,6 +4801,7 @@ The function returns the wrapper template string from the props.
 <a name="UiField+getValue"></a>
 
 ### uiFieldWithFields.getValue([values]) ⇒
+
 The getValue function returns the value associated with a given name from a provided object.
 
 **Kind**: instance method of [<code>UiFieldWithFields</code>](#UiFieldWithFields)  
@@ -4394,19 +4815,37 @@ The getValue function returns the value associated with a given name from a prov
 <a name="booleanField"></a>
 
 ## booleanField([label], [options]) ⇒
+
 The function `booleanField` creates a boolean field with a label and optional additional options.
 
 **Kind**: global function  
 **Returns**: a new instance of the `UiBooleanField` class with the provided options.  
 
-| Param | Description |
-| --- | --- |
-| [label] | The `label` parameter is a string that represents the label or name of the boolean field. It is an optional parameter, so if no value is provided, the field will not have a label. |
-| [options] | The `options` parameter is an object that contains additional configuration options for the `UiBooleanField` component. These options can include properties such as `defaultValue`, `disabled`, `onChange`, etc. |
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| [label] | <code>string</code> | <code>&quot;&#x27;&#x27;&quot;</code> | The `label` parameter is a string that represents the label or name of the boolean field. It is an optional parameter, so if no value is provided, the field will not have a label. |
+| [options] | <code>object</code> | <code>{}</code> | The `options` parameter is an object that contains additional configuration options for the `UiBooleanField` component. These options can include properties such as `defaultValue`, `disabled`, `onChange`, etc. |
+
+<a name="checkboxesField"></a>
+
+## checkboxesField([label], [choices], [options]) ⇒
+
+The function `checkboxesField` creates a checkboxes field with a label, choices, and additional
+options.
+
+**Kind**: global function  
+**Returns**: a new instance of the `UiCheckboxesField` class with the provided options.  
+
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| [label] | <code>string</code> | <code>&quot;&#x27;&#x27;&quot;</code> | The label parameter is a string that represents the label for the checkboxes field. It is optional and defaults to an empty string if not provided. |
+| [choices] | <code>Array.&lt;FieldChoices&gt;</code> | <code>[]</code> | The `choices` parameter is an array that contains the options for the checkboxes field. Each element in the array represents a choice that the user can select. |
+| [options] | <code>object</code> | <code>{}</code> | The `options` parameter is an object that contains additional configuration options for the checkboxes field. These options can include properties such as `id`, `name`, `value`, `class`, `style`, etc. |
 
 <a name="colorField"></a>
 
 ## colorField([label], [options]) ⇒
+
 The function `colorField` creates a new UiColorField object with the provided label and options.
 
 **Kind**: global function  
@@ -4420,6 +4859,7 @@ The function `colorField` creates a new UiColorField object with the provided la
 <a name="numberField"></a>
 
 ## numberField([label], [options]) ⇒
+
 The function "numberField" creates a new number input field with an optional label and additional
 options.
 
@@ -4434,6 +4874,7 @@ options.
 <a name="textareaField"></a>
 
 ## textareaField([label], [options]) ⇒
+
 The function `textareaField` creates a textarea input field with a label and optional additional
 options.
 
@@ -4448,6 +4889,7 @@ options.
 <a name="textField"></a>
 
 ## textField([label], [options]) ⇒
+
 The function `textField` creates a new instance of `UiTextField` with the provided label and
 options.
 
@@ -4462,6 +4904,7 @@ options.
 <a name="dateField"></a>
 
 ## dateField([label], [options]) ⇒
+
 The function `dateField` creates a new date field with a label and optional additional options.
 
 **Kind**: global function  
@@ -4475,6 +4918,7 @@ The function `dateField` creates a new date field with a label and optional addi
 <a name="datetimeField"></a>
 
 ## datetimeField([label], [options]) ⇒
+
 The function `datetimeField` creates a new `UiDateTimeField` object with the provided label and
 options.
 
@@ -4489,6 +4933,7 @@ options.
 <a name="datetimelocalField"></a>
 
 ## datetimelocalField([label], [options]) ⇒
+
 The function `datetimelocalField` creates a new instance of `UiDateTimeLocalField` with the provided
 label and options.
 
@@ -4503,6 +4948,7 @@ label and options.
 <a name="emailField"></a>
 
 ## emailField([label], [options]) ⇒
+
 The function creates an email input field with an optional label and additional options.
 
 **Kind**: global function  
@@ -4516,6 +4962,7 @@ The function creates an email input field with an optional label and additional 
 <a name="fileField"></a>
 
 ## fileField([label], [options]) ⇒
+
 The function `fileField` creates a new instance of `UiFileField` with the provided label and
 options.
 
@@ -4530,6 +4977,7 @@ options.
 <a name="formField"></a>
 
 ## formField([label], [fields], [options]) ⇒
+
 The function `formField` creates a form field with a label, an array of fields, and additional
 options.
 
@@ -4545,6 +4993,7 @@ options.
 <a name="hiddenField"></a>
 
 ## hiddenField([label], [options]) ⇒
+
 The function `hiddenField` creates a hidden field with an optional label and additional options.
 
 **Kind**: global function  
@@ -4558,6 +5007,7 @@ The function `hiddenField` creates a hidden field with an optional label and add
 <a name="imageField"></a>
 
 ## imageField([label], [options]) ⇒
+
 The function `imageField` creates a new image field with a label and optional additional options.
 
 **Kind**: global function  
@@ -4571,6 +5021,7 @@ The function `imageField` creates a new image field with a label and optional ad
 <a name="monthField"></a>
 
 ## monthField([label], [options]) ⇒
+
 The function `monthField` creates a new month field UI component with an optional label and
 additional options.
 
@@ -4585,6 +5036,7 @@ additional options.
 <a name="passwordField"></a>
 
 ## passwordField([label], [options]) ⇒
+
 The function creates a password field with a label and optional additional options.
 
 **Kind**: global function  
@@ -4598,6 +5050,7 @@ The function creates a password field with a label and optional additional optio
 <a name="rangeField"></a>
 
 ## rangeField([label], [options]) ⇒
+
 The function `rangeField` creates a range field UI element with a label and optional additional
 options.
 
@@ -4612,6 +5065,7 @@ options.
 <a name="searchField"></a>
 
 ## searchField([label], [options]) ⇒
+
 The function `searchField` creates a new instance of `UiSearchField` with the provided label and
 options.
 
@@ -4626,6 +5080,7 @@ options.
 <a name="telField"></a>
 
 ## telField([label], [options]) ⇒
+
 The function `telField` creates a new `UiTelField` object with optional label and options.
 
 **Kind**: global function  
@@ -4639,6 +5094,7 @@ The function `telField` creates a new `UiTelField` object with optional label an
 <a name="timeField"></a>
 
 ## timeField([label], [options]) ⇒
+
 The function `timeField` creates a time field UI element with an optional label and additional
 options.
 
@@ -4653,6 +5109,7 @@ options.
 <a name="urlField"></a>
 
 ## urlField([label], [options]) ⇒
+
 The function `urlField` creates a URL input field with an optional label.
 
 **Kind**: global function  
@@ -4666,6 +5123,7 @@ The function `urlField` creates a URL input field with an optional label.
 <a name="getLabelAndRequired"></a>
 
 ## getLabelAndRequired([label]) ⇒
+
 The function `getLabelAndRequired` returns an object with a sanitized label and a boolean indicating
 if the label suggests that it is required.
 
@@ -4682,6 +5140,7 @@ value of the "required" property is the result of calling the "itSuggestsRequire
 <a name="sanitizeLabel"></a>
 
 ## sanitizeLabel(label) ⇒
+
 The `sanitizeLabel` function takes a label as input, removes trailing asterisks and leading/trailing
 whitespace, and returns the sanitized label or 'No label' if the resulting label is empty.
 
@@ -4697,6 +5156,7 @@ removed.
 <a name="itSuggestsRequired"></a>
 
 ## itSuggestsRequired(label) ⇒
+
 The function checks if a label ends with an asterisk (*) to suggest that it is required.
 
 **Kind**: global function  
@@ -4706,4 +5166,3 @@ whitespace.
 | Param | Description |
 | --- | --- |
 | label | The label parameter is a string that represents the label of a form field. |
-
