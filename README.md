@@ -89,10 +89,10 @@ npm run test
 
 ## Roadmap
 
-[x] UiField descendant (UiFieldWithFields) to handle collection of fields
-[x] UiFormField class to generate form
-[ ] Create button Ui classes and shortcut functions (e.g UiButton, UiSubmit, UiReset)
-[ ] Extend formField function to add submit and reset buttons. 
+- [x] UiField descendant (UiFieldWithFields) to handle collection of fields
+- [x] UiFormField class to generate form
+- [ ] Create button Ui classes and shortcut functions (e.g UiButton, UiSubmit, UiReset)
+- [ ] Extend formField function to add submit and reset buttons.
 
 ## Author
 
