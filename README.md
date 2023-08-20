@@ -4,6 +4,13 @@ Framework for building UI elements programmatically using JavaScript.
 
 ## Introduction
 
+Are you a JavaScript developer and want to create UI elements quickly with a consistent Bootstrap code? Take a look at `UIJS-KIT`. Out of the box, it provides functions to generate UI element. For example: 
+
+- `textField` function creates the HTML code for `<input type="text" .../>` and provides the `label` tag for the input field. All is encapsulated with a `.form-group`.
+- functions for popular input UI elements: checkboxes, boolean, color, radio, select, textarea, color, time, url, date, datetime, datetime-local, or week.
+- quick indicator for required fields: a trailing asterisk (*) in the label field.
+- options field allows you to specify custom name and id attributes. You can also add additional properties and use them in field type templates. 
+
 ## Installation
 
 ```bash
@@ -59,5 +66,6 @@ console.log(html);
 
 ## Contributing
 
-## License
+If you are interested in reporting/fixing issues and contributing directly to the code base, please see [CONTRIBUTING.md](CONTRIBUTING.md) for more information on what we're looking for and how to get started.
 
+## License
