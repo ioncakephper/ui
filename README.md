@@ -1,6 +1,22 @@
-# uijs-kit
+<h1 align="center">Welcome to uijs-kit 👋</h1>
+<p>
+  <a href="https://www.npmjs.com/package/uijs-kit" target="_blank">
+    <img alt="Version" src="https://img.shields.io/npm/v/uijs-kit.svg">
+  </a>
+  <a href="https://github.com/ioncakephper/ui#readme" target="_blank">
+    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
+  </a>
+  <a href="https://github.com/ioncakephper/ui/graphs/commit-activity" target="_blank">
+    <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
+  </a>
+  <a href="https://github.com/ioncakephper/ui/blob/master/LICENSE" target="_blank">
+    <img alt="License: MIT" src="https://img.shields.io/github/license/ioncakephper/ui" />
+  </a>
+</p>
 
-Framework for building UI elements programmatically using JavaScript.
+> Framework for building UI elements programmatically using JavaScript.
+
+### 🏠 [UIJS-KIT Homepage](https://github.com/ioncakephper/ui)
 
 ## Introduction
 
@@ -9,12 +25,12 @@ Are you a JavaScript developer and want to create UI elements quickly with a con
 - `textField` function creates the HTML code for `<input type="text" .../>` and provides the `label` tag for the input field. All is encapsulated with a `.form-group`.
 - functions for popular input UI elements: checkboxes, boolean, color, radio, select, textarea, color, time, url, date, datetime, datetime-local, or week.
 - quick indicator for required fields: a trailing asterisk (*) in the label field.
-- options field allows you to specify custom name and id attributes. You can also add additional properties and use them in field type templates. 
+- options field allows you to specify custom name and id attributes. You can also add additional properties and use them in field type templates.
 
-## Installation
+## Install
 
-```bash
-npm i uijs-kit --save
+```sh
+npm install uijs-kit
 ```
 
 ## Usage
@@ -64,10 +80,39 @@ console.log(html);
 // </div>
 ```
 
-## Contributing
 
-If you are interested in reporting/fixing issues and contributing directly to the code base, please see [CONTRIBUTING.md](CONTRIBUTING.md) for more information on what we're looking for and how to get started.
+## Run tests
+
+```sh
+npm run test
+```
+
+## Author
+
+👤 **Ion Gireada**
+
+* Github: [@ioncakephper](https://github.com/ioncakephper)
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/ioncakephper/ui/issues). You can also take a look at the [contributing guide](https://github.com/ioncakephper/ui/blob/master/CONTRIBUTING.md).
 
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](CODE_OF_CONDUCT.md)
 
-## License
+## Show your support
+
+Give a ⭐️ if this project helped you!
+
+<a href="https://www.patreon.com/iongireada">
+  <img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="160">
+</a>
+
+## 📝 License
+
+Copyright © 2023 [Ion Gireada](https://github.com/ioncakephper).<br />
+This project is [MIT](https://github.com/ioncakephper/ui/blob/master/LICENSE) licensed.
+
+  <a href="https://github.com/ioncakephper/ui/blob/master/LICENSE" target="_blank">
+    <img alt="License: MIT" src="https://img.shields.io/github/license/ioncakephper/ui" />
+  </a>
+
