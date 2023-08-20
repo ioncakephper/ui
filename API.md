@@ -438,7 +438,7 @@ The `UiBooleanField` class is a subclass of `UiField` that represents a checkbox
     * [.getTemplateFilename()](#UiField+getTemplateFilename) ⇒ <code>string</code>
     * [.getTemplateString()](#UiField+getTemplateString) ⇒ <code>string</code>
     * [.getWrapperTemplateFilename()](#UiField+getWrapperTemplateFilename) ⇒ <code>string</code>
-    * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒
+    * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒ <code>string</code>
     * [.getValue([values])](#UiField+getValue) ⇒ <code>object</code> \| <code>string</code> \| <code>number</code> \| <code>boolean</code> \| <code>Array.&lt;any&gt;</code>
 
 <a name="new_UiBooleanField_new"></a>
@@ -551,12 +551,12 @@ The function returns the filename of a UI wrapper template.
 **Returns**: <code>string</code> - the string `ui-wrapper`.  
 <a name="UiField+getWrapperTemplateString"></a>
 
-### uiBooleanField.getWrapperTemplateString() ⇒
+### uiBooleanField.getWrapperTemplateString() ⇒ <code>string</code>
 The function returns the wrapper template string from the props.
 
 **Kind**: instance method of [<code>UiBooleanField</code>](#UiBooleanField)  
 **Overrides**: [<code>getWrapperTemplateString</code>](#UiField+getWrapperTemplateString)  
-**Returns**: the value of the `wrapperTemplateString` property of the `props` object.  
+**Returns**: <code>string</code> - the value of the `wrapperTemplateString` property of the `props` object.  
 <a name="UiField+getValue"></a>
 
 ### uiBooleanField.getValue([values]) ⇒ <code>object</code> \| <code>string</code> \| <code>number</code> \| <code>boolean</code> \| <code>Array.&lt;any&gt;</code>
@@ -589,7 +589,7 @@ The `UiTextField` class is a subclass of `UiField` that represents a text input 
     * [.variables([values])](#UiField+variables) ⇒ <code>object</code>
     * [.getTemplateString()](#UiField+getTemplateString) ⇒ <code>string</code>
     * [.getWrapperTemplateFilename()](#UiField+getWrapperTemplateFilename) ⇒ <code>string</code>
-    * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒
+    * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒ <code>string</code>
     * [.getValue([values])](#UiField+getValue) ⇒ <code>object</code> \| <code>string</code> \| <code>number</code> \| <code>boolean</code> \| <code>Array.&lt;any&gt;</code>
 
 <a name="new_UiTextField_new"></a>
@@ -702,12 +702,12 @@ The function returns the filename of a UI wrapper template.
 **Returns**: <code>string</code> - the string `ui-wrapper`.  
 <a name="UiField+getWrapperTemplateString"></a>
 
-### uiTextField.getWrapperTemplateString() ⇒
+### uiTextField.getWrapperTemplateString() ⇒ <code>string</code>
 The function returns the wrapper template string from the props.
 
 **Kind**: instance method of [<code>UiTextField</code>](#UiTextField)  
 **Overrides**: [<code>getWrapperTemplateString</code>](#UiField+getWrapperTemplateString)  
-**Returns**: the value of the `wrapperTemplateString` property of the `props` object.  
+**Returns**: <code>string</code> - the value of the `wrapperTemplateString` property of the `props` object.  
 <a name="UiField+getValue"></a>
 
 ### uiTextField.getValue([values]) ⇒ <code>object</code> \| <code>string</code> \| <code>number</code> \| <code>boolean</code> \| <code>Array.&lt;any&gt;</code>
@@ -740,7 +740,7 @@ The `UiNumberField` class is a subclass of `UiTextField` that sets the input typ
     * [.variables([values])](#UiField+variables) ⇒ <code>object</code>
     * [.getTemplateString()](#UiField+getTemplateString) ⇒ <code>string</code>
     * [.getWrapperTemplateFilename()](#UiField+getWrapperTemplateFilename) ⇒ <code>string</code>
-    * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒
+    * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒ <code>string</code>
     * [.getValue([values])](#UiField+getValue) ⇒ <code>object</code> \| <code>string</code> \| <code>number</code> \| <code>boolean</code> \| <code>Array.&lt;any&gt;</code>
 
 <a name="new_UiNumberField_new"></a>
@@ -853,12 +853,12 @@ The function returns the filename of a UI wrapper template.
 **Returns**: <code>string</code> - the string `ui-wrapper`.  
 <a name="UiField+getWrapperTemplateString"></a>
 
-### uiNumberField.getWrapperTemplateString() ⇒
+### uiNumberField.getWrapperTemplateString() ⇒ <code>string</code>
 The function returns the wrapper template string from the props.
 
 **Kind**: instance method of [<code>UiNumberField</code>](#UiNumberField)  
 **Overrides**: [<code>getWrapperTemplateString</code>](#UiField+getWrapperTemplateString)  
-**Returns**: the value of the `wrapperTemplateString` property of the `props` object.  
+**Returns**: <code>string</code> - the value of the `wrapperTemplateString` property of the `props` object.  
 <a name="UiField+getValue"></a>
 
 ### uiNumberField.getValue([values]) ⇒ <code>object</code> \| <code>string</code> \| <code>number</code> \| <code>boolean</code> \| <code>Array.&lt;any&gt;</code>
@@ -894,7 +894,7 @@ The `UiCheckboxesField` class is a subclass of `UiFieldWithOptions` that represe
     * [.getTemplateFilename()](#UiField+getTemplateFilename) ⇒ <code>string</code>
     * [.getTemplateString()](#UiField+getTemplateString) ⇒ <code>string</code>
     * [.getWrapperTemplateFilename()](#UiField+getWrapperTemplateFilename) ⇒ <code>string</code>
-    * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒
+    * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒ <code>string</code>
 
 <a name="new_UiCheckboxesField_new"></a>
 
@@ -1054,12 +1054,12 @@ The function returns the filename of a UI wrapper template.
 **Returns**: <code>string</code> - the string `ui-wrapper`.  
 <a name="UiField+getWrapperTemplateString"></a>
 
-### uiCheckboxesField.getWrapperTemplateString() ⇒
+### uiCheckboxesField.getWrapperTemplateString() ⇒ <code>string</code>
 The function returns the wrapper template string from the props.
 
 **Kind**: instance method of [<code>UiCheckboxesField</code>](#UiCheckboxesField)  
 **Overrides**: [<code>getWrapperTemplateString</code>](#UiField+getWrapperTemplateString)  
-**Returns**: the value of the `wrapperTemplateString` property of the `props` object.  
+**Returns**: <code>string</code> - the value of the `wrapperTemplateString` property of the `props` object.  
 <a name="UiColorField"></a>
 
 ## UiColorField ⇐ [<code>UiTextField</code>](#UiTextField)
@@ -1079,7 +1079,7 @@ The `UiColorField` class is a subclass of `UiTextField` that sets the input type
     * [.variables([values])](#UiField+variables) ⇒ <code>object</code>
     * [.getTemplateString()](#UiField+getTemplateString) ⇒ <code>string</code>
     * [.getWrapperTemplateFilename()](#UiField+getWrapperTemplateFilename) ⇒ <code>string</code>
-    * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒
+    * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒ <code>string</code>
     * [.getValue([values])](#UiField+getValue) ⇒ <code>object</code> \| <code>string</code> \| <code>number</code> \| <code>boolean</code> \| <code>Array.&lt;any&gt;</code>
 
 <a name="new_UiColorField_new"></a>
@@ -1193,12 +1193,12 @@ The function returns the filename of a UI wrapper template.
 **Returns**: <code>string</code> - the string `ui-wrapper`.  
 <a name="UiField+getWrapperTemplateString"></a>
 
-### uiColorField.getWrapperTemplateString() ⇒
+### uiColorField.getWrapperTemplateString() ⇒ <code>string</code>
 The function returns the wrapper template string from the props.
 
 **Kind**: instance method of [<code>UiColorField</code>](#UiColorField)  
 **Overrides**: [<code>getWrapperTemplateString</code>](#UiField+getWrapperTemplateString)  
-**Returns**: the value of the `wrapperTemplateString` property of the `props` object.  
+**Returns**: <code>string</code> - the value of the `wrapperTemplateString` property of the `props` object.  
 <a name="UiField+getValue"></a>
 
 ### uiColorField.getValue([values]) ⇒ <code>object</code> \| <code>string</code> \| <code>number</code> \| <code>boolean</code> \| <code>Array.&lt;any&gt;</code>
@@ -1231,7 +1231,7 @@ The `UiDateField` class is a subclass of `UiTextField` that sets the input type 
     * [.variables([values])](#UiField+variables) ⇒ <code>object</code>
     * [.getTemplateString()](#UiField+getTemplateString) ⇒ <code>string</code>
     * [.getWrapperTemplateFilename()](#UiField+getWrapperTemplateFilename) ⇒ <code>string</code>
-    * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒
+    * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒ <code>string</code>
     * [.getValue([values])](#UiField+getValue) ⇒ <code>object</code> \| <code>string</code> \| <code>number</code> \| <code>boolean</code> \| <code>Array.&lt;any&gt;</code>
 
 <a name="new_UiDateField_new"></a>
@@ -1345,12 +1345,12 @@ The function returns the filename of a UI wrapper template.
 **Returns**: <code>string</code> - the string `ui-wrapper`.  
 <a name="UiField+getWrapperTemplateString"></a>
 
-### uiDateField.getWrapperTemplateString() ⇒
+### uiDateField.getWrapperTemplateString() ⇒ <code>string</code>
 The function returns the wrapper template string from the props.
 
 **Kind**: instance method of [<code>UiDateField</code>](#UiDateField)  
 **Overrides**: [<code>getWrapperTemplateString</code>](#UiField+getWrapperTemplateString)  
-**Returns**: the value of the `wrapperTemplateString` property of the `props` object.  
+**Returns**: <code>string</code> - the value of the `wrapperTemplateString` property of the `props` object.  
 <a name="UiField+getValue"></a>
 
 ### uiDateField.getValue([values]) ⇒ <code>object</code> \| <code>string</code> \| <code>number</code> \| <code>boolean</code> \| <code>Array.&lt;any&gt;</code>
@@ -1383,7 +1383,7 @@ The UiDateTimeField class is a subclass of UiTextField that sets the type of the
     * [.variables([values])](#UiField+variables) ⇒ <code>object</code>
     * [.getTemplateString()](#UiField+getTemplateString) ⇒ <code>string</code>
     * [.getWrapperTemplateFilename()](#UiField+getWrapperTemplateFilename) ⇒ <code>string</code>
-    * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒
+    * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒ <code>string</code>
     * [.getValue([values])](#UiField+getValue) ⇒ <code>object</code> \| <code>string</code> \| <code>number</code> \| <code>boolean</code> \| <code>Array.&lt;any&gt;</code>
 
 <a name="new_UiDateTimeField_new"></a>
@@ -1496,12 +1496,12 @@ The function returns the filename of a UI wrapper template.
 **Returns**: <code>string</code> - the string `ui-wrapper`.  
 <a name="UiField+getWrapperTemplateString"></a>
 
-### uiDateTimeField.getWrapperTemplateString() ⇒
+### uiDateTimeField.getWrapperTemplateString() ⇒ <code>string</code>
 The function returns the wrapper template string from the props.
 
 **Kind**: instance method of [<code>UiDateTimeField</code>](#UiDateTimeField)  
 **Overrides**: [<code>getWrapperTemplateString</code>](#UiField+getWrapperTemplateString)  
-**Returns**: the value of the `wrapperTemplateString` property of the `props` object.  
+**Returns**: <code>string</code> - the value of the `wrapperTemplateString` property of the `props` object.  
 <a name="UiField+getValue"></a>
 
 ### uiDateTimeField.getValue([values]) ⇒ <code>object</code> \| <code>string</code> \| <code>number</code> \| <code>boolean</code> \| <code>Array.&lt;any&gt;</code>
@@ -1534,7 +1534,7 @@ The `UiDateTimeLocalField` class is a subclass of `UiTextField` that sets the in
     * [.variables([values])](#UiField+variables) ⇒ <code>object</code>
     * [.getTemplateString()](#UiField+getTemplateString) ⇒ <code>string</code>
     * [.getWrapperTemplateFilename()](#UiField+getWrapperTemplateFilename) ⇒ <code>string</code>
-    * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒
+    * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒ <code>string</code>
     * [.getValue([values])](#UiField+getValue) ⇒ <code>object</code> \| <code>string</code> \| <code>number</code> \| <code>boolean</code> \| <code>Array.&lt;any&gt;</code>
 
 <a name="new_UiDateTimeLocalField_new"></a>
@@ -1647,12 +1647,12 @@ The function returns the filename of a UI wrapper template.
 **Returns**: <code>string</code> - the string `ui-wrapper`.  
 <a name="UiField+getWrapperTemplateString"></a>
 
-### uiDateTimeLocalField.getWrapperTemplateString() ⇒
+### uiDateTimeLocalField.getWrapperTemplateString() ⇒ <code>string</code>
 The function returns the wrapper template string from the props.
 
 **Kind**: instance method of [<code>UiDateTimeLocalField</code>](#UiDateTimeLocalField)  
 **Overrides**: [<code>getWrapperTemplateString</code>](#UiField+getWrapperTemplateString)  
-**Returns**: the value of the `wrapperTemplateString` property of the `props` object.  
+**Returns**: <code>string</code> - the value of the `wrapperTemplateString` property of the `props` object.  
 <a name="UiField+getValue"></a>
 
 ### uiDateTimeLocalField.getValue([values]) ⇒ <code>object</code> \| <code>string</code> \| <code>number</code> \| <code>boolean</code> \| <code>Array.&lt;any&gt;</code>
@@ -1685,7 +1685,7 @@ The `UiEmailField` class is a subclass of `UiTextField` that sets the `type` pro
     * [.variables([values])](#UiField+variables) ⇒ <code>object</code>
     * [.getTemplateString()](#UiField+getTemplateString) ⇒ <code>string</code>
     * [.getWrapperTemplateFilename()](#UiField+getWrapperTemplateFilename) ⇒ <code>string</code>
-    * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒
+    * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒ <code>string</code>
     * [.getValue([values])](#UiField+getValue) ⇒ <code>object</code> \| <code>string</code> \| <code>number</code> \| <code>boolean</code> \| <code>Array.&lt;any&gt;</code>
 
 <a name="new_UiEmailField_new"></a>
@@ -1798,12 +1798,12 @@ The function returns the filename of a UI wrapper template.
 **Returns**: <code>string</code> - the string `ui-wrapper`.  
 <a name="UiField+getWrapperTemplateString"></a>
 
-### uiEmailField.getWrapperTemplateString() ⇒
+### uiEmailField.getWrapperTemplateString() ⇒ <code>string</code>
 The function returns the wrapper template string from the props.
 
 **Kind**: instance method of [<code>UiEmailField</code>](#UiEmailField)  
 **Overrides**: [<code>getWrapperTemplateString</code>](#UiField+getWrapperTemplateString)  
-**Returns**: the value of the `wrapperTemplateString` property of the `props` object.  
+**Returns**: <code>string</code> - the value of the `wrapperTemplateString` property of the `props` object.  
 <a name="UiField+getValue"></a>
 
 ### uiEmailField.getValue([values]) ⇒ <code>object</code> \| <code>string</code> \| <code>number</code> \| <code>boolean</code> \| <code>Array.&lt;any&gt;</code>
@@ -1836,7 +1836,7 @@ The `UiFileField` class is a subclass of `UiTextField` that sets the `type` prop
     * [.variables([values])](#UiField+variables) ⇒ <code>object</code>
     * [.getTemplateString()](#UiField+getTemplateString) ⇒ <code>string</code>
     * [.getWrapperTemplateFilename()](#UiField+getWrapperTemplateFilename) ⇒ <code>string</code>
-    * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒
+    * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒ <code>string</code>
     * [.getValue([values])](#UiField+getValue) ⇒ <code>object</code> \| <code>string</code> \| <code>number</code> \| <code>boolean</code> \| <code>Array.&lt;any&gt;</code>
 
 <a name="new_UiFileField_new"></a>
@@ -1949,12 +1949,12 @@ The function returns the filename of a UI wrapper template.
 **Returns**: <code>string</code> - the string `ui-wrapper`.  
 <a name="UiField+getWrapperTemplateString"></a>
 
-### uiFileField.getWrapperTemplateString() ⇒
+### uiFileField.getWrapperTemplateString() ⇒ <code>string</code>
 The function returns the wrapper template string from the props.
 
 **Kind**: instance method of [<code>UiFileField</code>](#UiFileField)  
 **Overrides**: [<code>getWrapperTemplateString</code>](#UiField+getWrapperTemplateString)  
-**Returns**: the value of the `wrapperTemplateString` property of the `props` object.  
+**Returns**: <code>string</code> - the value of the `wrapperTemplateString` property of the `props` object.  
 <a name="UiField+getValue"></a>
 
 ### uiFileField.getValue([values]) ⇒ <code>object</code> \| <code>string</code> \| <code>number</code> \| <code>boolean</code> \| <code>Array.&lt;any&gt;</code>
@@ -1989,7 +1989,7 @@ props object to 'form' in its constructor.
     * [.getTemplateFilename()](#UiField+getTemplateFilename) ⇒ <code>string</code>
     * [.getTemplateString()](#UiField+getTemplateString) ⇒ <code>string</code>
     * [.getWrapperTemplateFilename()](#UiField+getWrapperTemplateFilename) ⇒ <code>string</code>
-    * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒
+    * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒ <code>string</code>
     * [.getValue([values])](#UiField+getValue) ⇒ <code>object</code> \| <code>string</code> \| <code>number</code> \| <code>boolean</code> \| <code>Array.&lt;any&gt;</code>
 
 <a name="new_UiFormField_new"></a>
@@ -2120,12 +2120,12 @@ The function returns the filename of a UI wrapper template.
 **Returns**: <code>string</code> - the string `ui-wrapper`.  
 <a name="UiField+getWrapperTemplateString"></a>
 
-### uiFormField.getWrapperTemplateString() ⇒
+### uiFormField.getWrapperTemplateString() ⇒ <code>string</code>
 The function returns the wrapper template string from the props.
 
 **Kind**: instance method of [<code>UiFormField</code>](#UiFormField)  
 **Overrides**: [<code>getWrapperTemplateString</code>](#UiField+getWrapperTemplateString)  
-**Returns**: the value of the `wrapperTemplateString` property of the `props` object.  
+**Returns**: <code>string</code> - the value of the `wrapperTemplateString` property of the `props` object.  
 <a name="UiField+getValue"></a>
 
 ### uiFormField.getValue([values]) ⇒ <code>object</code> \| <code>string</code> \| <code>number</code> \| <code>boolean</code> \| <code>Array.&lt;any&gt;</code>
@@ -2159,7 +2159,7 @@ user interface.
     * [.variables([values])](#UiField+variables) ⇒ <code>object</code>
     * [.getTemplateString()](#UiField+getTemplateString) ⇒ <code>string</code>
     * [.getWrapperTemplateFilename()](#UiField+getWrapperTemplateFilename) ⇒ <code>string</code>
-    * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒
+    * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒ <code>string</code>
     * [.getValue([values])](#UiField+getValue) ⇒ <code>object</code> \| <code>string</code> \| <code>number</code> \| <code>boolean</code> \| <code>Array.&lt;any&gt;</code>
 
 <a name="new_UiHiddenField_new"></a>
@@ -2272,12 +2272,12 @@ The function returns the filename of a UI wrapper template.
 **Returns**: <code>string</code> - the string `ui-wrapper`.  
 <a name="UiField+getWrapperTemplateString"></a>
 
-### uiHiddenField.getWrapperTemplateString() ⇒
+### uiHiddenField.getWrapperTemplateString() ⇒ <code>string</code>
 The function returns the wrapper template string from the props.
 
 **Kind**: instance method of [<code>UiHiddenField</code>](#UiHiddenField)  
 **Overrides**: [<code>getWrapperTemplateString</code>](#UiField+getWrapperTemplateString)  
-**Returns**: the value of the `wrapperTemplateString` property of the `props` object.  
+**Returns**: <code>string</code> - the value of the `wrapperTemplateString` property of the `props` object.  
 <a name="UiField+getValue"></a>
 
 ### uiHiddenField.getValue([values]) ⇒ <code>object</code> \| <code>string</code> \| <code>number</code> \| <code>boolean</code> \| <code>Array.&lt;any&gt;</code>
@@ -2310,7 +2310,7 @@ The `UiImageField` class is a subclass of `UiTextField` that represents an image
     * [.variables([values])](#UiField+variables) ⇒ <code>object</code>
     * [.getTemplateString()](#UiField+getTemplateString) ⇒ <code>string</code>
     * [.getWrapperTemplateFilename()](#UiField+getWrapperTemplateFilename) ⇒ <code>string</code>
-    * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒
+    * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒ <code>string</code>
     * [.getValue([values])](#UiField+getValue) ⇒ <code>object</code> \| <code>string</code> \| <code>number</code> \| <code>boolean</code> \| <code>Array.&lt;any&gt;</code>
 
 <a name="new_UiImageField_new"></a>
@@ -2424,12 +2424,12 @@ The function returns the filename of a UI wrapper template.
 **Returns**: <code>string</code> - the string `ui-wrapper`.  
 <a name="UiField+getWrapperTemplateString"></a>
 
-### uiImageField.getWrapperTemplateString() ⇒
+### uiImageField.getWrapperTemplateString() ⇒ <code>string</code>
 The function returns the wrapper template string from the props.
 
 **Kind**: instance method of [<code>UiImageField</code>](#UiImageField)  
 **Overrides**: [<code>getWrapperTemplateString</code>](#UiField+getWrapperTemplateString)  
-**Returns**: the value of the `wrapperTemplateString` property of the `props` object.  
+**Returns**: <code>string</code> - the value of the `wrapperTemplateString` property of the `props` object.  
 <a name="UiField+getValue"></a>
 
 ### uiImageField.getValue([values]) ⇒ <code>object</code> \| <code>string</code> \| <code>number</code> \| <code>boolean</code> \| <code>Array.&lt;any&gt;</code>
@@ -2462,7 +2462,7 @@ The UiMonthField class is a subclass of UiTextField that sets the input type to 
     * [.variables([values])](#UiField+variables) ⇒ <code>object</code>
     * [.getTemplateString()](#UiField+getTemplateString) ⇒ <code>string</code>
     * [.getWrapperTemplateFilename()](#UiField+getWrapperTemplateFilename) ⇒ <code>string</code>
-    * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒
+    * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒ <code>string</code>
     * [.getValue([values])](#UiField+getValue) ⇒ <code>object</code> \| <code>string</code> \| <code>number</code> \| <code>boolean</code> \| <code>Array.&lt;any&gt;</code>
 
 <a name="new_UiMonthField_new"></a>
@@ -2576,12 +2576,12 @@ The function returns the filename of a UI wrapper template.
 **Returns**: <code>string</code> - the string `ui-wrapper`.  
 <a name="UiField+getWrapperTemplateString"></a>
 
-### uiMonthField.getWrapperTemplateString() ⇒
+### uiMonthField.getWrapperTemplateString() ⇒ <code>string</code>
 The function returns the wrapper template string from the props.
 
 **Kind**: instance method of [<code>UiMonthField</code>](#UiMonthField)  
 **Overrides**: [<code>getWrapperTemplateString</code>](#UiField+getWrapperTemplateString)  
-**Returns**: the value of the `wrapperTemplateString` property of the `props` object.  
+**Returns**: <code>string</code> - the value of the `wrapperTemplateString` property of the `props` object.  
 <a name="UiField+getValue"></a>
 
 ### uiMonthField.getValue([values]) ⇒ <code>object</code> \| <code>string</code> \| <code>number</code> \| <code>boolean</code> \| <code>Array.&lt;any&gt;</code>
@@ -2614,7 +2614,7 @@ The `UiPasswordField` class is a subclass of `UiTextField` that sets the input t
     * [.variables([values])](#UiField+variables) ⇒ <code>object</code>
     * [.getTemplateString()](#UiField+getTemplateString) ⇒ <code>string</code>
     * [.getWrapperTemplateFilename()](#UiField+getWrapperTemplateFilename) ⇒ <code>string</code>
-    * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒
+    * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒ <code>string</code>
     * [.getValue([values])](#UiField+getValue) ⇒ <code>object</code> \| <code>string</code> \| <code>number</code> \| <code>boolean</code> \| <code>Array.&lt;any&gt;</code>
 
 <a name="new_UiPasswordField_new"></a>
@@ -2727,12 +2727,12 @@ The function returns the filename of a UI wrapper template.
 **Returns**: <code>string</code> - the string `ui-wrapper`.  
 <a name="UiField+getWrapperTemplateString"></a>
 
-### uiPasswordField.getWrapperTemplateString() ⇒
+### uiPasswordField.getWrapperTemplateString() ⇒ <code>string</code>
 The function returns the wrapper template string from the props.
 
 **Kind**: instance method of [<code>UiPasswordField</code>](#UiPasswordField)  
 **Overrides**: [<code>getWrapperTemplateString</code>](#UiField+getWrapperTemplateString)  
-**Returns**: the value of the `wrapperTemplateString` property of the `props` object.  
+**Returns**: <code>string</code> - the value of the `wrapperTemplateString` property of the `props` object.  
 <a name="UiField+getValue"></a>
 
 ### uiPasswordField.getValue([values]) ⇒ <code>object</code> \| <code>string</code> \| <code>number</code> \| <code>boolean</code> \| <code>Array.&lt;any&gt;</code>
@@ -2765,7 +2765,7 @@ The `UiRadioField` class is a subclass of `UiFieldWithOptions` that represents a
     * [.getTemplateFilename()](#UiField+getTemplateFilename) ⇒ <code>string</code>
     * [.getTemplateString()](#UiField+getTemplateString) ⇒ <code>string</code>
     * [.getWrapperTemplateFilename()](#UiField+getWrapperTemplateFilename) ⇒ <code>string</code>
-    * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒
+    * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒ <code>string</code>
     * [.getValue([values])](#UiField+getValue) ⇒ <code>object</code> \| <code>string</code> \| <code>number</code> \| <code>boolean</code> \| <code>Array.&lt;any&gt;</code>
 
 <a name="new_UiRadioField_new"></a>
@@ -2878,12 +2878,12 @@ The function returns the filename of a UI wrapper template.
 **Returns**: <code>string</code> - the string `ui-wrapper`.  
 <a name="UiField+getWrapperTemplateString"></a>
 
-### uiRadioField.getWrapperTemplateString() ⇒
+### uiRadioField.getWrapperTemplateString() ⇒ <code>string</code>
 The function returns the wrapper template string from the props.
 
 **Kind**: instance method of [<code>UiRadioField</code>](#UiRadioField)  
 **Overrides**: [<code>getWrapperTemplateString</code>](#UiField+getWrapperTemplateString)  
-**Returns**: the value of the `wrapperTemplateString` property of the `props` object.  
+**Returns**: <code>string</code> - the value of the `wrapperTemplateString` property of the `props` object.  
 <a name="UiField+getValue"></a>
 
 ### uiRadioField.getValue([values]) ⇒ <code>object</code> \| <code>string</code> \| <code>number</code> \| <code>boolean</code> \| <code>Array.&lt;any&gt;</code>
@@ -2916,7 +2916,7 @@ The `UiRangeField` class is a subclass of `UiTextField` that sets the `type` pro
     * [.variables([values])](#UiField+variables) ⇒ <code>object</code>
     * [.getTemplateString()](#UiField+getTemplateString) ⇒ <code>string</code>
     * [.getWrapperTemplateFilename()](#UiField+getWrapperTemplateFilename) ⇒ <code>string</code>
-    * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒
+    * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒ <code>string</code>
     * [.getValue([values])](#UiField+getValue) ⇒ <code>object</code> \| <code>string</code> \| <code>number</code> \| <code>boolean</code> \| <code>Array.&lt;any&gt;</code>
 
 <a name="new_UiRangeField_new"></a>
@@ -3029,12 +3029,12 @@ The function returns the filename of a UI wrapper template.
 **Returns**: <code>string</code> - the string `ui-wrapper`.  
 <a name="UiField+getWrapperTemplateString"></a>
 
-### uiRangeField.getWrapperTemplateString() ⇒
+### uiRangeField.getWrapperTemplateString() ⇒ <code>string</code>
 The function returns the wrapper template string from the props.
 
 **Kind**: instance method of [<code>UiRangeField</code>](#UiRangeField)  
 **Overrides**: [<code>getWrapperTemplateString</code>](#UiField+getWrapperTemplateString)  
-**Returns**: the value of the `wrapperTemplateString` property of the `props` object.  
+**Returns**: <code>string</code> - the value of the `wrapperTemplateString` property of the `props` object.  
 <a name="UiField+getValue"></a>
 
 ### uiRangeField.getValue([values]) ⇒ <code>object</code> \| <code>string</code> \| <code>number</code> \| <code>boolean</code> \| <code>Array.&lt;any&gt;</code>
@@ -3067,7 +3067,7 @@ The `UiSearchField` class is a subclass of `UiTextField` that sets the type of t
     * [.variables([values])](#UiField+variables) ⇒ <code>object</code>
     * [.getTemplateString()](#UiField+getTemplateString) ⇒ <code>string</code>
     * [.getWrapperTemplateFilename()](#UiField+getWrapperTemplateFilename) ⇒ <code>string</code>
-    * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒
+    * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒ <code>string</code>
     * [.getValue([values])](#UiField+getValue) ⇒ <code>object</code> \| <code>string</code> \| <code>number</code> \| <code>boolean</code> \| <code>Array.&lt;any&gt;</code>
 
 <a name="new_UiSearchField_new"></a>
@@ -3181,12 +3181,12 @@ The function returns the filename of a UI wrapper template.
 **Returns**: <code>string</code> - the string `ui-wrapper`.  
 <a name="UiField+getWrapperTemplateString"></a>
 
-### uiSearchField.getWrapperTemplateString() ⇒
+### uiSearchField.getWrapperTemplateString() ⇒ <code>string</code>
 The function returns the wrapper template string from the props.
 
 **Kind**: instance method of [<code>UiSearchField</code>](#UiSearchField)  
 **Overrides**: [<code>getWrapperTemplateString</code>](#UiField+getWrapperTemplateString)  
-**Returns**: the value of the `wrapperTemplateString` property of the `props` object.  
+**Returns**: <code>string</code> - the value of the `wrapperTemplateString` property of the `props` object.  
 <a name="UiField+getValue"></a>
 
 ### uiSearchField.getValue([values]) ⇒ <code>object</code> \| <code>string</code> \| <code>number</code> \| <code>boolean</code> \| <code>Array.&lt;any&gt;</code>
@@ -3223,7 +3223,7 @@ interface.
     * [.getTemplateFilename()](#UiField+getTemplateFilename) ⇒ <code>string</code>
     * [.getTemplateString()](#UiField+getTemplateString) ⇒ <code>string</code>
     * [.getWrapperTemplateFilename()](#UiField+getWrapperTemplateFilename) ⇒ <code>string</code>
-    * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒
+    * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒ <code>string</code>
 
 <a name="new_UiSelectField_new"></a>
 
@@ -3383,12 +3383,12 @@ The function returns the filename of a UI wrapper template.
 **Returns**: <code>string</code> - the string `ui-wrapper`.  
 <a name="UiField+getWrapperTemplateString"></a>
 
-### uiSelectField.getWrapperTemplateString() ⇒
+### uiSelectField.getWrapperTemplateString() ⇒ <code>string</code>
 The function returns the wrapper template string from the props.
 
 **Kind**: instance method of [<code>UiSelectField</code>](#UiSelectField)  
 **Overrides**: [<code>getWrapperTemplateString</code>](#UiField+getWrapperTemplateString)  
-**Returns**: the value of the `wrapperTemplateString` property of the `props` object.  
+**Returns**: <code>string</code> - the value of the `wrapperTemplateString` property of the `props` object.  
 <a name="UiTelField"></a>
 
 ## UiTelField ⇐ [<code>UiTextField</code>](#UiTextField)
@@ -3408,7 +3408,7 @@ The UiTelField class is a subclass of UiTextField that sets the type of the inpu
     * [.variables([values])](#UiField+variables) ⇒ <code>object</code>
     * [.getTemplateString()](#UiField+getTemplateString) ⇒ <code>string</code>
     * [.getWrapperTemplateFilename()](#UiField+getWrapperTemplateFilename) ⇒ <code>string</code>
-    * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒
+    * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒ <code>string</code>
     * [.getValue([values])](#UiField+getValue) ⇒ <code>object</code> \| <code>string</code> \| <code>number</code> \| <code>boolean</code> \| <code>Array.&lt;any&gt;</code>
 
 <a name="new_UiTelField_new"></a>
@@ -3521,12 +3521,12 @@ The function returns the filename of a UI wrapper template.
 **Returns**: <code>string</code> - the string `ui-wrapper`.  
 <a name="UiField+getWrapperTemplateString"></a>
 
-### uiTelField.getWrapperTemplateString() ⇒
+### uiTelField.getWrapperTemplateString() ⇒ <code>string</code>
 The function returns the wrapper template string from the props.
 
 **Kind**: instance method of [<code>UiTelField</code>](#UiTelField)  
 **Overrides**: [<code>getWrapperTemplateString</code>](#UiField+getWrapperTemplateString)  
-**Returns**: the value of the `wrapperTemplateString` property of the `props` object.  
+**Returns**: <code>string</code> - the value of the `wrapperTemplateString` property of the `props` object.  
 <a name="UiField+getValue"></a>
 
 ### uiTelField.getValue([values]) ⇒ <code>object</code> \| <code>string</code> \| <code>number</code> \| <code>boolean</code> \| <code>Array.&lt;any&gt;</code>
@@ -3559,7 +3559,7 @@ The `UiTextareaField` class is a subclass of `UiField` that represents a textare
     * [.getTemplateFilename()](#UiField+getTemplateFilename) ⇒ <code>string</code>
     * [.getTemplateString()](#UiField+getTemplateString) ⇒ <code>string</code>
     * [.getWrapperTemplateFilename()](#UiField+getWrapperTemplateFilename) ⇒ <code>string</code>
-    * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒
+    * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒ <code>string</code>
     * [.getValue([values])](#UiField+getValue) ⇒ <code>object</code> \| <code>string</code> \| <code>number</code> \| <code>boolean</code> \| <code>Array.&lt;any&gt;</code>
 
 <a name="new_UiTextareaField_new"></a>
@@ -3672,12 +3672,12 @@ The function returns the filename of a UI wrapper template.
 **Returns**: <code>string</code> - the string `ui-wrapper`.  
 <a name="UiField+getWrapperTemplateString"></a>
 
-### uiTextareaField.getWrapperTemplateString() ⇒
+### uiTextareaField.getWrapperTemplateString() ⇒ <code>string</code>
 The function returns the wrapper template string from the props.
 
 **Kind**: instance method of [<code>UiTextareaField</code>](#UiTextareaField)  
 **Overrides**: [<code>getWrapperTemplateString</code>](#UiField+getWrapperTemplateString)  
-**Returns**: the value of the `wrapperTemplateString` property of the `props` object.  
+**Returns**: <code>string</code> - the value of the `wrapperTemplateString` property of the `props` object.  
 <a name="UiField+getValue"></a>
 
 ### uiTextareaField.getValue([values]) ⇒ <code>object</code> \| <code>string</code> \| <code>number</code> \| <code>boolean</code> \| <code>Array.&lt;any&gt;</code>
@@ -3710,7 +3710,7 @@ The UiTimeField class is a subclass of UiTextField that sets the type of the inp
     * [.variables([values])](#UiField+variables) ⇒ <code>object</code>
     * [.getTemplateString()](#UiField+getTemplateString) ⇒ <code>string</code>
     * [.getWrapperTemplateFilename()](#UiField+getWrapperTemplateFilename) ⇒ <code>string</code>
-    * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒
+    * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒ <code>string</code>
     * [.getValue([values])](#UiField+getValue) ⇒ <code>object</code> \| <code>string</code> \| <code>number</code> \| <code>boolean</code> \| <code>Array.&lt;any&gt;</code>
 
 <a name="new_UiTimeField_new"></a>
@@ -3823,12 +3823,12 @@ The function returns the filename of a UI wrapper template.
 **Returns**: <code>string</code> - the string `ui-wrapper`.  
 <a name="UiField+getWrapperTemplateString"></a>
 
-### uiTimeField.getWrapperTemplateString() ⇒
+### uiTimeField.getWrapperTemplateString() ⇒ <code>string</code>
 The function returns the wrapper template string from the props.
 
 **Kind**: instance method of [<code>UiTimeField</code>](#UiTimeField)  
 **Overrides**: [<code>getWrapperTemplateString</code>](#UiField+getWrapperTemplateString)  
-**Returns**: the value of the `wrapperTemplateString` property of the `props` object.  
+**Returns**: <code>string</code> - the value of the `wrapperTemplateString` property of the `props` object.  
 <a name="UiField+getValue"></a>
 
 ### uiTimeField.getValue([values]) ⇒ <code>object</code> \| <code>string</code> \| <code>number</code> \| <code>boolean</code> \| <code>Array.&lt;any&gt;</code>
@@ -3861,7 +3861,7 @@ The `UiUrlField` class is a subclass of `UiTextField` that sets the input type t
     * [.variables([values])](#UiField+variables) ⇒ <code>object</code>
     * [.getTemplateString()](#UiField+getTemplateString) ⇒ <code>string</code>
     * [.getWrapperTemplateFilename()](#UiField+getWrapperTemplateFilename) ⇒ <code>string</code>
-    * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒
+    * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒ <code>string</code>
     * [.getValue([values])](#UiField+getValue) ⇒ <code>object</code> \| <code>string</code> \| <code>number</code> \| <code>boolean</code> \| <code>Array.&lt;any&gt;</code>
 
 <a name="new_UiUrlField_new"></a>
@@ -3975,12 +3975,12 @@ The function returns the filename of a UI wrapper template.
 **Returns**: <code>string</code> - the string `ui-wrapper`.  
 <a name="UiField+getWrapperTemplateString"></a>
 
-### uiUrlField.getWrapperTemplateString() ⇒
+### uiUrlField.getWrapperTemplateString() ⇒ <code>string</code>
 The function returns the wrapper template string from the props.
 
 **Kind**: instance method of [<code>UiUrlField</code>](#UiUrlField)  
 **Overrides**: [<code>getWrapperTemplateString</code>](#UiField+getWrapperTemplateString)  
-**Returns**: the value of the `wrapperTemplateString` property of the `props` object.  
+**Returns**: <code>string</code> - the value of the `wrapperTemplateString` property of the `props` object.  
 <a name="UiField+getValue"></a>
 
 ### uiUrlField.getValue([values]) ⇒ <code>object</code> \| <code>string</code> \| <code>number</code> \| <code>boolean</code> \| <code>Array.&lt;any&gt;</code>
@@ -4029,7 +4029,7 @@ The `UiField` class is a JavaScript class that renders content and wraps it usin
     * [.getTemplateFilename()](#UiField+getTemplateFilename) ⇒ <code>string</code>
     * [.getTemplateString()](#UiField+getTemplateString) ⇒ <code>string</code>
     * [.getWrapperTemplateFilename()](#UiField+getWrapperTemplateFilename) ⇒ <code>string</code>
-    * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒
+    * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒ <code>string</code>
     * [.getValue([values])](#UiField+getValue) ⇒ <code>object</code> \| <code>string</code> \| <code>number</code> \| <code>boolean</code> \| <code>Array.&lt;any&gt;</code>
 
 <a name="new_UiField_new"></a>
@@ -4134,11 +4134,11 @@ The function returns the filename of a UI wrapper template.
 **Returns**: <code>string</code> - the string `ui-wrapper`.  
 <a name="UiField+getWrapperTemplateString"></a>
 
-### uiField.getWrapperTemplateString() ⇒
+### uiField.getWrapperTemplateString() ⇒ <code>string</code>
 The function returns the wrapper template string from the props.
 
 **Kind**: instance method of [<code>UiField</code>](#UiField)  
-**Returns**: the value of the `wrapperTemplateString` property of the `props` object.  
+**Returns**: <code>string</code> - the value of the `wrapperTemplateString` property of the `props` object.  
 <a name="UiField+getValue"></a>
 
 ### uiField.getValue([values]) ⇒ <code>object</code> \| <code>string</code> \| <code>number</code> \| <code>boolean</code> \| <code>Array.&lt;any&gt;</code>
@@ -4175,7 +4175,7 @@ items based on the options provided.
     * [.getTemplateFilename()](#UiField+getTemplateFilename) ⇒ <code>string</code>
     * [.getTemplateString()](#UiField+getTemplateString) ⇒ <code>string</code>
     * [.getWrapperTemplateFilename()](#UiField+getWrapperTemplateFilename) ⇒ <code>string</code>
-    * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒
+    * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒ <code>string</code>
 
 <a name="new_UiFieldWithOptions_new"></a>
 
@@ -4333,12 +4333,12 @@ The function returns the filename of a UI wrapper template.
 **Returns**: <code>string</code> - the string `ui-wrapper`.  
 <a name="UiField+getWrapperTemplateString"></a>
 
-### uiFieldWithOptions.getWrapperTemplateString() ⇒
+### uiFieldWithOptions.getWrapperTemplateString() ⇒ <code>string</code>
 The function returns the wrapper template string from the props.
 
 **Kind**: instance method of [<code>UiFieldWithOptions</code>](#UiFieldWithOptions)  
 **Overrides**: [<code>getWrapperTemplateString</code>](#UiField+getWrapperTemplateString)  
-**Returns**: the value of the `wrapperTemplateString` property of the `props` object.  
+**Returns**: <code>string</code> - the value of the `wrapperTemplateString` property of the `props` object.  
 <a name="UiFieldWithFields"></a>
 
 ## UiFieldWithFields ⇐ [<code>UiField</code>](#UiField)
@@ -4359,7 +4359,7 @@ The `UiFieldWithFields` class is a subclass of `UiField` that renders an array o
     * [.getTemplateFilename()](#UiField+getTemplateFilename) ⇒ <code>string</code>
     * [.getTemplateString()](#UiField+getTemplateString) ⇒ <code>string</code>
     * [.getWrapperTemplateFilename()](#UiField+getWrapperTemplateFilename) ⇒ <code>string</code>
-    * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒
+    * [.getWrapperTemplateString()](#UiField+getWrapperTemplateString) ⇒ <code>string</code>
     * [.getValue([values])](#UiField+getValue) ⇒ <code>object</code> \| <code>string</code> \| <code>number</code> \| <code>boolean</code> \| <code>Array.&lt;any&gt;</code>
 
 <a name="new_UiFieldWithFields_new"></a>
@@ -4490,12 +4490,12 @@ The function returns the filename of a UI wrapper template.
 **Returns**: <code>string</code> - the string `ui-wrapper`.  
 <a name="UiField+getWrapperTemplateString"></a>
 
-### uiFieldWithFields.getWrapperTemplateString() ⇒
+### uiFieldWithFields.getWrapperTemplateString() ⇒ <code>string</code>
 The function returns the wrapper template string from the props.
 
 **Kind**: instance method of [<code>UiFieldWithFields</code>](#UiFieldWithFields)  
 **Overrides**: [<code>getWrapperTemplateString</code>](#UiField+getWrapperTemplateString)  
-**Returns**: the value of the `wrapperTemplateString` property of the `props` object.  
+**Returns**: <code>string</code> - the value of the `wrapperTemplateString` property of the `props` object.  
 <a name="UiField+getValue"></a>
 
 ### uiFieldWithFields.getValue([values]) ⇒ <code>object</code> \| <code>string</code> \| <code>number</code> \| <code>boolean</code> \| <code>Array.&lt;any&gt;</code>
