@@ -122,10 +122,6 @@ options.</p>
 <dd><p>The function <code>textareaField</code> creates a textarea input field with a label and optional additional
 options.</p>
 </dd>
-<dt><a href="#textField">textField([label], [options])</a> ⇒ <code><a href="#UiTextField">UiTextField</a></code></dt>
-<dd><p>The function <code>textField</code> creates a new instance of <code>UiTextField</code> with the provided label and
-options.</p>
-</dd>
 <dt><a href="#dateField">dateField([label], [options])</a> ⇒ <code><a href="#UiDateField">UiDateField</a></code></dt>
 <dd><p>The function <code>dateField</code> creates a new date field with a label and optional additional options.</p>
 </dd>
@@ -172,12 +168,16 @@ options.</p>
 <dd><p>The function <code>searchField</code> creates a new instance of <code>UiSearchField</code> with the provided label and
 options.</p>
 </dd>
-<dt><a href="#telField">telField([label], [options])</a> ⇒ <code><a href="#UiTelField">UiTelField</a></code></dt>
-<dd><p>The function <code>telField</code> creates a new <code>UiTelField</code> object with optional label and options.</p>
-</dd>
 <dt><a href="#selectField">selectField([label], [choices], [options])</a> ⇒ <code><a href="#UiSelectField">UiSelectField</a></code></dt>
 <dd><p>The function <code>selectField</code> creates a new <code>UiSelectField</code> object with the provided label, choices,
 and options.</p>
+</dd>
+<dt><a href="#telField">telField([label], [options])</a> ⇒ <code><a href="#UiTelField">UiTelField</a></code></dt>
+<dd><p>The function <code>telField</code> creates a new <code>UiTelField</code> object with optional label and options.</p>
+</dd>
+<dt><a href="#textField">textField([label], [options])</a> ⇒ <code><a href="#UiTextField">UiTextField</a></code></dt>
+<dd><p>The function <code>textField</code> creates a new instance of <code>UiTextField</code> with the provided label and
+options.</p>
 </dd>
 <dt><a href="#timeField">timeField([label], [options])</a> ⇒ <code><a href="#UiTimeField">UiTimeField</a></code></dt>
 <dd><p>The function <code>timeField</code> creates a time field UI element with an optional label and additional
@@ -438,7 +438,7 @@ The constructor function sets the type property of the props object to 'checkbox
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
-| [props] | <code>object</code> | <code>{}</code> | The `props` parameter is an object that contains the properties and values that are passed to the component when it is created. In this case, the `props` object is set to an empty object `{}` by default if no argument is provided when creating the component. |
+| [props] | [<code>FieldProperties</code>](#FieldProperties) | <code>{}</code> | The `props` parameter is an object that contains the properties and values that are passed to the component when it is created. In this case, the `props` object is set to an empty object `{}` by default if no argument is provided when creating the component. |
 
 <a name="UiField+render"></a>
 
@@ -589,7 +589,7 @@ The constructor function sets the default value of the 'type' property to 'text'
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
-| [props] | <code>object</code> | <code>{}</code> | The `props` parameter is an object that contains the properties and values that are passed to the constructor. In this case, the `props` object is set to an empty object `{}` by default if no argument is provided when creating an instance of the class. |
+| [props] | [<code>FieldProperties</code>](#FieldProperties) | <code>{}</code> | The `props` parameter is an object that contains the properties and values that are passed to the constructor. In this case, the `props` object is set to an empty object `{}` by default if no argument is provided when creating an instance of the class. |
 
 <a name="UiTextField+getTemplateFilename"></a>
 
@@ -740,7 +740,7 @@ The constructor function sets the type property of the props object to 'number'.
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
-| [props] | <code>object</code> | <code>{}</code> | The `props` parameter is an object that contains the properties and values that are passed to the constructor when creating an instance of the class. In this case, the `props` object is set to an empty object `{}` by default if no argument is provided when creating an instance. |
+| [props] | [<code>FieldProperties</code>](#FieldProperties) | <code>{}</code> | The `props` parameter is an object that contains the properties and values that are passed to the constructor when creating an instance of the class. In this case, the `props` object is set to an empty object `{}` by default if no argument is provided when creating an instance. |
 
 <a name="UiTextField+getTemplateFilename"></a>
 
@@ -893,7 +893,7 @@ The constructor function sets the type property of the props object to 'checkbox
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
-| [props] | <code>object</code> | <code>{}</code> | The `props` parameter is an object that contains the properties passed to the constructor. In this case, it is set to an empty object `{}` by default. |
+| [props] | [<code>FieldProperties</code>](#FieldProperties) | <code>{}</code> | The `props` parameter is an object that contains the properties passed to the constructor. In this case, it is set to an empty object `{}` by default. |
 
 <a name="UiFieldWithOptions+getValue"></a>
 
@@ -1080,7 +1080,7 @@ object.
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
-| [props] | <code>object</code> | <code>{}</code> | The `props` parameter is an object that contains the properties and values that are passed to the constructor when creating an instance of the class. In this case, the `props` object is set to an empty object `{}` by default if no arguments are provided when creating an instance. |
+| [props] | [<code>FieldProperties</code>](#FieldProperties) | <code>{}</code> | The `props` parameter is an object that contains the properties and values that are passed to the constructor when creating an instance of the class. In this case, the `props` object is set to an empty object `{}` by default if no arguments are provided when creating an instance. |
 
 <a name="UiTextField+getTemplateFilename"></a>
 
@@ -1232,7 +1232,7 @@ object.
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
-| [props] | <code>object</code> | <code>{}</code> | The `props` parameter is an object that contains the properties passed to the constructor. In this case, it is an optional parameter with a default value of an empty object `{}`. |
+| [props] | [<code>FieldProperties</code>](#FieldProperties) | <code>{}</code> | The `props` parameter is an object that contains the properties passed to the constructor. In this case, it is an optional parameter with a default value of an empty object `{}`. |
 
 <a name="UiTextField+getTemplateFilename"></a>
 
@@ -1383,7 +1383,7 @@ The constructor function sets the type property of the props object to 'datetime
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
-| [props] | <code>object</code> | <code>{}</code> | The `props` parameter is an object that contains the properties passed to the constructor. In this case, it is an optional parameter with a default value of an empty object `{}`. |
+| [props] | [<code>FieldProperties</code>](#FieldProperties) | <code>{}</code> | The `props` parameter is an object that contains the properties passed to the constructor. In this case, it is an optional parameter with a default value of an empty object `{}`. |
 
 <a name="UiTextField+getTemplateFilename"></a>
 
@@ -1534,7 +1534,7 @@ The constructor function sets the type of a props object to 'datetime-local'.
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
-| [props] | <code>object</code> | <code>{}</code> | The `props` parameter is an object that contains the properties passed to the constructor. In this case, it is an optional parameter with a default value of an empty object `{}`. |
+| [props] | [<code>FieldProperties</code>](#FieldProperties) | <code>{}</code> | The `props` parameter is an object that contains the properties passed to the constructor. In this case, it is an optional parameter with a default value of an empty object `{}`. |
 
 <a name="UiTextField+getTemplateFilename"></a>
 
@@ -1685,7 +1685,7 @@ The constructor function sets the type property of the props object to 'email'.
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
-| [props] | <code>object</code> | <code>{}</code> | The `props` parameter is an object that contains the properties passed to the constructor. In this case, it is set to an empty object `{}` by default. |
+| [props] | [<code>FieldProperties</code>](#FieldProperties) | <code>{}</code> | The `props` parameter is an object that contains the properties passed to the constructor. In this case, it is set to an empty object `{}` by default. |
 
 <a name="UiTextField+getTemplateFilename"></a>
 
@@ -1836,7 +1836,7 @@ The constructor function sets the type property of the props object to 'file'.
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
-| [props] | <code>object</code> | <code>{}</code> | The `props` parameter is an object that contains the properties and values that are passed to the constructor when creating an instance of the class. In this case, the `props` object is set to an empty object `{}` by default if no arguments are provided when creating an instance. |
+| [props] | [<code>FieldProperties</code>](#FieldProperties) | <code>{}</code> | The `props` parameter is an object that contains the properties and values that are passed to the constructor when creating an instance of the class. In this case, the `props` object is set to an empty object `{}` by default if no arguments are provided when creating an instance. |
 
 <a name="UiTextField+getTemplateFilename"></a>
 
@@ -1989,7 +1989,7 @@ The constructor function sets the type property of the props object to 'form'.
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
-| [props] | <code>object</code> | <code>{}</code> | The `props` parameter is an object that contains the properties passed to the constructor. In this case, it is set to an empty object `{}` by default. |
+| [props] | [<code>FieldProperties</code>](#FieldProperties) | <code>{}</code> | The `props` parameter is an object that contains the properties passed to the constructor. In this case, it is set to an empty object `{}` by default. |
 
 <a name="UiFieldWithFields+defaultVariables"></a>
 
@@ -2159,7 +2159,7 @@ The constructor function sets the type property of the props object to 'hidden'.
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
-| [props] | <code>object</code> | <code>{}</code> | The `props` parameter is an object that contains the properties and values that are passed to the component when it is created. In this case, the `props` object is set to an empty object `{}` by default if no argument is provided when creating the component. |
+| [props] | [<code>FieldProperties</code>](#FieldProperties) | <code>{}</code> | The `props` parameter is an object that contains the properties and values that are passed to the component when it is created. In this case, the `props` object is set to an empty object `{}` by default if no argument is provided when creating the component. |
 
 <a name="UiHiddenField+getTemplateFilename"></a>
 
@@ -2311,7 +2311,7 @@ before calling the super constructor.
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
-| [props] | <code>object</code> | <code>{}</code> | The `props` parameter is an object that contains the properties and values that are passed to the constructor. |
+| [props] | [<code>FieldProperties</code>](#FieldProperties) | <code>{}</code> | The `props` parameter is an object that contains the properties and values that are passed to the constructor. |
 
 <a name="UiTextField+getTemplateFilename"></a>
 
@@ -2463,7 +2463,7 @@ object.
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
-| [props] | <code>object</code> | <code>{}</code> | The `props` parameter is an object that contains the properties passed to the constructor. In this case, it is set to an empty object `{}` by default. |
+| [props] | [<code>FieldProperties</code>](#FieldProperties) | <code>{}</code> | The `props` parameter is an object that contains the properties passed to the constructor. In this case, it is set to an empty object `{}` by default. |
 
 <a name="UiTextField+getTemplateFilename"></a>
 
@@ -2614,7 +2614,7 @@ The constructor function sets the type of a password input field to 'password'.
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
-| [props] | <code>object</code> | <code>{}</code> | The `props` parameter is an object that contains the properties passed to the constructor. It is an optional parameter and if no value is provided, an empty object `{}` is used as the default value. |
+| [props] | [<code>FieldProperties</code>](#FieldProperties) | <code>{}</code> | The `props` parameter is an object that contains the properties passed to the constructor. It is an optional parameter and if no value is provided, an empty object `{}` is used as the default value. |
 
 <a name="UiTextField+getTemplateFilename"></a>
 
@@ -2765,7 +2765,7 @@ The constructor function sets the type property of the props object to 'radio'.
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
-| [props] | <code>object</code> | <code>{}</code> | The `props` parameter is an object that contains the properties and values that are passed to the component when it is created. It is an optional parameter, and if no value is provided, an empty object `{}` is used as the default value. |
+| [props] | [<code>FieldProperties</code>](#FieldProperties) | <code>{}</code> | The `props` parameter is an object that contains the properties and values that are passed to the component when it is created. It is an optional parameter, and if no value is provided, an empty object `{}` is used as the default value. |
 
 <a name="UiField+render"></a>
 
@@ -2916,7 +2916,7 @@ The constructor function sets the type property of the props object to 'range'.
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
-| [props] | <code>object</code> | <code>{}</code> | The `props` parameter is an object that contains the properties and values that are passed to the constructor. In this case, it is set to an empty object `{}` by default. |
+| [props] | [<code>FieldProperties</code>](#FieldProperties) | <code>{}</code> | The `props` parameter is an object that contains the properties and values that are passed to the constructor. In this case, it is set to an empty object `{}` by default. |
 
 <a name="UiTextField+getTemplateFilename"></a>
 
@@ -3068,7 +3068,7 @@ object.
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
-| [props] | <code>object</code> | <code>{}</code> | The `props` parameter is an object that contains the properties passed to the constructor. In this case, it is set to an empty object `{}` by default. |
+| [props] | [<code>FieldProperties</code>](#FieldProperties) | <code>{}</code> | The `props` parameter is an object that contains the properties passed to the constructor. In this case, it is set to an empty object `{}` by default. |
 
 <a name="UiTextField+getTemplateFilename"></a>
 
@@ -3222,7 +3222,7 @@ The constructor function sets the type property of the props object to 'select'.
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
-| [props] | <code>object</code> | <code>{}</code> | The `props` parameter is an object that contains the properties and values that are passed to the constructor. In this case, it is set to an empty object `{}` by default. |
+| [props] | [<code>FieldProperties</code>](#FieldProperties) | <code>{}</code> | The `props` parameter is an object that contains the properties and values that are passed to the constructor. In this case, it is set to an empty object `{}` by default. |
 
 <a name="UiFieldWithOptions+getValue"></a>
 
@@ -3408,7 +3408,7 @@ The constructor function sets the type of the props object to 'tel' by default.
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
-| [props] | <code>object</code> | <code>{}</code> | The `props` parameter is an object that contains the properties passed to the component. In this case, it is an optional parameter with a default value of an empty object `{}`. |
+| [props] | [<code>FieldProperties</code>](#FieldProperties) | <code>{}</code> | The `props` parameter is an object that contains the properties passed to the component. In this case, it is an optional parameter with a default value of an empty object `{}`. |
 
 <a name="UiTextField+getTemplateFilename"></a>
 
@@ -3559,7 +3559,7 @@ The constructor function sets the type property of the props object to 'textarea
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
-| [props] | <code>object</code> | <code>{}</code> | The `props` parameter is an object that contains the properties and values that are passed to the constructor. In this case, it is set to an empty object `{}` by default. |
+| [props] | [<code>FieldProperties</code>](#FieldProperties) | <code>{}</code> | The `props` parameter is an object that contains the properties and values that are passed to the constructor. In this case, it is set to an empty object `{}` by default. |
 
 <a name="UiField+render"></a>
 
@@ -3710,7 +3710,7 @@ The constructor function sets the type property of the props object to 'time'.
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
-| [props] | <code>object</code> | <code>{}</code> | props is an object that contains the properties passed to the constructor. It is an optional parameter and if no value is provided, an empty object is assigned as the default value. |
+| [props] | [<code>FieldProperties</code>](#FieldProperties) | <code>{}</code> | props is an object that contains the properties passed to the constructor. It is an optional parameter and if no value is provided, an empty object is assigned as the default value. |
 
 <a name="UiTextField+getTemplateFilename"></a>
 
@@ -3862,7 +3862,7 @@ object.
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
-| [props] | <code>object</code> | <code>{}</code> | The `props` parameter is an object that contains the properties and values that are passed to the constructor. In this case, it is set to an empty object `{}` by default. |
+| [props] | [<code>FieldProperties</code>](#FieldProperties) | <code>{}</code> | The `props` parameter is an object that contains the properties and values that are passed to the constructor. In this case, it is set to an empty object `{}` by default. |
 
 <a name="UiTextField+getTemplateFilename"></a>
 
@@ -4567,20 +4567,6 @@ options.
 | [label] | <code>string</code> | <code>&quot;&#x27;&#x27;&quot;</code> | A string representing the label for the textarea field. It is an optional parameter and defaults to an empty string if not provided. |
 | [options] | [<code>FieldProperties</code>](#FieldProperties) | <code>{}</code> | An object that contains additional options for the textarea field. These options can include properties such as placeholder, value, rows, cols, and disabled. |
 
-<a name="textField"></a>
-
-## textField([label], [options]) ⇒ [<code>UiTextField</code>](#UiTextField)
-The function `textField` creates a new instance of `UiTextField` with the provided label and
-options.
-
-**Kind**: global function  
-**Returns**: [<code>UiTextField</code>](#UiTextField) - a new instance of the `UiTextField` class with the provided options.  
-
-| Param | Type | Default | Description |
-| --- | --- | --- | --- |
-| [label] | <code>string</code> | <code>&quot;&#x27;&#x27;&quot;</code> | The label parameter is a string that represents the label or placeholder text for the text field. It is optional and defaults to an empty string if not provided. |
-| [options] | [<code>FieldProperties</code>](#FieldProperties) | <code>{}</code> | The `options` parameter is an object that contains additional configuration options for the `UiTextField` component. These options can include properties such as `placeholder`, `maxLength`, `defaultValue`, `disabled`, etc. |
-
 <a name="dateField"></a>
 
 ## dateField([label], [options]) ⇒ [<code>UiDateField</code>](#UiDateField)
@@ -4759,19 +4745,6 @@ options.
 | [label] | <code>string</code> | <code>&quot;&#x27;&#x27;&quot;</code> | The label parameter is a string that represents the label or title of the search field. It is optional and defaults to an empty string if not provided. |
 | [options] | [<code>FieldProperties</code>](#FieldProperties) | <code>{}</code> | The `options` parameter is an object that contains additional configuration options for the `UiSearchField` component. These options can include properties such as `placeholder`, `defaultValue`, `onChange`, etc. |
 
-<a name="telField"></a>
-
-## telField([label], [options]) ⇒ [<code>UiTelField</code>](#UiTelField)
-The function `telField` creates a new `UiTelField` object with optional label and options.
-
-**Kind**: global function  
-**Returns**: [<code>UiTelField</code>](#UiTelField) - a new instance of the `UiTelField` class with the provided options.  
-
-| Param | Type | Default | Description |
-| --- | --- | --- | --- |
-| [label] | <code>string</code> | <code>&quot;&#x27;&#x27;&quot;</code> | A string that represents the label for the telephone field. It is an optional parameter and defaults to an empty string if not provided. |
-| [options] | [<code>FieldProperties</code>](#FieldProperties) | <code>{}</code> | An object that contains additional configuration options for the `UiTelField` component. |
-
 <a name="selectField"></a>
 
 ## selectField([label], [choices], [options]) ⇒ [<code>UiSelectField</code>](#UiSelectField)
@@ -4786,6 +4759,33 @@ and options.
 | [label] | <code>string</code> | <code>&quot;&#x27;&#x27;&quot;</code> | The label parameter is a string that represents the label or title of the field. It is optional and defaults to an empty string if not provided. |
 | [choices] | [<code>Array.&lt;FieldChoice&gt;</code>](#FieldChoice) | <code>[]</code> | An array of options for the select field. Each option should be a string or an object with a "label" and "value" property. |
 | [options] | [<code>FieldProperties</code>](#FieldProperties) | <code>{}</code> | An object containing additional options for the select field. These options will be merged with the default options. |
+
+<a name="telField"></a>
+
+## telField([label], [options]) ⇒ [<code>UiTelField</code>](#UiTelField)
+The function `telField` creates a new `UiTelField` object with optional label and options.
+
+**Kind**: global function  
+**Returns**: [<code>UiTelField</code>](#UiTelField) - a new instance of the `UiTelField` class with the provided options.  
+
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| [label] | <code>string</code> | <code>&quot;&#x27;&#x27;&quot;</code> | A string that represents the label for the telephone field. It is an optional parameter and defaults to an empty string if not provided. |
+| [options] | [<code>FieldProperties</code>](#FieldProperties) | <code>{}</code> | An object that contains additional configuration options for the `UiTelField` component. |
+
+<a name="textField"></a>
+
+## textField([label], [options]) ⇒ [<code>UiTextField</code>](#UiTextField)
+The function `textField` creates a new instance of `UiTextField` with the provided label and
+options.
+
+**Kind**: global function  
+**Returns**: [<code>UiTextField</code>](#UiTextField) - a new instance of the `UiTextField` class with the provided options.  
+
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| [label] | <code>string</code> | <code>&quot;&#x27;&#x27;&quot;</code> | The label parameter is a string that represents the label or placeholder text for the text field. It is optional and defaults to an empty string if not provided. |
+| [options] | [<code>FieldProperties</code>](#FieldProperties) | <code>{}</code> | The `options` parameter is an object that contains additional configuration options for the `UiTextField` component. These options can include properties such as `placeholder`, `maxLength`, `defaultValue`, `disabled`, etc. |
 
 <a name="timeField"></a>
 
