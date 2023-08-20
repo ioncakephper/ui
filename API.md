@@ -104,90 +104,97 @@ items based on the options provided.</p>
 ## Functions
 
 <dl>
-<dt><a href="#booleanField">booleanField([label], [options])</a> ⇒</dt>
+<dt><a href="#booleanField">booleanField([label], [options])</a> ⇒ <code><a href="#UiBooleanField">UiBooleanField</a></code></dt>
 <dd><p>The function <code>booleanField</code> creates a boolean field with a label and optional additional options.</p>
 </dd>
 <dt><a href="#checkboxesField">checkboxesField([label], [choices], [options])</a> ⇒ <code><a href="#UiCheckboxesField">UiCheckboxesField</a></code></dt>
 <dd><p>The function <code>checkboxesField</code> creates a checkboxes field with a label, choices, and additional
 options.</p>
 </dd>
-<dt><a href="#colorField">colorField([label], [options])</a> ⇒</dt>
+<dt><a href="#colorField">colorField([label], [options])</a> ⇒ <code><a href="#UiColorField">UiColorField</a></code></dt>
 <dd><p>The function <code>colorField</code> creates a new UiColorField object with the provided label and options.</p>
 </dd>
-<dt><a href="#numberField">numberField([label], [options])</a> ⇒</dt>
+<dt><a href="#numberField">numberField([label], [options])</a> ⇒ <code><a href="#UiNumberField">UiNumberField</a></code></dt>
 <dd><p>The function &quot;numberField&quot; creates a new number input field with an optional label and additional
 options.</p>
 </dd>
-<dt><a href="#textareaField">textareaField([label], [options])</a> ⇒</dt>
+<dt><a href="#textareaField">textareaField([label], [options])</a> ⇒ <code><a href="#UiTextareaField">UiTextareaField</a></code></dt>
 <dd><p>The function <code>textareaField</code> creates a textarea input field with a label and optional additional
 options.</p>
 </dd>
-<dt><a href="#textField">textField([label], [options])</a> ⇒</dt>
+<dt><a href="#textField">textField([label], [options])</a> ⇒ <code><a href="#UiTextField">UiTextField</a></code></dt>
 <dd><p>The function <code>textField</code> creates a new instance of <code>UiTextField</code> with the provided label and
 options.</p>
 </dd>
-<dt><a href="#dateField">dateField([label], [options])</a> ⇒</dt>
+<dt><a href="#dateField">dateField([label], [options])</a> ⇒ <code><a href="#UiDateField">UiDateField</a></code></dt>
 <dd><p>The function <code>dateField</code> creates a new date field with a label and optional additional options.</p>
 </dd>
-<dt><a href="#datetimeField">datetimeField([label], [options])</a> ⇒</dt>
+<dt><a href="#datetimeField">datetimeField([label], [options])</a> ⇒ <code><a href="#UiDateTimeField">UiDateTimeField</a></code></dt>
 <dd><p>The function <code>datetimeField</code> creates a new <code>UiDateTimeField</code> object with the provided label and
 options.</p>
 </dd>
-<dt><a href="#datetimelocalField">datetimelocalField([label], [options])</a> ⇒</dt>
+<dt><a href="#datetimelocalField">datetimelocalField([label], [options])</a> ⇒ <code><a href="#UiDateTimeLocalField">UiDateTimeLocalField</a></code></dt>
 <dd><p>The function <code>datetimelocalField</code> creates a new instance of <code>UiDateTimeLocalField</code> with the provided
 label and options.</p>
 </dd>
-<dt><a href="#emailField">emailField([label], [options])</a> ⇒</dt>
+<dt><a href="#emailField">emailField([label], [options])</a> ⇒ <code><a href="#UiEmailField">UiEmailField</a></code></dt>
 <dd><p>The function creates an email input field with an optional label and additional options.</p>
 </dd>
-<dt><a href="#fileField">fileField([label], [options])</a> ⇒</dt>
+<dt><a href="#fileField">fileField([label], [options])</a> ⇒ <code><a href="#UiFileField">UiFileField</a></code></dt>
 <dd><p>The function <code>fileField</code> creates a new instance of <code>UiFileField</code> with the provided label and
 options.</p>
 </dd>
-<dt><a href="#formField">formField([label], [fields], [options])</a> ⇒</dt>
+<dt><a href="#formField">formField([label], [fields], [options])</a> ⇒ <code><a href="#UiFormField">UiFormField</a></code></dt>
 <dd><p>The function <code>formField</code> creates a form field with a label, an array of fields, and additional
 options.</p>
 </dd>
-<dt><a href="#hiddenField">hiddenField([label], [options])</a> ⇒</dt>
+<dt><a href="#hiddenField">hiddenField([label], [options])</a> ⇒ <code><a href="#UiHiddenField">UiHiddenField</a></code></dt>
 <dd><p>The function <code>hiddenField</code> creates a hidden field with an optional label and additional options.</p>
 </dd>
-<dt><a href="#imageField">imageField([label], [options])</a> ⇒</dt>
+<dt><a href="#imageField">imageField([label], [options])</a> ⇒ <code><a href="#UiImageField">UiImageField</a></code></dt>
 <dd><p>The function <code>imageField</code> creates a new image field with a label and optional additional options.</p>
 </dd>
-<dt><a href="#monthField">monthField([label], [options])</a> ⇒</dt>
+<dt><a href="#monthField">monthField([label], [options])</a> ⇒ <code><a href="#UiMonthField">UiMonthField</a></code></dt>
 <dd><p>The function <code>monthField</code> creates a new month field UI component with an optional label and
 additional options.</p>
 </dd>
-<dt><a href="#passwordField">passwordField([label], [options])</a> ⇒</dt>
+<dt><a href="#passwordField">passwordField([label], [options])</a> ⇒ <code><a href="#UiPasswordField">UiPasswordField</a></code></dt>
 <dd><p>The function creates a password field with a label and optional additional options.</p>
 </dd>
-<dt><a href="#rangeField">rangeField([label], [options])</a> ⇒</dt>
+<dt><a href="#radioField">radioField([label], [choices], [options])</a> ⇒ <code><a href="#UiRadioField">UiRadioField</a></code></dt>
+<dd><p>The function <code>radioField</code> creates a radio field with a label, choices, and additional options.</p>
+</dd>
+<dt><a href="#rangeField">rangeField([label], [options])</a> ⇒ <code><a href="#UiRangeField">UiRangeField</a></code></dt>
 <dd><p>The function <code>rangeField</code> creates a range field UI element with a label and optional additional
 options.</p>
 </dd>
-<dt><a href="#searchField">searchField([label], [options])</a> ⇒</dt>
+<dt><a href="#searchField">searchField([label], [options])</a> ⇒ <code><a href="#UiSearchField">UiSearchField</a></code></dt>
 <dd><p>The function <code>searchField</code> creates a new instance of <code>UiSearchField</code> with the provided label and
 options.</p>
 </dd>
-<dt><a href="#telField">telField([label], [options])</a> ⇒</dt>
+<dt><a href="#telField">telField([label], [options])</a> ⇒ <code><a href="#UiTelField">UiTelField</a></code></dt>
 <dd><p>The function <code>telField</code> creates a new <code>UiTelField</code> object with optional label and options.</p>
 </dd>
-<dt><a href="#timeField">timeField([label], [options])</a> ⇒</dt>
+<dt><a href="#selectField">selectField([label], [choices], [options])</a> ⇒ <code><a href="#UiSelectField">UiSelectField</a></code></dt>
+<dd><p>The function <code>selectField</code> creates a new <code>UiSelectField</code> object with the provided label, choices,
+and options.</p>
+</dd>
+<dt><a href="#timeField">timeField([label], [options])</a> ⇒ <code><a href="#UiTimeField">UiTimeField</a></code></dt>
 <dd><p>The function <code>timeField</code> creates a time field UI element with an optional label and additional
 options.</p>
 </dd>
-<dt><a href="#urlField">urlField([label], [options])</a> ⇒</dt>
+<dt><a href="#urlField">urlField([label], [options])</a> ⇒ <code><a href="#UiUrlField">UiUrlField</a></code></dt>
 <dd><p>The function <code>urlField</code> creates a URL input field with an optional label.</p>
 </dd>
-<dt><a href="#getLabelAndRequired">getLabelAndRequired([label])</a> ⇒</dt>
+<dt><a href="#getLabelAndRequired">getLabelAndRequired([label])</a> ⇒ <code>object</code></dt>
 <dd><p>The function <code>getLabelAndRequired</code> returns an object with a sanitized label and a boolean indicating
 if the label suggests that it is required.</p>
 </dd>
-<dt><a href="#sanitizeLabel">sanitizeLabel(label)</a> ⇒</dt>
+<dt><a href="#sanitizeLabel">sanitizeLabel([label])</a> ⇒ <code>string</code></dt>
 <dd><p>The <code>sanitizeLabel</code> function takes a label as input, removes trailing asterisks and leading/trailing
 whitespace, and returns the sanitized label or &#39;No label&#39; if the resulting label is empty.</p>
 </dd>
-<dt><a href="#itSuggestsRequired">itSuggestsRequired(label)</a> ⇒</dt>
+<dt><a href="#itSuggestsRequired">itSuggestsRequired(label)</a> ⇒ <code>boolean</code></dt>
 <dd><p>The function checks if a label ends with an asterisk (*) to suggest that it is required.</p>
 </dd>
 </dl>
@@ -195,7 +202,13 @@ whitespace, and returns the sanitized label or &#39;No label&#39; if the resulti
 ## Typedefs
 
 <dl>
-<dt><a href="#FieldChoices">FieldChoices</a> : <code>object</code></dt>
+<dt><a href="#TemplateOptions">TemplateOptions</a> : <code>object</code></dt>
+<dd><p>The <code>TemplateOptions</code> object represents the template options of a field.</p>
+</dd>
+<dt><a href="#FieldProperties">FieldProperties</a> : <code>object</code></dt>
+<dd><p>The <code>FieldProperties</code> object represents a field in a form.</p>
+</dd>
+<dt><a href="#FieldChoice">FieldChoice</a> : <code>object</code></dt>
 <dd><p>The <code>FieldChoices</code> object represents a choice in a radio, select, or checkboxes field.</p>
 </dd>
 </dl>
@@ -4487,16 +4500,16 @@ The getValue function returns the value associated with a given name from a prov
 
 <a name="booleanField"></a>
 
-## booleanField([label], [options]) ⇒
+## booleanField([label], [options]) ⇒ [<code>UiBooleanField</code>](#UiBooleanField)
 The function `booleanField` creates a boolean field with a label and optional additional options.
 
 **Kind**: global function  
-**Returns**: a new instance of the `UiBooleanField` class with the provided options.  
+**Returns**: [<code>UiBooleanField</code>](#UiBooleanField) - a new instance of the `UiBooleanField` class with the provided options.  
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
 | [label] | <code>string</code> | <code>&quot;&#x27;&#x27;&quot;</code> | The `label` parameter is a string that represents the label or name of the boolean field. It is an optional parameter, so if no value is provided, the field will not have a label. |
-| [options] | <code>object</code> | <code>{}</code> | The `options` parameter is an object that contains additional configuration options for the `UiBooleanField` component. These options can include properties such as `defaultValue`, `disabled`, `onChange`, etc. |
+| [options] | [<code>FieldProperties</code>](#FieldProperties) | <code>{}</code> | The `options` parameter is an object that contains additional configuration options for the `UiBooleanField` component. These options can include properties such as `defaultValue`, `disabled`, `onChange`, etc. |
 
 <a name="checkboxesField"></a>
 
@@ -4510,276 +4523,305 @@ options.
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
 | [label] | <code>string</code> | <code>&quot;&#x27;&#x27;&quot;</code> | The label parameter is a string that represents the label for the checkboxes field. It is optional and defaults to an empty string if not provided. |
-| [choices] | [<code>Array.&lt;FieldChoices&gt;</code>](#FieldChoices) | <code>[]</code> | The `choices` parameter is an array that contains the options for the checkboxes field. Each element in the array represents a choice that the user can select. |
-| [options] | <code>object</code> | <code>{}</code> | The `options` parameter is an object that contains additional configuration options for the checkboxes field. These options can include properties such as `id`, `name`, `value`, `class`, `style`, etc. |
+| [choices] | [<code>Array.&lt;FieldChoice&gt;</code>](#FieldChoice) | <code>[]</code> | The `choices` parameter is an array that contains the options for the checkboxes field. Each element in the array represents a choice that the user can select. |
+| [options] | [<code>FieldProperties</code>](#FieldProperties) | <code>{}</code> | The `options` parameter is an object that contains additional configuration options for the checkboxes field. These options can include properties such as `id`, `name`, `value`, `class`, `style`, etc. |
 
 <a name="colorField"></a>
 
-## colorField([label], [options]) ⇒
+## colorField([label], [options]) ⇒ [<code>UiColorField</code>](#UiColorField)
 The function `colorField` creates a new UiColorField object with the provided label and options.
 
 **Kind**: global function  
-**Returns**: a new instance of the `UiColorField` class with the provided `options`.  
+**Returns**: [<code>UiColorField</code>](#UiColorField) - a new instance of the `UiColorField` class with the provided `options`.  
 
-| Param | Description |
-| --- | --- |
-| [label] | A string representing the label for the color field. It is an optional parameter and defaults to an empty string if not provided. |
-| [options] | An object that contains additional configuration options for the color field. These options can include properties such as the default color, the available color options, and any event handlers for when the color is changed. |
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| [label] |  |  | A string representing the label for the color field. It is an optional parameter and defaults to an empty string if not provided. |
+| [options] | [<code>FieldProperties</code>](#FieldProperties) | <code>{}</code> | An object that contains additional configuration options for the color field. These options can include properties such as the default color, the available color options, and any event handlers for when the color is changed. |
 
 <a name="numberField"></a>
 
-## numberField([label], [options]) ⇒
+## numberField([label], [options]) ⇒ [<code>UiNumberField</code>](#UiNumberField)
 The function "numberField" creates a new number input field with an optional label and additional
 options.
 
 **Kind**: global function  
-**Returns**: a new instance of the `UiNumberField` class with the provided options.  
+**Returns**: [<code>UiNumberField</code>](#UiNumberField) - a new instance of the `UiNumberField` class with the provided options.  
 
-| Param | Description |
-| --- | --- |
-| [label] | A string representing the label for the number field. It is an optional parameter and defaults to an empty string if not provided. |
-| [options] | An object that contains additional options for the number field. These options can include properties such as minimum and maximum values, step size, default value, and any other configuration options specific to the number field component. |
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| [label] |  |  | A string representing the label for the number field. It is an optional parameter and defaults to an empty string if not provided. |
+| [options] | [<code>FieldProperties</code>](#FieldProperties) | <code>{}</code> | An object that contains additional options for the number field. These options can include properties such as minimum and maximum values, step size, default value, and any other configuration options specific to the number field component. |
 
 <a name="textareaField"></a>
 
-## textareaField([label], [options]) ⇒
+## textareaField([label], [options]) ⇒ [<code>UiTextareaField</code>](#UiTextareaField)
 The function `textareaField` creates a textarea input field with a label and optional additional
 options.
 
 **Kind**: global function  
-**Returns**: a new instance of the `UiTextareaField` class with the provided options.  
+**Returns**: [<code>UiTextareaField</code>](#UiTextareaField) - a new instance of the `UiTextareaField` class with the provided options.  
 
-| Param | Description |
-| --- | --- |
-| [label] | A string representing the label for the textarea field. It is an optional parameter and defaults to an empty string if not provided. |
-| [options] | An object that contains additional options for the textarea field. These options can include properties such as placeholder, value, rows, cols, and disabled. |
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| [label] |  |  | A string representing the label for the textarea field. It is an optional parameter and defaults to an empty string if not provided. |
+| [options] | [<code>FieldProperties</code>](#FieldProperties) | <code>{}</code> | An object that contains additional options for the textarea field. These options can include properties such as placeholder, value, rows, cols, and disabled. |
 
 <a name="textField"></a>
 
-## textField([label], [options]) ⇒
+## textField([label], [options]) ⇒ [<code>UiTextField</code>](#UiTextField)
 The function `textField` creates a new instance of `UiTextField` with the provided label and
 options.
 
 **Kind**: global function  
-**Returns**: a new instance of the `UiTextField` class with the provided options.  
+**Returns**: [<code>UiTextField</code>](#UiTextField) - a new instance of the `UiTextField` class with the provided options.  
 
-| Param | Description |
-| --- | --- |
-| [label] | The label parameter is a string that represents the label or placeholder text for the text field. It is optional and defaults to an empty string if not provided. |
-| [options] | The `options` parameter is an object that contains additional configuration options for the `UiTextField` component. These options can include properties such as `placeholder`, `maxLength`, `defaultValue`, `disabled`, etc. |
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| [label] |  |  | The label parameter is a string that represents the label or placeholder text for the text field. It is optional and defaults to an empty string if not provided. |
+| [options] | [<code>FieldProperties</code>](#FieldProperties) | <code>{}</code> | The `options` parameter is an object that contains additional configuration options for the `UiTextField` component. These options can include properties such as `placeholder`, `maxLength`, `defaultValue`, `disabled`, etc. |
 
 <a name="dateField"></a>
 
-## dateField([label], [options]) ⇒
+## dateField([label], [options]) ⇒ [<code>UiDateField</code>](#UiDateField)
 The function `dateField` creates a new date field with a label and optional additional options.
 
 **Kind**: global function  
-**Returns**: a new instance of the `UiDateField` class with the provided `options` object.  
+**Returns**: [<code>UiDateField</code>](#UiDateField) - a new instance of the `UiDateField` class with the provided `options` object.  
 
-| Param | Description |
-| --- | --- |
-| [label] | A string that represents the label for the date field. It is an optional parameter and defaults to an empty string if not provided. |
-| [options] | An object that contains additional options for the date field. These options can include properties such as the default value, minimum and maximum date, and any custom validation rules. |
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| [label] |  |  | A string that represents the label for the date field. It is an optional parameter and defaults to an empty string if not provided. |
+| [options] | [<code>FieldProperties</code>](#FieldProperties) | <code>{}</code> | An object that contains additional options for the date field. These options can include properties such as the default value, minimum and maximum date, and any custom validation rules. |
 
 <a name="datetimeField"></a>
 
-## datetimeField([label], [options]) ⇒
+## datetimeField([label], [options]) ⇒ [<code>UiDateTimeField</code>](#UiDateTimeField)
 The function `datetimeField` creates a new `UiDateTimeField` object with the provided label and
 options.
 
 **Kind**: global function  
-**Returns**: a new instance of the `UiDateTimeField` class with the provided `options`.  
+**Returns**: [<code>UiDateTimeField</code>](#UiDateTimeField) - a new instance of the `UiDateTimeField` class with the provided `options`.  
 
-| Param | Description |
-| --- | --- |
-| [label] | A string representing the label for the datetime field. It is an optional parameter and defaults to an empty string if not provided. |
-| [options] | An object that contains additional options for the UiDateTimeField. These options can include properties such as format, initialDate, minDate, maxDate, and onChange. |
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| [label] |  |  | A string representing the label for the datetime field. It is an optional parameter and defaults to an empty string if not provided. |
+| [options] | [<code>FieldProperties</code>](#FieldProperties) | <code>{}</code> | An object that contains additional options for the UiDateTimeField. These options can include properties such as format, initialDate, minDate, maxDate, and onChange. |
 
 <a name="datetimelocalField"></a>
 
-## datetimelocalField([label], [options]) ⇒
+## datetimelocalField([label], [options]) ⇒ [<code>UiDateTimeLocalField</code>](#UiDateTimeLocalField)
 The function `datetimelocalField` creates a new instance of `UiDateTimeLocalField` with the provided
 label and options.
 
 **Kind**: global function  
-**Returns**: a new instance of the `UiDateTimeLocalField` class with the provided options.  
+**Returns**: [<code>UiDateTimeLocalField</code>](#UiDateTimeLocalField) - a new instance of the `UiDateTimeLocalField` class with the provided options.  
 
-| Param | Description |
-| --- | --- |
-| [label] | The label parameter is a string that represents the label or name of the field. It is used to provide a descriptive name for the field in the user interface. |
-| [options] | An object that contains additional configuration options for the `UiDateTimeLocalField` component. These options can include properties such as `defaultValue`, `disabled`, `onChange`, etc. |
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| [label] |  |  | The label parameter is a string that represents the label or name of the field. It is used to provide a descriptive name for the field in the user interface. |
+| [options] | [<code>FieldProperties</code>](#FieldProperties) | <code>{}</code> | An object that contains additional configuration options for the `UiDateTimeLocalField` component. These options can include properties such as `defaultValue`, `disabled`, `onChange`, etc. |
 
 <a name="emailField"></a>
 
-## emailField([label], [options]) ⇒
+## emailField([label], [options]) ⇒ [<code>UiEmailField</code>](#UiEmailField)
 The function creates an email input field with an optional label and additional options.
 
 **Kind**: global function  
-**Returns**: a new instance of the `UiEmailField` class with the provided options.  
+**Returns**: [<code>UiEmailField</code>](#UiEmailField) - a new instance of the `UiEmailField` class with the provided options.  
 
-| Param | Description |
-| --- | --- |
-| [label] | A string that represents the label for the email field. It is an optional parameter and defaults to an empty string if not provided. |
-| [options] | An object that contains additional options for the email field. These options can include properties such as placeholder text, default value, validation rules, and event handlers. |
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| [label] |  |  | A string that represents the label for the email field. It is an optional parameter and defaults to an empty string if not provided. |
+| [options] | [<code>FieldProperties</code>](#FieldProperties) | <code>{}</code> | An object that contains additional options for the email field. These options can include properties such as placeholder text, default value, validation rules, and event handlers. |
 
 <a name="fileField"></a>
 
-## fileField([label], [options]) ⇒
+## fileField([label], [options]) ⇒ [<code>UiFileField</code>](#UiFileField)
 The function `fileField` creates a new instance of `UiFileField` with the provided label and
 options.
 
 **Kind**: global function  
-**Returns**: a new instance of the `UiFileField` class with the `options` object as its parameter.  
+**Returns**: [<code>UiFileField</code>](#UiFileField) - a new instance of the `UiFileField` class with the `options` object as its parameter.  
 
-| Param | Description |
-| --- | --- |
-| [label] | The label parameter is a string that represents the label or name of the file field. It is optional and can be left empty if no label is needed for the field. |
-| [options] | An object that contains additional options for the file field. These options can include properties such as the field's name, value, placeholder, and event handlers. |
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| [label] |  |  | The label parameter is a string that represents the label or name of the file field. It is optional and can be left empty if no label is needed for the field. |
+| [options] | [<code>FieldProperties</code>](#FieldProperties) | <code>{}</code> | An object that contains additional options for the file field. These options can include properties such as the field's name, value, placeholder, and event handlers. |
 
 <a name="formField"></a>
 
-## formField([label], [fields], [options]) ⇒
+## formField([label], [fields], [options]) ⇒ [<code>UiFormField</code>](#UiFormField)
 The function `formField` creates a form field with a label, an array of fields, and additional
 options.
 
 **Kind**: global function  
-**Returns**: a new instance of the `UiFormField` class with the provided options.  
+**Returns**: [<code>UiFormField</code>](#UiFormField) - a new instance of the `UiFormField` class with the provided options.  
 
-| Param | Description |
-| --- | --- |
-| [label] | The label parameter is a string that represents the label for the form field. It is optional and defaults to an empty string if not provided. |
-| [fields] | The `fields` parameter is an array that contains the input fields for the form. Each element in the array represents a single input field. |
-| [options] | An object that contains additional options for the form field. These options will be merged with the label and required properties obtained from the getLabelAndRequired function. |
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| [label] |  |  | The label parameter is a string that represents the label for the form field. It is optional and defaults to an empty string if not provided. |
+| [fields] | [<code>Array.&lt;UiField&gt;</code>](#UiField) | <code>[]</code> | The `fields` parameter is an array that contains the input fields for the form. Each element in the array represents a single input field. |
+| [options] | [<code>FieldProperties</code>](#FieldProperties) | <code>{}</code> | An object that contains additional options for the form field. These options will be merged with the label and required properties obtained from the getLabelAndRequired function. |
 
 <a name="hiddenField"></a>
 
-## hiddenField([label], [options]) ⇒
+## hiddenField([label], [options]) ⇒ [<code>UiHiddenField</code>](#UiHiddenField)
 The function `hiddenField` creates a hidden field with an optional label and additional options.
 
 **Kind**: global function  
-**Returns**: a new instance of the `UiHiddenField` class with the `options` object as its parameter.  
+**Returns**: [<code>UiHiddenField</code>](#UiHiddenField) - a new instance of the `UiHiddenField` class with the `options` object as its parameter.  
 
-| Param | Description |
-| --- | --- |
-| [label] | The label parameter is a string that represents the label for the hidden field. It is optional and defaults to an empty string if not provided. |
-| [options] | An object that contains additional options for the hidden field. These options can include properties such as the field's name, value, and any additional attributes or classes that should be applied to the field. |
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| [label] |  |  | The label parameter is a string that represents the label for the hidden field. It is optional and defaults to an empty string if not provided. |
+| [options] | [<code>FieldProperties</code>](#FieldProperties) | <code>{}</code> | An object that contains additional options for the hidden field. These options can include properties such as the field's name, value, and any additional attributes or classes that should be applied to the field. |
 
 <a name="imageField"></a>
 
-## imageField([label], [options]) ⇒
+## imageField([label], [options]) ⇒ [<code>UiImageField</code>](#UiImageField)
 The function `imageField` creates a new image field with a label and optional additional options.
 
 **Kind**: global function  
-**Returns**: a new instance of the `UiImageField` class with the `options` object as its parameter.  
+**Returns**: [<code>UiImageField</code>](#UiImageField) - a new instance of the `UiImageField` class with the `options` object as its parameter.  
 
-| Param | Description |
-| --- | --- |
-| [label] | The label parameter is a string that represents the label or title for the image field. It is optional and can be left empty if no label is needed. |
-| [options] | An object that contains additional options for the image field. These options can include properties such as the field's name, value, placeholder, and event handlers. |
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| [label] |  |  | The label parameter is a string that represents the label or title for the image field. It is optional and can be left empty if no label is needed. |
+| [options] | [<code>FieldProperties</code>](#FieldProperties) | <code>{}</code> | An object that contains additional options for the image field. These options can include properties such as the field's name, value, placeholder, and event handlers. |
 
 <a name="monthField"></a>
 
-## monthField([label], [options]) ⇒
+## monthField([label], [options]) ⇒ [<code>UiMonthField</code>](#UiMonthField)
 The function `monthField` creates a new month field UI component with an optional label and
 additional options.
 
 **Kind**: global function  
-**Returns**: a new instance of the `UiMonthField` class with the provided options.  
+**Returns**: [<code>UiMonthField</code>](#UiMonthField) - a new instance of the `UiMonthField` class with the provided options.  
 
-| Param | Description |
-| --- | --- |
-| [label] | A string representing the label for the month field. It is an optional parameter and defaults to an empty string if not provided. |
-| [options] | An object that contains additional options for the month field. These options can include properties such as defaultValue, placeholder, disabled, and onChange. |
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| [label] |  |  | A string representing the label for the month field. It is an optional parameter and defaults to an empty string if not provided. |
+| [options] | [<code>FieldProperties</code>](#FieldProperties) | <code>{}</code> | An object that contains additional options for the month field. These options can include properties such as defaultValue, placeholder, disabled, and onChange. |
 
 <a name="passwordField"></a>
 
-## passwordField([label], [options]) ⇒
+## passwordField([label], [options]) ⇒ [<code>UiPasswordField</code>](#UiPasswordField)
 The function creates a password field with a label and optional additional options.
 
 **Kind**: global function  
-**Returns**: a new instance of the `UiPasswordField` class with the provided options.  
+**Returns**: [<code>UiPasswordField</code>](#UiPasswordField) - a new instance of the `UiPasswordField` class with the provided options.  
 
-| Param | Description |
-| --- | --- |
-| [label] | The label parameter is a string that represents the label or name of the password field. It is optional and can be left empty if no label is needed for the field. |
-| [options] | An object that contains additional options for the password field. These options can include properties such as placeholder, maxLength, minLength, and disabled. |
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| [label] |  |  | The label parameter is a string that represents the label or name of the password field. It is optional and can be left empty if no label is needed for the field. |
+| [options] | [<code>FieldProperties</code>](#FieldProperties) | <code>{}</code> | An object that contains additional options for the password field. These options can include properties such as placeholder, maxLength, minLength, and disabled. |
+
+<a name="radioField"></a>
+
+## radioField([label], [choices], [options]) ⇒ [<code>UiRadioField</code>](#UiRadioField)
+The function `radioField` creates a radio field with a label, choices, and additional options.
+
+**Kind**: global function  
+**Returns**: [<code>UiRadioField</code>](#UiRadioField) - a new instance of the `UiRadioField` class with the provided options.  
+
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| [label] |  |  | The label parameter is a string that represents the label or title for the radio field. It is optional and defaults to an empty string if not provided. |
+| [choices] | [<code>Array.&lt;FieldChoice&gt;</code>](#FieldChoice) | <code>[]</code> | An array of options for the radio field. Each option should be a string representing the label for the option. |
+| [options] | [<code>FieldProperties</code>](#FieldProperties) | <code>{}</code> | An object that contains additional options for the radio field. These options can include properties such as `id`, `name`, `value`, `disabled`, `readonly`, etc. |
 
 <a name="rangeField"></a>
 
-## rangeField([label], [options]) ⇒
+## rangeField([label], [options]) ⇒ [<code>UiRangeField</code>](#UiRangeField)
 The function `rangeField` creates a range field UI element with a label and optional additional
 options.
 
 **Kind**: global function  
-**Returns**: a new instance of the `UiRangeField` class with the `options` object as its parameter.  
+**Returns**: [<code>UiRangeField</code>](#UiRangeField) - a new instance of the `UiRangeField` class with the `options` object as its parameter.  
 
-| Param | Description |
-| --- | --- |
-| [label] | A string representing the label for the range field. It is an optional parameter and defaults to an empty string if not provided. |
-| [options] | An object that contains additional options for the range field. These options can include properties such as min, max, step, and value, which define the range of values and the initial value of the range field. |
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| [label] |  |  | A string representing the label for the range field. It is an optional parameter and defaults to an empty string if not provided. |
+| [options] | [<code>FieldProperties</code>](#FieldProperties) | <code>{}</code> | An object that contains additional options for the range field. These options can include properties such as min, max, step, and value, which define the range of values and the initial value of the range field. |
 
 <a name="searchField"></a>
 
-## searchField([label], [options]) ⇒
+## searchField([label], [options]) ⇒ [<code>UiSearchField</code>](#UiSearchField)
 The function `searchField` creates a new instance of `UiSearchField` with the provided label and
 options.
 
 **Kind**: global function  
-**Returns**: a new instance of the `UiSearchField` class with the `options` object as its parameter.  
+**Returns**: [<code>UiSearchField</code>](#UiSearchField) - a new instance of the `UiSearchField` class with the `options` object as its parameter.  
 
-| Param | Description |
-| --- | --- |
-| [label] | The label parameter is a string that represents the label or title of the search field. It is optional and defaults to an empty string if not provided. |
-| [options] | The `options` parameter is an object that contains additional configuration options for the `UiSearchField` component. These options can include properties such as `placeholder`, `defaultValue`, `onChange`, etc. |
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| [label] |  |  | The label parameter is a string that represents the label or title of the search field. It is optional and defaults to an empty string if not provided. |
+| [options] | [<code>FieldProperties</code>](#FieldProperties) | <code>{}</code> | The `options` parameter is an object that contains additional configuration options for the `UiSearchField` component. These options can include properties such as `placeholder`, `defaultValue`, `onChange`, etc. |
 
 <a name="telField"></a>
 
-## telField([label], [options]) ⇒
+## telField([label], [options]) ⇒ [<code>UiTelField</code>](#UiTelField)
 The function `telField` creates a new `UiTelField` object with optional label and options.
 
 **Kind**: global function  
-**Returns**: a new instance of the `UiTelField` class with the provided options.  
+**Returns**: [<code>UiTelField</code>](#UiTelField) - a new instance of the `UiTelField` class with the provided options.  
 
-| Param | Description |
-| --- | --- |
-| [label] | A string that represents the label for the telephone field. It is an optional parameter and defaults to an empty string if not provided. |
-| [options] | An object that contains additional configuration options for the `UiTelField` component. |
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| [label] |  |  | A string that represents the label for the telephone field. It is an optional parameter and defaults to an empty string if not provided. |
+| [options] | [<code>FieldProperties</code>](#FieldProperties) | <code>{}</code> | An object that contains additional configuration options for the `UiTelField` component. |
+
+<a name="selectField"></a>
+
+## selectField([label], [choices], [options]) ⇒ [<code>UiSelectField</code>](#UiSelectField)
+The function `selectField` creates a new `UiSelectField` object with the provided label, choices,
+and options.
+
+**Kind**: global function  
+**Returns**: [<code>UiSelectField</code>](#UiSelectField) - a new instance of the `UiSelectField` class with the provided options.  
+
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| [label] |  |  | The label parameter is a string that represents the label or title of the field. It is optional and defaults to an empty string if not provided. |
+| [choices] | [<code>Array.&lt;FieldChoice&gt;</code>](#FieldChoice) | <code>[]</code> | An array of options for the select field. Each option should be a string or an object with a "label" and "value" property. |
+| [options] | [<code>FieldProperties</code>](#FieldProperties) | <code>{}</code> | An object containing additional options for the select field. These options will be merged with the default options. |
 
 <a name="timeField"></a>
 
-## timeField([label], [options]) ⇒
+## timeField([label], [options]) ⇒ [<code>UiTimeField</code>](#UiTimeField)
 The function `timeField` creates a time field UI element with an optional label and additional
 options.
 
 **Kind**: global function  
-**Returns**: a new instance of the `UiTimeField` class with the provided `options`.  
+**Returns**: [<code>UiTimeField</code>](#UiTimeField) - a new instance of the `UiTimeField` class with the provided `options`.  
 
-| Param | Description |
-| --- | --- |
-| [label] | A string that represents the label for the time field. It is an optional parameter and defaults to an empty string if not provided. |
-| [options] | An object that contains additional configuration options for the time field. These options can include properties such as the default value, minimum and maximum time values, and any custom validation rules. |
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| [label] |  |  | A string that represents the label for the time field. It is an optional parameter and defaults to an empty string if not provided. |
+| [options] | [<code>FieldProperties</code>](#FieldProperties) | <code>{}</code> | An object that contains additional configuration options for the time field. These options can include properties such as the default value, minimum and maximum time values, and any custom validation rules. |
 
 <a name="urlField"></a>
 
-## urlField([label], [options]) ⇒
+## urlField([label], [options]) ⇒ [<code>UiUrlField</code>](#UiUrlField)
 The function `urlField` creates a URL input field with an optional label.
 
 **Kind**: global function  
-**Returns**: a new instance of the `UiUrlField` class with the provided `options`.  
+**Returns**: [<code>UiUrlField</code>](#UiUrlField) - a new instance of the `UiUrlField` class with the provided `options`.  
 
-| Param | Description |
-| --- | --- |
-| [label] | The label parameter is a string that represents the label or name of the URL field. It is optional and can be left empty if no label is needed for the field. |
-| [options] | An object that contains additional options for the URL field. These options can include properties such as placeholder text, default value, validation rules, and event handlers. |
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| [label] |  |  | The label parameter is a string that represents the label or name of the URL field. It is optional and can be left empty if no label is needed for the field. |
+| [options] | [<code>FieldProperties</code>](#FieldProperties) | <code>{}</code> | An object that contains additional options for the URL field. These options can include properties such as placeholder text, default value, validation rules, and event handlers. |
 
 <a name="getLabelAndRequired"></a>
 
-## getLabelAndRequired([label]) ⇒
+## getLabelAndRequired([label]) ⇒ <code>object</code>
 The function `getLabelAndRequired` returns an object with a sanitized label and a boolean indicating
 if the label suggests that it is required.
 
 **Kind**: global function  
-**Returns**: an object with two properties: "label" and "required". The value of the "label" property is
+**Returns**: <code>object</code> - an object with two properties: "label" and "required". The value of the "label" property is
 the result of calling the "sanitizeLabel" function with the "label" parameter as an argument. The
 value of the "required" property is the result of calling the "itSuggestsRequired" function with the
 "label" parameter as an argument.  
@@ -4790,35 +4832,73 @@ value of the "required" property is the result of calling the "itSuggestsRequire
 
 <a name="sanitizeLabel"></a>
 
-## sanitizeLabel(label) ⇒
+## sanitizeLabel([label]) ⇒ <code>string</code>
 The `sanitizeLabel` function takes a label as input, removes trailing asterisks and leading/trailing
 whitespace, and returns the sanitized label or 'No label' if the resulting label is empty.
 
 **Kind**: global function  
-**Returns**: the sanitized label. If the label is empty or consists only of asterisks at the end, it
+**Returns**: <code>string</code> - the sanitized label. If the label is empty or consists only of asterisks at the end, it
 will return 'No label'. Otherwise, it will return the trimmed label with any trailing asterisks
 removed.  
 
-| Param | Description |
-| --- | --- |
-| label | The `label` parameter is a string that represents a label. |
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| [label] | <code>string</code> | <code>&quot;&#x27;&#x27;&quot;</code> | The `label` parameter is a string that represents a label. |
 
 <a name="itSuggestsRequired"></a>
 
-## itSuggestsRequired(label) ⇒
+## itSuggestsRequired(label) ⇒ <code>boolean</code>
 The function checks if a label ends with an asterisk (*) to suggest that it is required.
 
 **Kind**: global function  
-**Returns**: a boolean value indicating whether the label ends with an asterisk (*) after trimming any
+**Returns**: <code>boolean</code> - a boolean value indicating whether the label ends with an asterisk (*) after trimming any
 whitespace.  
 
 | Param | Description |
 | --- | --- |
 | label | The label parameter is a string that represents the label of a form field. |
 
-<a name="FieldChoices"></a>
+<a name="TemplateOptions"></a>
 
-## FieldChoices : <code>object</code>
+## TemplateOptions : <code>object</code>
+The `TemplateOptions` object represents the template options of a field.
+
+**Kind**: global typedef  
+**Properties**
+
+| Name | Type | Default | Description |
+| --- | --- | --- | --- |
+| template_path | <code>string</code> |  | The path to the template file. |
+| [template_extension] | <code>string</code> | <code>&quot;&#x27;.hbs&#x27;&quot;</code> | The extension of the template file. |
+
+<a name="FieldProperties"></a>
+
+## FieldProperties : <code>object</code>
+The `FieldProperties` object represents a field in a form.
+
+**Kind**: global typedef  
+**Properties**
+
+| Name | Type | Default | Description |
+| --- | --- | --- | --- |
+| [label] | <code>string</code> | <code>&quot;&#x27;&#x27;&quot;</code> | The label of the field. |
+| [name] | <code>string</code> | <code>&quot;&#x27;&#x27;&quot;</code> | The name of the field. |
+| [description] | <code>string</code> | <code>&quot;&#x27;&#x27;&quot;</code> | The description of the field. |
+| [placeholder] | <code>string</code> | <code>&quot;&#x27;&#x27;&quot;</code> | The placeholder of the field. |
+| [defaultValue] | <code>string</code> | <code>&quot;&#x27;&#x27;&quot;</code> | The default value of the field. |
+| [type] | <code>string</code> | <code>&quot;&#x27;&#x27;&quot;</code> | The type of the field. |
+| [templateString] | <code>string</code> | <code>&quot;&#x27;&#x27;&quot;</code> | The template string of the field. |
+| [wrapperTemplateString] | <code>string</code> | <code>&quot;&#x27;&#x27;&quot;</code> | The wrapper template string of the field. |
+| [templateOptions] | [<code>TemplateOptions</code>](#TemplateOptions) | <code>{}</code> | The template options of the field. |
+| [options] | <code>object</code> | <code>{}</code> | The options of the field. |
+| [values] | <code>object</code> | <code>{}</code> | The values of the field. |
+| [required] | <code>boolean</code> | <code>false</code> | Whether or not the field is required. |
+| [disabled] | <code>boolean</code> | <code>false</code> | Whether or not the field is disabled. |
+| [hidden] | <code>boolean</code> | <code>false</code> | Whether or not the field is hidden. |
+
+<a name="FieldChoice"></a>
+
+## FieldChoice : <code>object</code>
 The `FieldChoices` object represents a choice in a radio, select, or checkboxes field.
 
 **Kind**: global typedef  
