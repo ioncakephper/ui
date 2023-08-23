@@ -97,7 +97,7 @@ npm run test
 - [x] UiFormField class to generate form
 - [x] Update shortcut functions code documentation: type, default param values, return type.
 - [ ] Create documentation site with Docusaurus, outlined with Skelosaurus. Store it at Github pages for this repository
-- [ ] Create button Ui classes and shortcut functions (e.g UiButton, UiSubmit, UiReset)
+- [ x] Create button Ui classes and shortcut functions (e.g UiButton, UiSubmit, UiReset)
 - [ ] Extend formField function to add submit and reset buttons.
 
 ## Author
