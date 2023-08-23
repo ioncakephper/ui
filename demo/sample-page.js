@@ -1,4 +1,4 @@
-const { textField, colorField, numberField, booleanField, dateField, datetimeField, datetimelocalField, emailField, fileField, hiddenField, imageField, monthField, passwordField, rangeField, searchField, telField, timeField, urlField, textareaField, selectField, radioField, checkboxesField, formField } = require("../lib/ui-field-shortcuts");
+const { textField, colorField, numberField, booleanField, dateField, datetimeField, datetimelocalField, emailField, fileField, hiddenField, imageField, monthField, passwordField, rangeField, searchField, telField, timeField, urlField, textareaField, selectField, radioField, checkboxesField, formField, buttonField, submitField, resetField } = require("../lib/ui-field-shortcuts");
 const {saveDocument} = require("file-easy");
 const hbsr = require("hbsr");
 
@@ -12,6 +12,9 @@ let choices = [
     }
 })
 let fields = [
+    buttonField('Button'),
+    submitField('Submit'),
+    resetField('Reset'),
     booleanField('Required', {description: `Checkbox field description goes here`}),
     checkboxesField('Checkboxes 1', choices),
     checkboxesField('Checkboxes', choices),
