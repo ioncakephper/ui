@@ -49,7 +49,7 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             // 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-            'https://github.com/ioncakephper/ui/tree/main/website/docs',
+            'https://github.com/ioncakephper/ui/tree/main/website',
         },
         blog: {
           showReadingTime: true,
@@ -57,7 +57,7 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             // 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-            'https://github.com/ioncakephper/ui/tree/main/website/blog',
+            'https://github.com/ioncakephper/ui/tree/main/website',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
