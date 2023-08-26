@@ -1,0 +1,32 @@
+sidebars:
+  - apiSidebar:
+      - label: API
+        freeze: true
+        title: 'API: uijs-kit classes and functions documentation'
+
+
+  - docsSidebar:
+      - label: Getting started
+        headings:
+          - label: Installation
+          - label: Usage
+
+      - Guides:
+          - label: Basic functions
+            order:
+              by: label
+            headings:
+              - label: textField
+                items:
+                  - label: Synopsis
+                  - label: Description
+                  - label: Parameters
+                  - label: Returns
+                  - label: Example
+              - booleanField
+              - numberField
+              - dateField
+              - selectField
+              - colorField
+          - Field templates
+          - Passing field values
