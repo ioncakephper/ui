@@ -28,29 +28,30 @@ console.log(h)
 ```js title="Create and render a list of fields"
 const ui = require('uijs-kit');
 
-let formFields = [
+let fields = [
     ui.textField('First name'),
     ui.textField('Last name*'), // use trailing * to create a required field
     ui.dateField('Date of birth', {name: 'dob'})
 ]
 
 // render all fields in formFields
-let h = formFields.map(field => field.render()).join('')
+let h = fields.map(field => field.render()).join('')
 console.log(h)
 ```
-
 
 ```js title="Create a formField and render it"
 const ui = require('uijs-kit');
 
-let formFields = [
+let fields = [
     ui.textField('First name'),
     ui.textField('Last name*'), // use trailing * to create a required field
     ui.dateField('Date of birth', {name: 'dob'}),
     ui.booleanField('In charge', {description: 'Whether the person is in charge'})
 ]
 
-let form = ui.formField('Sample form', formFields);
+let form = ui.formField('Sample form', fields, {
+    method: "GET", action: "#"
+});
 let h = form.render()
 console.log(h)
 ```
