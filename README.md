@@ -82,7 +82,7 @@ console.log(html);
 
 ## API
 
-See [api.md](api.md) for API documentation.
+See [api](./api.md) for API documentation.
 
 
 ## Run tests
