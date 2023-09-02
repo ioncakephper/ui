@@ -75,7 +75,8 @@ const config = {
         title: 'UIJS Kit',
         logo: {
           alt: 'UIJS Kit Logo',
-          src: 'img/logo.svg',
+          src: 'img/uijskit.png',
+          // src: 'img/logo.svg',
         },
         items: [
           {
