@@ -94,6 +94,11 @@ const config = {
           // { type: 'doc', docId: 'api', position: 'left', label: 'API' },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
+            href: 'https://portal.leanbe.ai/uijskit',
+            label: 'Announcements',
+            position: 'right'
+          },
+          {
             href: 'https://github.com/ioncakephper/ui',
             label: 'GitHub',
             position: 'right',
